@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Views/MasterPages/MasterPage.Master" AutoEventWireup="true"
+    CodeBehind="Interior.master.cs" Inherits="PublicTheater.Web.Views.MasterPages.Interior" %>
+<%@ Import Namespace="PublicTheater.Custom.Episerver.Utility" %>
+<%@ Register TagPrefix="uc" TagName="HeroImageControl" Src="~/Views/Controls/HeroImageControl.ascx" %>
+<%@ Register TagPrefix="uc" TagName="PageHeading" Src="~/Views/Controls/PageHeading.ascx" %>
+<%@ Register TagPrefix="uc" TagName="PDPShareTools" Src="~/Views/Controls/PDPShareTools.ascx" %>
+
+<asp:content id="Content1" contentplaceholderid="Head" runat="server">
+    <asp:contentplaceholder id="HeadContent" runat="server" />
+</asp:content>
+<asp:content id="Content3" contentplaceholderid="beforeWrapper" runat="server">
+        <uc:HeroImageControl runat="server" ID="HeroImg1"></uc:HeroImageControl>
+</asp:content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div>
+        <uc:PageHeading runat="server" ID="propHeading"/>
+        <uc:PDPShareTools runat="server" ID="PDPShare" />
+        
+        <asp:contentplaceholder id="PageNameContent" runat="server">
+        </asp:contentplaceholder>
+        <div class="row">
+            <div class="large-12 columns">
+                <asp:panel runat="server" id="pnlWrapper" cssclass="interiorPage">
+                    <asp:contentplaceholder id="PrimaryContent" runat="server">
+                    </asp:contentplaceholder>
+                </asp:panel>
+                <asp:contentplaceholder id="PrimaryContentBottomSection" runat="server">
+                </asp:contentplaceholder>
+            </div>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="scripts" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:content>
+<asp:content id="Content4" contentplaceholderid="BeforeCloseBody" runat="server">
+    <asp:contentplaceholder id="BeforeCloseBodyContent" runat="server" />
+</asp:content>

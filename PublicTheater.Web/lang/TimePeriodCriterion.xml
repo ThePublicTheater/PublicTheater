@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="English" id="en">
+    <shell>
+      <cms>
+        <visitorgroups>
+          <criteria>
+            <timeperiod>
+              <category>Time and Place Criteria</category>
+              <displayname>Time Period</displayname>
+              <description>Matches when the current time and date is in the time period specified</description>
+              <time>Time</time>
+              <date>Date</date>
+              <from>From:</from>
+              <to>To:</to>
+            </timeperiod>
+          </criteria>
+        </visitorgroups>
+      </cms>
+    </shell>
+  </language>
+  <language name="Svenska" id="sv">
+    <shell>
+      <cms>
+        <visitorgroups>
+          <criteria>
+            <timeperiod>
+              <category>Tid- och platskriterier</category>
+              <displayname>Tidsperiod</displayname>
+              <description>Matchar när nuvarande tid och datum är inom vald tidsperiod</description>
+              <time>Tid</time>
+              <date>Datum</date>
+              <from>Från och med:</from>
+              <to>Till och med:</to>
+            </timeperiod>
+          </criteria>
+        </visitorgroups>
+      </cms>
+    </shell>
+  </language>
+</languages>

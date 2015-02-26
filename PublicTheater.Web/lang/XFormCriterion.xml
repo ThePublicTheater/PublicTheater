@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="English" id="en">
+    <enums>
+        <criteriapack>
+          <xformscriterion>
+            
+              <submissionstatus>
+                <hassubmitted>Has submitted</hassubmitted>
+                <hasnotsubmitted>Has not submitted</hasnotsubmitted>
+              </submissionstatus>
+            
+          </xformscriterion>
+        </criteriapack>
+    </enums>
+    <shell>
+      <cms>
+        <visitorgroups>
+          <criteria>
+            <xform>
+              <submissionstatus>User has</submissionstatus>
+              <selectedxform>the form</selectedxform>
+            </xform>
+          </criteria>
+        </visitorgroups>
+      </cms>
+    </shell>
+  </language>
+</languages>

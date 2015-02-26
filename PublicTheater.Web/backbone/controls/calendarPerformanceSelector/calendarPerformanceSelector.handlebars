@@ -1,0 +1,20 @@
+﻿<div data-bb="performanceCalendarControl" class="miniCal">
+	<div class="heading">
+    <span>Select a day/time</span>
+    <span class="closeControl">X</span>
+	</div>
+	{{#if dateSelected}}
+  <div class="timeSlot">
+    <div class="selectedDateHeader">{{formattedDate currentSelectedDate}}</div>
+		<ul class="selectedDateTime">
+			{{#each arrayOfTimes}}
+				<li data-bb="performanceTimeSlot" data-id="{{PerformanceId}}">
+					{{formattedTime PerformanceDate}}
+				</li>
+			{{/each}}
+		</ul>
+	{{else}}
+		<div data-bb="datepickerMe"></div>
+    {{/if}}
+  </div>
+</div>

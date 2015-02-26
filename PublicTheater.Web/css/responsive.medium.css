@@ -1,0 +1,133 @@
+﻿@media (max-width:979px) {
+    
+    /* Helper Text to see what media Query is being used */
+    .helper:after{content: "MEDIUM";}  
+     .navbar { display:none;}
+    /* Master Elements */
+    .mobile-nav-collapse.in ul li {border-bottom:none;padding:0;}
+    footer iframe { height:auto; width:100%;}
+    footer .youTube a { display:block; width:100%;  }
+    footer .youTube a img { width:100%!important; }
+    header .header-wrap { padding: 20px 15px 0; }
+
+    header nav ul { text-align:center; }
+    header nav ul li, body.ie.ie9 header nav ul li {margin-left: 13px;list-style: none;position: relative;display: inline-block; float:none; vertical-align: top;}
+
+    header .userNav, body.ie.ie9 header .userNav {margin-top: 10px;float: right;width: 525px;}
+    header .userNav ul {text-align: right;}
+    header .userNav ul li {width: auto;list-style: none;display: inline-block; float:none; vertical-align: top;}
+
+    /* PDP Page */
+    .playDetailsHero .bgColor{ display:none; }
+    .playDetailsHero .bgTexture{display:none; }
+    .playDetailsHero .bgFeature{display:none; }
+    .playDetailsHero .imgFallback { display:block; }
+    .playDetailsHero .caption { position:static; width: 96%;padding:25px 2%; border-bottom:solid 2px #ccc; background: #FAFAFA;}
+    .playDetailsHero.animate-simple .caption {position:static; width: 96%;padding:25px 2%; border-bottom:solid 2px #ccc; }
+    
+
+    .theaterContainer .theaterLeftColumn { display:inline-block; width: 100%; margin-top:0; }
+    .theaterContainer:nth-of-type(3) .theaterLeftColumn { float: left; width: 100%; margin-top:-15px; }
+
+    .theaterSectionSelection { display:inline-block; width: 100%; border-top: 2px solid #333; padding-bottom: 20px; margin-top:12px; }
+    
+    .theaterSectionSelection .sectionContainer { display:inline-block; width: 100%; }
+    .theaterContainer .theaterSectionList ul { clear: both; list-style: none; padding: 10px 0 0;  width:100%; padding-left:25px; margin-left:0;-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;  }
+    .theaterContainer .theaterLeftColumn h3 { margin: 0; border-top: 2px solid #333; padding: 25px 0 0; text-transform: uppercase; font-size: 14px; color: #000; }
+   
+    .theaterSectionSelection .seatingMapContainer {  width:100%; height:500px; margin:25px 0; }
+    .theaterSectionSelection .seatingMapContainer .seatMapImg { display:block; margin:0 auto; float:none; width:60%;}
+    .packageDescription { position: relative; bottom: 0; margin-bottom:0px; left:0; opacity: 1; text-align:center; }
+    .packageDescription h2 { font-size:24px; padding-left:0; margin: 0;}
+
+    #packageDisplay .miniCart .perfRow td, #cartItemDisplay .miniCart .perfRow td {vertical-align:middle; padding:6px 15px 4px 0; }
+
+
+    /* Cart Parking Add-on */
+    #cartParkingArea { display: inline-block; float: left; width: 100%; border: 1px dotted #ccc; clear: both; padding: 17px 21px 3px; margin-top: 15px; margin-bottom:15px; overflow: hidden; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+    #cartParkingArea .addOnDescription { width: 55%; float: left; padding-right:10px; margin-right:8px; border-right:1px solid #cecfd0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+    #cartParkingArea .addOnPricing, .selectQty { width:42%; float: right; text-align: right; }
+
+    #cartParkingArea .selectQty label { padding-left: 5px; }
+    #cartParkingArea .parkingSubTotal { padding: 5px 0; }
+    #cartParkingArea .parkingSubTotal label, .parkingSubTotal span { display: inline-block; }
+    #cartParkingArea .parkingSubTotal span { font-weight: bold; width: 75px; }
+
+    #cartParkingArea .parkingDropDown { margin-bottom:4px; margin-top:-5px;}
+
+    /* Cart Actions - Order Totals */
+    #cartActions { display:inline-block; width:100%; min-width:300px; float:left; text-align: right;  /*border:1px dotted #ccc;*/ margin-top:15px;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+    #cartActions > .row-fluid {width:60%; display:inline-block; float:left;}
+    #cartActions ul { display:block; margin: 0 0 15px 0; background:#f3f3f3; padding:13px 0 7px 0; width:100%; border:3px solid #cecfd0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+    #cartActions ul li {display:block; }
+    #cartActions ul li label {display:inline-block; margin-right:20px; line-height:2.1em; text-align:right; width:60%; padding-right:5px;  border-bottom:1px dotted #ccc; }
+    #cartActions ul li:nth-child(3) label {border-bottom:2px solid #ddd;}
+    #cartActions ul li:nth-child(4) label {border-bottom:none; font-weight:bold; margin-top:5px; font-size:16px;}
+
+    #cartActions ul li span {display:inline-block; margin-right:10px; line-height:2.1em; font-weight:bold; text-align:left; width:17%; border-bottom:1px dotted #ccc;}
+    #cartActions ul li:nth-child(3) span {border-bottom:2px solid #ddd;}
+    #cartActions ul li:nth-child(4) span {border-bottom:none; margin-top:5px; font-size:16px;}
+
+    #cartActions .continueBtn.checkoutBtns {width:40%; display:inline-block; margin-top:10px;}
+    #cartActions .continueBtn.checkoutBtns > p { padding-bottom:6px; display:inline-block; width:100%;}
+    #cartActions .continueBtn.checkoutBtns > p a {  margin:0; min-width:90%; padding:23px 0; display:inline-block; font-size:17px;}
+
+    #cartActions .continueBtn.checkoutBtns > .btn.btnStandOut { padding:23px 0; margin:0; min-width:90%; display:inline-block;  background:#000; font-size:17px;}
+    #cartActions .continueBtn.checkoutBtns > .btn.btnStandOut:hover { background:#4d4d4d;}
+
+    .selectNewSectionContainer { max-height: 500px; max-width: 800px; width:90%; min-width:50%; left:0 !important; top: 50% !important; margin: -250px 0 0 5%; }
+
+    /* Confirmation Options - Payment and comment information */
+    #confirmationOptions { clear: both; float: left; width: 100%; padding:0 0 20px 0; }
+    #confirmationOptions .step { display:inline-block; min-height: 150px; padding: 0 2% 0 0; width: 48%; min-width:180px; margin-right:3.5%;  }
+
+    #confirmationOptions .paymentInformation { margin-left: 0;}
+    #confirmationOptions .paymentInformation:nth-of-type(2) { padding-right: 0; margin-right:0;}
+
+    #confirmationOptions .orderComments { margin-left: 0; max-width:none; }
+    #confirmationOptions .orderComments p { word-wrap: break-word; }
+
+    #confirmationOptions .nextSteps { margin-right:0; padding-right:0;}
+    #confirmationContainer #cartParkingArea {width:100% !important;}
+    #confirmationContainer #cartActions {width:100%; }
+    #confirmationContainer #cartActions > .row-fluid {width:100%; }
+
+
+    /* Register Login Form */
+    #registerControl .form input, #registerControl .form select, #registerControl #enterPromoCode input {border-radius:0; border:1px solid #cccccc; }
+    #registerControl .form input { width: 90%; min-width:70%; line-height:1.5em;}
+
+    #registerControl .form li .leftCol, #registerControl .form li .rightCol  { width:43.5%; min-width:33%; }
+    #registerControl .form li .leftCol { margin-right:5.5%;}
+    #registerControl .form .leftCol input, #registerControl .form .rightCol select {width:100%; }
+
+    #registerControl #enterPromoCode input {line-height:1.5em; margin-top:4px;}
+    #registerControl #enterPromoCode label {display:inline-block; margin-right:10px;}
+
+    #courseListPage #filterContainer.courseListFilter { width: 25.11% !important; margin-right:4%; display:inline-block; float:left;}
+    #courseListPage #courseListFilter { }
+    #courseListPage #courseListControl { width: 70%; margin-left:0; padding:0; border-top:1px solid #999; float:none; display:inline-block;}
+
+
+    /* Courses Register Page */
+    #courseRegister fieldset ul {list-style:none; display:block;}
+    #courseRegister .field label { display:block; float:left;  margin-right:10px; width:30%; min-width:30%; margin-bottom:0; vertical-align: top; }
+    #courseRegister .field input, #courseRegister .field select { display:inline-block; margin-right:10px; width:60%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+    #courseRegister ul > .field { width:100%; display:block; min-height:60px;}
+    #courseRegister .field input {height:30px;}
+
+    /* left side */
+    #courseRegister .studentInfo .field select, #courseRegister .studentInfo .field label, #courseRegister .studentInfo .field input {width:90%;}
+    #courseRegister .studentInfo .field:nth-of-type(5) select {width:27.8%; margin-right:2.5%;}
+    /* right side */
+    #courseRegister .emergency .field input, #courseRegister .emergency .field select, #courseRegister .emergency .field label { width:90%; }
+    #courseRegister .emergency .field:nth-of-type(2n+4) input {width:28%; margin-right:3%; float:left; }
+
+#courseRegister .emergency .field:last-of-type textarea {width:90%; }
+
+    /* Donation Page */
+    .supportUsSection { padding-right: 5%; border-right: 1px solid #eee; width:65% !important;}
+    .donorBenefits { margin-bottom: 25px; padding-left:3%; min-width:220px; width: 35% !important;}
+    
+    .playsListing .packagePlayItem { width:33.3333333%; float:left; display:inline-block; }
+}

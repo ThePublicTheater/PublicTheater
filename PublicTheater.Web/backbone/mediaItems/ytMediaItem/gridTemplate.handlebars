@@ -1,0 +1,13 @@
+﻿<div data-id="{{mediaId}}" class="mediaItem {{mediaType}}">
+	{{#if hasTopSection}}
+		<div class="topSection">
+			{{#if hasImage}}
+				<img src="{{imageURL}}" alt="{{title}}" class="mediaItemImage"></img>
+			{{/if}}
+		</div>
+	{{/if}}
+	<div class="bottomSection">
+		<span class="mediaTitle">{{title}}</span>
+		<span class="mediaSubTitle">{{subtitle}}</span>
+	</div>
+</div>

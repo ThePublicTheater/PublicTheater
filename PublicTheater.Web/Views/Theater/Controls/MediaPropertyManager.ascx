@@ -1,0 +1,1 @@
+﻿<%@ Control Language="C#" Inherits="PublicTheater.Web.Views.Theater.Controls.MediaPropertyManager" %>

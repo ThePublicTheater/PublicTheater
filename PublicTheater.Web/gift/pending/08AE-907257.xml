@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GiftCertificateEmail xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <To>Cihangir</To>
+  <From>Gönül</From>
+  <Email>cihangirmalkoc@gmail.com</Email>
+  <Amount>20</Amount>
+  <Message>john Freeman workshop</Message>
+  <DesignPath>/Global/GiftCertificates/GiftCertificates_Joes%20Pub.jpg</DesignPath>
+</GiftCertificateEmail>

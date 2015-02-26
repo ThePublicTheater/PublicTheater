@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="VtixSeniorCopy.ascx.cs" Inherits="PublicTheater.Web.modules.VTixSeniorCopy.VtixSeniorCopy" %>
+<asp:Literal ID="ltlSenioCopy" runat="server"></asp:Literal>

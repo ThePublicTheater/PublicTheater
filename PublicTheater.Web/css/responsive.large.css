@@ -1,0 +1,12 @@
+﻿@media (min-width:979px) {
+    
+     /* Helper Text to see what media Query is being used */
+     .helper:after{content: "LARGE";}    
+    
+     /* Master Elements */
+     .mobile-nav-collapse.in ul li {border-bottom:none;padding:0;}
+     
+
+    #choiceWrapper .overLay { display:block !important;}
+
+}

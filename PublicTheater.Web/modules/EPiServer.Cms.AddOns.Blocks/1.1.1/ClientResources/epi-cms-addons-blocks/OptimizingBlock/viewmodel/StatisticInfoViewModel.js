@@ -1,0 +1,2 @@
+//>>built
+define("epi-cms-addons-blocks/OptimizingBlock/viewmodel/StatisticInfoViewModel",["dojo/_base/declare","dojo/Stateful"],function(_1,_2){return _1([_2],{boostValue:null,probability:null,viewsCount:null,goalCount:null,exposureDate:null});});

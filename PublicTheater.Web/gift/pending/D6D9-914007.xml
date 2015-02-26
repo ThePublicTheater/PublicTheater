@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GiftCertificateEmail xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <To>Lynda Crawford</To>
+  <From>Nora Pierson</From>
+  <Email>nora@norapierson.com</Email>
+  <Amount>0</Amount>
+  <Message>Happy Mother's Day, Mom! 
+While I wish I could take you to a play for this special day, hopefully you can at least enjoy one. You deserve it! 
+~ NORA</Message>
+  <DesignPath>/Global/GiftCertificates/GiftCertificates_3.jpg</DesignPath>
+</GiftCertificateEmail>

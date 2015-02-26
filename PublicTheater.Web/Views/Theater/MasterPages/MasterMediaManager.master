@@ -1,0 +1,27 @@
+<%@ Master Language="C#" AutoEventWireup="False" CodeBehind="MasterMediaManager.master.cs"
+    Inherits=" PublicTheater.Web.Views.Theater.MasterPages.MasterMediaManager" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="HtmlElement" lang="<%= LanguageString %>">
+<head runat="server">
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+    <%--<script type="text/javascript" src="/js/scripts.js"></script>
+    <script type="text/javascript" src="/util/javascript/system.js"></script>
+    <script type="text/javascript" src="/util/javascript/dialog.js"></script>--%>
+    <%--<title runat="server">Adage Theater</title>--%>
+    <link href="../CSS/media_manager.css" rel="Stylesheet" media="all" />
+        
+</head>
+<body class="customEpi">
+    <form runat="server" id="frmMediaManager" class="mediamanager">
+    <div id="mediaMgr">
+        <asp:ScriptManager runat="server" ID="scManager" EnablePartialRendering="true">
+        </asp:ScriptManager>
+        <asp:ContentPlaceHolder ID="Content" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

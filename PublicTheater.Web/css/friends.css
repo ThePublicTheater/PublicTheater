@@ -1,0 +1,48 @@
+﻿
+/* Facebook Share/Friends Module */
+.fb-share-wrap { max-width: 350px; margin: 50px; }
+.fb-share-wrap .friend { padding: 6px 8px; cursor: pointer; }
+.fb-share-wrap .friend:hover, .fb-share-wrap .friend:active { background: #eee; }
+.fb-share-wrap .friend [class^="icon"] { margin-right: 5px; }
+.fb-share-header { background: #eee; }
+.fb-share-header > div { padding: 20px; }
+.fb-share-header .btn { float: right; }
+.fb-available-friends { max-height: 200px; margin: 0; padding: 0; list-style: none; overflow-y: auto; border: 1px solid #ddd; }
+.fb-available-friends img { width: 35px; height: 35px; margin-right: 5px; }
+.fb-available-friends .friend:hover { cursor: pointer; background: #f7f7f7; }
+.fb-friend-list .friend { cursor: pointer; }
+
+.fb-selected-friends { margin: 10px 0; }
+
+.fb-reservation-list { }
+.fb-reservation-list ul { list-style-type: none; margin: 0; padding: 0; }
+.fb-reservation-list img { height: 38px; }
+.fb-reservation-list p { margin: 0; }
+.fb-reservation-list .thumb-wrap { margin-right: 5px; }
+.fb-reservation-list li { padding: 2px; padding-right: 15px; border-bottom: 1px solid #eee; }
+.fb-reservation-list .row-title { font-size: 11px; }
+.fb-reservation-list .row-subtitle { font-size: 10px; }
+
+.fb-modal { position: fixed; width: 100%; height: 100%; background: none; z-index: 9999; -moz-transition: 300ms all; -o-transition: 300ms all; -webkit-transition: 300ms all; transition: 300ms all; }
+.fb-modal.fb-modal-open { background: rgba(255,255,255,0.75); }
+.fb-modal-open .fb-modal-inner { top: 10%; opacity: 1; }
+.fb-modal-inner { position: absolute; top: 6%; left: 30%; opacity: 0; width: 40%; border: 1px solid #ddd; background: #fff; z-index: 9999; border-radius: 3px; box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15); padding: 20px; -moz-transition: 300ms all; -o-transition: 300ms all; -webkit-transition: 300ms all; transition: 300ms all; }
+
+.fb-charm { overflow: auto; float: right; min-height: 25px; min-width: 25px; }
+.fb-charm-thumbs img { float: right; height: 25px; }
+
+.fb-status { background: #f7f7f7; border: 1px solid #eee; padding: 1px 10px; font-size: 11px; overflow: auto; min-height: 20px; }
+
+.fb-popover { border: 1px solid #ccc; -webkit-box-shadow: 1px 1px 1px #aaa; box-shadow: 1px 1px 1px #aaa; background: #fff; }
+
+.fb-action-button .button-inner { border: 1px solid #ccc; font-size: 11px; padding: 2px 5px; margin-left: 5px; min-height: 20px; }
+.fb-action-button .button-inner:hover { -webkit-box-shadow: #ddd 0 0 1px; box-shadow: #ddd 0 0 1px; }
+.fb-action-button a:hover { text-decoration: none; }
+.fb-action-button img { height: 7px; margin: 7px 5px 0; }
+
+.event-form-field { overflow: auto; margin-bottom: 10px; font-size: 12px; }
+.event-form-field label { font-size: 13px; }
+.event-form-field textarea, .event-form-field input, .event-form-field select { font-size: 12px; }
+
+
+.fb-error:after { background:#FDCACA; color:#DA3232; font-weight:bold; font-size:10px; border:1px solid #EBA0A0; content:"error"; padding:2px 5px; margin:2px; }

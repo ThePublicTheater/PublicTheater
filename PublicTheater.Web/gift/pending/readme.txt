@@ -1,0 +1,1 @@
+this folder need to exist on the server in order save temp gift certificates

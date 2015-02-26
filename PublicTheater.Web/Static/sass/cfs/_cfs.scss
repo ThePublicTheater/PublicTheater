@@ -1,0 +1,652 @@
+﻿/*Login Styles
+-------------------------------------------------------*/
+
+.login input[name*="Username"], .login input[type="password"] {width: 100%; background: #d9d9d9; border: none; padding: 11px 5px; float:none; margin-bottom:20px;}
+.register a[href*="register"] { float: left; }
+.login input[value="Login"] {float: none; margin-top: 20px; min-width: 100px; @include knockout31(); }
+div.checker {float: left; margin-right: 10px;}
+.rememberMe {margin-top: 10px; display:block; }
+.loginPromo {width:100%!important;}
+
+#loginContainer .simpleModal {margin:auto!important; position:absolute!important; top:13px!important; left:0!important; right:0!important; max-width: 550px; background: #001111; padding:13px;}
+#loginContainer .simpleModal .field {padding:13px; background:#fff;}
+#loginContainer .simpleModal .field label {font-size:18px;}
+#loginContainer .simpleModal .field input[type="text"] {display:block; width:100%; border: solid 2px #c6c6c6; padding: 3px; margin-bottom:30px;}
+#loginContainer .simpleModal .field .btn {margin-bottom:5px; @include knockout31();	background: $main-color; color: #fff; border-color: $main-color;
+	&:after {@include icons(caret-right, after){ margin-left:10px;};}}
+
+
+.login label {display:inline;}
+.errorAsterisk {float:left; color:red;} 
+.havePromoCode {margin-top:5px; display:block; width:100%;}
+
+.bgOverlay { background: rgba(0, 0, 0, .5)!important; }
+
+.loginChange {width:50%;}
+.loginChange ul li {padding-bottom: 10px;}
+.loginChange ul li label {font-size: 16px; width: 35%; float: left;}
+.loginChange ul li input {width: 60%; line-height: 1.5em; margin: 0; border-radius: 0; border: solid 2px #c6c6c6; padding: 3px;}
+.loginChange .btn {margin: 26px 0 0 0; width: auto; clear: both; text-decoration:none; @include knockout31();}
+
+/* --------------------- CALENDAR PAGE --------------------- */
+
+///SHOULDN'T BE SHOWING
+#calendarHeader .span7 .legendArea {display:none;}
+.headerText {display:none;}
+/* .errorMsg {display:none; color:red;} */
+
+//HIDE FOR NOW
+.promoWhatsThisContent {display:none;}
+.promoWhatsThisLink {display:none;}
+#calendarHeader .formSection .promoDesc {display:none;}
+
+#calendarHeader {margin-bottom:13px;}
+#calendarHeader h1 {margin-bottom:0; background-color: rgba(0,0,0,$translucent);}
+#calendarHeader .formSection {display:block; clear:both;}
+//#calendarHeader .formSection .promo {width:auto; float:right; margin-bottom:-30px;}
+//#calendarHeader .formSection .promo #havePromo {float:right; border:none; font-size:18px; color:#afafaf; text-decoration:underline; padding:0; margin:0; &:after {content:''; padding:0; margin:0;} }
+.promo .errorMsg p {float:left; margin-bottom:5px;}
+.legendArea ul li span {color:#fff;}
+#calendarArea {clear:both; width:100%;}
+#calendarArea .calendarMonthDisplay .calendarMonthSelector { float:left; background:none; border:3px solid #fff; border-bottom:none; padding:20px 10px; clear:both;background-color: rgba(0,0,0,$translucent);}
+#calendarArea .calendarMonthDisplay .calendarMonthSelector h2 {font-size:44px; color:$main-color; float:left; margin:0; padding:0;}
+#calendarArea .calendarMonthDisplay .calendarMonthSelector .changeMonthPrev {font-size:44px; color:$main-color; float:left; padding-right:15px; @include icons(caret-left, before);}
+#calendarArea .calendarMonthDisplay .calendarMonthSelector .changeMonthNext  {font-size:44px; color:$main-color; float:left; padding-left:15px; @include icons(caret-right, before);}
+#calendarArea .calendarMonthDisplay .calendarMonthSelector .changeMonthNext:before{content: "\f0da";}
+#calendarArea table {width:100%; margin-bottom:13px; clear:both;border-collapse: separate;}
+#calendarArea table thead tr th {color:#fff; font-size:20px; padding:13px 0;}
+#calendarArea table tbody {background:#fff;}
+#calendarArea table tbody tr td {min-height:125px; width:14.28%; padding:0; border:1px solid #aeaeae; vertical-align:top;position: relative;}
+#calendarArea table tbody tr td.today { border:solid 5px $main-color;}
+#calendarArea table tbody tr td .day {font-size:46px; @include knockout51(); display:block; padding-bottom:25px; float:left; margin: 15px 0 0 15px;}
+#calendarArea table tbody tr td.offDay .day {color:#aeaeae;}
+
+#calendarArea table tbody tr td.prevDay .toolTipLink { 
+	span {color:#aeaeae; }
+	label {color:#aeaeae; }}  
+
+
+#calendarArea table tbody tr td .toolTipLink { @include knockout31(); font-size:14px; cursor:pointer;
+	span {color:#000; line-height:1.3; display:block; &:hover {color:#333;}}
+	label {color:$main-color; line-height:1.3; display:block; }}
+
+#calendarArea table tbody tr td .thepublictheater { float:left; width:100%;}
+#calendarArea table tbody tr td .joespub { float:left; width:100%;}
+#calendarArea table tbody tr td .venueName {background: #000;color: #fff;width: 100%;float: left;padding: 0 10px;font-size: 11px;font-family: arial;font-weight: bold;}
+ 
+.calFilters { float:left; width:100%; margin-bottom:15px;}
+.calFilters ul { float:left; width:100%; border:solid 3px #fff; overflow:hidden;}
+.calFilters ul li { float:left;width:20%; border-left:solid 3px #fff; padding-bottom: 10000px;margin-bottom: -10000px;}
+.calFilters ul li + li{border-left: 3px solid #fff;}
+.calFilters ul li:first-child { border:none;}
+.calFilters ul li a { color:#fff; padding:10px 0; display:block; width:100%; text-align:center; font-size:18px;}
+.calFilters ul li:not(.selected) a {background-color: rgba(0,0,0,$translucent);}
+.calFilters ul li.selected { background:#fff}
+.calFilters ul li.selected a{color:#000;}
+#calendarHeader .formSection .promo {width:auto; position:absolute; top:0; right:0; 
+	a {width:auto; margin:0; @include icons(caret-down, after){top:10px;}}
+	a div p {margin:0;}}
+#calendarHeader .formSection .promo .promoLink.btn {&:hover {color:#fff; border-color:#fff;}}
+#calendarHeader .formSection #enterPromoCode {width:auto; position:absolute; top:0; right:0; 
+	input {padding: 7px 5px; border: 3px solid #ccc; background: none; float: left; color:#fff;}
+	.btn {padding: 9px 15px; margin: 0 0 0 10px; float: left; font-size: 16px; background: $main-color; border: none; color: #fff; @include knockout31();
+		&:hover {background:darken($main-color, 10%);}}}
+
+//Responsive Cal
+//#calendarArea {display:none;}
+.mobileCalendar {width: 100%; float: left; padding-top: 20px; margin-bottom:13px;}
+.mobileCalendar .filterPromoArea {width: 100%; float: left;}
+.mobileCalendar .filterPromoArea select {padding:13px; background:#fff; border:none; font-size: 22px; @include knockout51(); width: 96%; margin: 0 2% 5px; }
+
+.mobileCalendar .filterPromoArea .calHeaderWrap {width:100%; float:left; background:#fff; padding:13px; position:relative;}
+.mobileCalendar .filterPromoArea .calHeaderWrap .prevArrow {color:$main-color; cursor:pointer; font-size:26px; position:absolute; top:13px; left:13px; width:10%; height:100%; padding-right:10px; @include icons(caret-left, after);
+	&:hover {color:darken($main-color, 10%);}}
+.mobileCalendar .filterPromoArea .calHeaderWrap .nextArrow {color:$main-color; cursor:pointer; font-size:26px; position:absolute; top:13px; right:13px;width:10%; height:100%; padding-right:10px; @include icons(caret-right, after);
+	&:hover {color:darken($main-color, 10%);}}
+
+.mobileCalendar .filterPromoArea .calHeaderWrap .dayTitle {width: 80%; margin: 0 auto; text-align:center; color:$main-color; cursor:pointer; font-size:26px; @include knockout51(); @include icons(calendar, after){padding-left:10px;}
+	&:hover {color:darken($main-color, 10%);}}
+
+.mobileCalendar .filterPromoArea .hasDatepicker {}
+.mobileCalendar .filterPromoArea .ui-datepicker {border:none; border-radius:0; padding:13px; width:100%; float:left;}
+.mobileCalendar .filterPromoArea .ui-datepicker-title span {@include knockout51(); font-size:18px;}
+.mobileCalendar .filterPromoArea .ui-datepicker-title .ui-datepicker-year {color:#afafaf;}
+.mobileCalendar .filterPromoArea .heading span {@include knockout31(); color:#fff; font-size:16px;}
+.mobileCalendar .filterPromoArea .closeControl {cursor:pointer; position:absolute; top:4px; right:10px;
+	&:hover {color:#999;}}
+.mobileCalendar .filterPromoArea .ui-datepicker-header {color:#fff; background:#222; border:none; border-radius:0;}
+.mobileCalendar .filterPromoArea .ui-datepicker table {border:1px solid #222;}
+.mobileCalendar .filterPromoArea .ui-datepicker-calendar thead tr, .mobileCalendar .filterPromoArea .ui-datepicker-calendar tbody tr:nth-child(even) {background:#eee;}
+.mobileCalendar .filterPromoArea .ui-datepicker th, .miniCal .ui-datepicker td { padding:0;}
+.mobileCalendar .filterPromoArea .ui-datepicker th span, .miniCal .ui-datepicker td span, .miniCal .ui-datepicker td a {padding:5px 0; display:block;}
+.mobileCalendar .filterPromoArea .ui-datepicker th {@include knockout51();}
+.mobileCalendar .filterPromoArea .ui-datepicker td {@include knockout31(); padding:3px;}
+
+.mobileCalendar .filterPromoArea .ui-datepicker-current-day a {color:#fff; background:#ccc;}
+.mobileCalendar .filterPromoArea .ui-state-default {background:none; border:none; text-align:center; padding:0; }
+.mobileCalendar .filterPromoArea .ui-state-hover {color:#fff; background:$main-color;}
+
+.mobileCalendar .filterPromoArea .ui-datepicker-prev, .mobileCalendar .filterPromoArea .ui-datepicker-next {top:3px; border:none;background:#fff;
+	&:hover{background:$main-color; top:3px;}}
+.mobileCalendar .filterPromoArea .ui-datepicker-prev {left:4px;}
+.mobileCalendar .filterPromoArea .ui-datepicker-next {right:4px;}
+.mobileCalendar .filterPromoArea .ui-datepicker .ui-icon {cursor:pointer;}
+
+.mobileCalendar .filterPromoArea .hasDatepicker #closeDatePicker {position: absolute;top: 0;right: 7px;background: none;
+	&:hover {color: #999;}}
+
+.mobileCalendar .noCalendarItemsMessage {padding: 13px; background: #fff; font-size: 16px; color: #7e7e7e; width: 100%; float: left;}
+
+.mobileCalendar .mobileCalList {width: 100%; float: left; background: #fff; padding-top: 13px;}
+.mobileCalendar .mobileCalList li.venueBar {padding: 5px 13px; background: #001111; font-size: 18px; @include knockout51(); width: 100%;}
+.mobileCalendar .mobileCalList li.performanceLink {padding: 13px; width: 100%; float: left; position:relative;
+	a img {width: 50%; padding-right: 3%; float: left;}
+	a .showInfo {float: left; width: 47%; font-size: 18px; @include icons(caret-right, after){color:#001111; position:absolute; right:13px; top:40%;}}
+	a .showInfo span {display:block;
+		&:first-child {color:#001111; @include knockout51();}
+		&:last-child {color:$main-color;}}}
+
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {top:2px!important;}
+
+/* --------------------- TOOLTIP --------------------- */
+#calendarTable td .performanceToolTip { display: none; position: absolute; z-index: 999; top: 0; left: 100%; }
+#calendarTable td .performanceToolTip { background:  #001111; color: #fff; width: 385px; float: left; padding: 20px 15px; margin: 0; font-size: 12px; }
+#calendarTable td .performanceToolTip:before { content: ''; position: absolute; display: block; height: 20px; width: 10px; top: 50px; left: -10px; background: url(/Static/img/tooltip_arrow.png) no-repeat; }
+#calendarTable td .performanceToolTip h3 { font: normal 14px TradeGothicCond, Helvetica, Arial, sans-serif; }
+#calendarTable td .performanceToolTip.fromLeft .tooltipWrap:before { left: auto; right: -9px; background: url(/Static/img/tooltip_arrow_right.png) no-repeat; }
+#calendarTable td .performanceToolTip .btn { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; display: inline-block; }
+#calendarTable td .performanceToolTip .btn:hover { cursor: pointer; }
+#calendarTable td .performanceToolTip span { text-decoration: none; }
+.closeButton, .calendarWrap #closeDatePicker { position: absolute;cursor: pointer;top: -10px;right: -28px;display: block;height: 20px;width: 20px;overflow: hidden;background: #9CB226;color: #fff;text-align: center;/*font-weight: bold!important;*/}
+.calendarWrap #closeDatePicker:hover {background: #728319; } 
+.closeButton:hover, .calendarWrap #closeDatePicker:hover { background-position: 0 100%; }
+
+#calendarTable td .performanceRow {position:relative; float:left; width:100%; padding:10px 10px 0 10px;
+	&:last-child {padding-bottom:10px;}}
+.popover-title {margin:0;}
+#calendarTable td .performanceRow .performanceTime label {cursor:pointer;}
+
+#calendarPage .popover.calendarPopUp { position:absolute!important; width: 100%; min-width:300px; display: block; float: none; z-index:1000; margin-left: 7px; -webkit-box-shadow: none; box-shadow: none; background: #001111; color: #fff; left:100%!important;}
+#calendarPage .popover.calendarPopUp.left { right:100%!important; left:auto!important; }
+#calendarPage .popover.calendarPopUp.right .arrow {width:auto; float:none; border-right-color:#001111 !important; top: 50%; left: -11px; margin-top: -11px; border-left-width: 0; }
+#calendarPage .popover.calendarPopUp.right .arrow:after { border-right-color:#001111 !important;}
+
+#calendarPage .popover.calendarPopUp.left .arrow {width:auto; float:none; border-left-color:#001111 !important;}
+#calendarPage .popover.calendarPopUp.left .arrow:after { border-left-color:#001111 !important;}
+
+#calendarPage .popover.calendarPopUp .popover-content { float:none; display:block; text-decoration:none; height:100%; padding:13px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+#calendarPage .popover.calendarPopUp .popover-content img { margin-bottom:10px; width:100%;}
+
+#calendarPage .popover.calendarPopUp .popover-content .lead {font-size:28px; color:#fff; display:block; line-height:1.3; margin-bottom:5px;}
+#calendarPage .popover.calendarPopUp .popover-content span {font-size:18px; color:#fff; display:inline-block; margin-bottom:15px; line-height:1.3;}
+#calendarPage .popover.calendarPopUp .popover-content span p { line-height:1.3; }
+#calendarPage .popover.calendarPopUp .popover-content hr {display:none;}
+
+#calendarPage .popover.calendarPopUp .popover-content .buttons { display:inline-block; height:100%; width:100%; margin-top:10px; }
+#calendarPage .popover.calendarPopUp .popover-content .buttons .btn { display:block; border:solid 4px $main-color; text-align:center; padding:10px 8px; font-size:16px; color:$main-color; float:left; width:auto; margin-right:13px;
+	&:last-child {margin-right:0;}
+	&:after {content:'';}
+	&:hover {color:darken($main-color, 10%); border-color:darken($main-color, 10%); }}
+	
+/* --------------------- Reserve Page ---------------------*/
+#reserveSelectSeats .calendarWrap {display:none;}
+
+#reserveSelectSeats #selectedPerformance {float:left; border-bottom:solid 3px #7e7e7e; width:100%; padding:13px 0;}
+#reserveSelectSeats #selectedPerformance img {width:100%;}
+#reserveSelectSeats #selectedPerformance .performanceInfo {float:left; width:100%;}
+#reserveSelectSeats #selectedPerformance h4 a {font-size:27px; color:#000; display:block; padding:0 0 10px; font-weight:400;}
+#reserveSelectSeats #selectedPerformance h5 {font-size:18px; color:#000; display:block;}
+#reserveSelectSeats #selectedPerformance .changePrefBtn.btn {color: $main-color; border-color: $main-color; display:block; width:220px; margin:10px 0 0 0; 
+	&:hover { border-color:darken($main-color, 10%); color:darken($main-color, 10%);}}
+
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap {padding:20px 10px 10px; background:$main-color; position:absolute; z-index:500;}
+
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .hasDatepicker {margin-top:8px;}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .ui-datepicker {border:none; border-radius:0; padding:0;}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .ui-datepicker-title span {@include knockout51(); font-size:18px;}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .heading span {@include knockout31(); color:#fff; font-size:16px;}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .closeControl {cursor:pointer; position:absolute; top:4px; right:10px;
+	&:hover {color:#999;}}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .ui-datepicker-header {color:#fff; background:#222; border:none; border-radius:0;}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .ui-datepicker-calendar thead tr, .miniCal .ui-datepicker-calendar tbody tr:nth-child(even) {background:#eee;}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .ui-datepicker th, .miniCal .ui-datepicker td { padding:0;}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .ui-datepicker th span, .miniCal .ui-datepicker td span, .miniCal .ui-datepicker td a {padding:5px 0; display:block;}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .ui-datepicker th {@include knockout51();}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .ui-datepicker td {@include knockout31();}
+
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .ui-datepicker-current-day a {color:#fff; background:#ccc;}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .ui-state-default {background:none; border:none; text-align:center; padding:0; }
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap table .ui-state-hover {color:#fff; background:$main-color;}
+
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .ui-datepicker-prev, .miniCal .ui-datepicker-next {top:3px; border:none;
+	&:hover{background:#888; top:3px;}}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .ui-datepicker-prev {left:4px;}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .ui-datepicker-next {right:4px;}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .ui-datepicker .ui-icon {cursor:pointer;}
+
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .heading {margin-bottom:5px;}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .timeSlot {cursor:default; background:#fff; padding:13px;}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .timeSlot .selectedDateHeader {font-size:18px; @include knockout51(); }
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .timeSlot ul li { padding: 5px 0; font-size:16px; cursor:pointer; @include icons(circle-blank, before){color:$main-color;}
+	&:hover {@include icons(circle, before){color:$main-color;}}}
+
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap .hasDatepicker #closeDatePicker {position: absolute;text-transform: uppercase;top: 0;right: 7px;background: none; font-size:16px;
+	&:hover {color: #999;}}
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap #changeDateDatepickerTimes {background: #fff; margin: 10px 0 0; padding: 13px; }	
+
+#reserveSelectSeats #selectedPerformance .performanceInfo .calendarWrap #changeDateDatepickerTimes .syos-calendar-performance-time { font-size:16px; cursor:pointer; @include icons(circle-blank, before){padding-right:5px; color:$main-color;}
+	&:hover {@include icons(circle, before){color:$main-color;}}}
+
+#selectedPerformance .promoMessage {float:left; width:100%; 
+	p {color: red; font-style: italic; margin-top: 13px; height:auto; margin-bottom:0;}}
+
+#reserveSelectSeats .formSection #enterPromoCode input[type="text"] {width: 225px; border: none; background: #ccc; padding: 7px 10px;}
+#reserveSelectSeats .formSection #enterPromoCode .btn {width: auto; border: none; background: $main-color; padding: 7px 15px; margin-left:10px; @include knockout31(); font-size:16px; color:#fff; 
+	&:hover {background: darken($main-color, 10%);}}
+
+#reserveSelectSeats .promoLinkWrapper {float:left; border-bottom:3px solid #7e7e7e; width:100%; padding:13px 0;}
+#reserveSelectSeats .formSection .promo {margin:0;}
+#reserveSelectSeats .formSection #havePromo.btn {color: $main-color; border-color: $main-color; display:block; float:left; font-size:20px; @include icons(caret-right, after){ font-size:16px; right: 20px;position: absolute; top:10px;} 
+	&:hover { border-color:darken($main-color, 10%); color:darken($main-color, 10%);}}
+#reserveSelectSeats .formSection #havePromo.btn div p {margin:0; padding:0;}
+#reserveSelectSeats .formSection .promoWhatsThisLink { font-size:16px; margin:0 auto; float:left; padding:14px; text-decoration:underline;}
+
+#reserveSelectSeats .syosWrapper {padding:13px 0; float:left; width:100%;}
+#reserveSelectSeats .syosWrapper img {width:100%;}
+
+#reserveSelectSeats .syosWrapper .nav-tabs {width:100%;}
+#reserveSelectSeats .syosWrapper .nav-tabs li {width:50%;}
+
+#reserveSelectSeats .promoLinkWrapper .formSection .promoDesc {font-size:16px; margin-bottom:13px;
+	span {padding-right:20px;
+	a {padding: 5px 10px; color: #fff; background: $main-color; display: inline-block; width: auto; font-size: 14px; @include knockout31();}}}
+
+#reserveSelectSeats .promoLinkWrapper .promoDisplay .eligible {font-size: 16px; width: 100%; float: left; margin-bottom: 7px;
+	select {border: solid 2px #c6c6c6; width: auto; padding: 3px;}}
+#reserveSelectSeats .promoLinkWrapper .promoDisplay	.promoMessage {font-size: 16px; width: 100%; float: left; color:$accent-gray; font-style:italic;
+	p {margin-bottom:0;}}
+	
+
+//NEW RESPONSIVE SECTION
+#bestAvailableTable {width:100%; float:left; margin-bottom:20px;}
+#bestAvailableTable ul {width:100%; float:left; }
+#bestAvailableTable ul li {float:left; /*width:20%;*/ }
+
+#bestAvailableTable ul.tableHead {font-size:18px; padding:10px; @include knockout51(); background:#f5f5f5;}
+#bestAvailableTable ul.tableBody {font-size:16px; padding:10px; border-bottom:1px solid #7e7e7e; margin:5px 0;}
+#bestAvailableTable ul.tableBody li .radio {margin:-2px 5px 0 0;}
+#bestAvailableTable ul.tableFoot {font-size:16px; padding:10px;
+	li:first-child {@include knockout51(); text-align:right; padding-right:13px;}
+	select {border: solid 2px #c6c6c6; width: auto; padding: 3px;}}
+
+#reserveSelectSeats .syosWrapper #bestAvail div p {display:block; font-size:16px; background-color: #d9d9d9; padding:13px;}
+#reserveSelectSeats .syosWrapper #bestAvail table tr td .radio {margin: -3px 5px 0 0;}
+#reserveSelectSeats .syosWrapper .btn.bestAvailableButton {display:block; background:$main-color; border:none; color:#fff; width:200px; margin:10px 0 20px 0;
+	&:hover {background:darken($main-color, 10%);}}
+#reserveSelectSeats .syosWrapper #bestAvail .errorBox { position: fixed; color: white!important; z-index: 1100000; /*min-width: 805px;*/ bottom: 0; left: 0; width: 100%; text-align: center; background: $main-color; background: rgba(239,65,53,.95); padding: 20px 0; color: #fff; font-size: 18px; -moz-box-shadow: 0 0 5px #333; -webkit-box-shadow: 0 0 5px #333; box-shadow: 0 0 5px #333; text-shadow: 1px 1px 1px rgba(0,0,0,.2); }
+ 
+.mapImageModal {display:none;}
+.mapImageModal .modal.btn {padding: 5px 45px 5px 10px; margin-top:40px; display:block; width:200px;}
+.mapImageModal #myModal.reveal-modal {text-align:center!important;}
+
+#reserveSelectSeats .syosWrapper #syosOnPage {width:100%; float:left;}
+
+	//WHY IS THIS STUFF HERE?
+	#reserveSelectSeats .formSection .errorMsg {display:none;}
+	#reserveSelectSeats .formSection .promoWhatsThisContent {display:none;}
+
+/* --------------------- PAYMENT --------------------- */
+#paymentContainer #paymentMainDisplay #cartParkingArea { width:100%;}
+#paymentContainer #checkoutOptions {width:100%; float:left; clear:both; padding:13px 0; border-bottom:3px solid #7e7e7e;}
+
+#subscriptionBuilder #paymentContainer .miniCart {font-size:18px; width:100%; float:left;}
+
+//might get rid of this?
+#subscriptionBuilder #paymentContainer .cartHead {width:100%; float:left; border-top:3px solid #7e7e7e; background:#eee; @include knockout51();}
+#subscriptionBuilder #paymentContainer .cartHead li {width:20%; float:left; padding:10px;}
+
+#subscriptionBuilder #paymentContainer .miniCart .cartBody {width:100%; float:left; border-bottom: 1px solid #ccc; padding: 0 0 10px 0; margin-bottom: 20px;}
+#subscriptionBuilder #paymentContainer .miniCart .cartBody li {width:20%; float:left; padding:10px;
+	&:last-child {width:40%;}
+	.remove.lTeal {border:2px solid $main-color; padding:1px 5px; font-size:14px; margin-right:5px;}
+	ul {padding:0; margin:0;}
+	ul li {float:left; width:100%!important; padding:0;}
+	ul li .priceTickets, ul li .seatingTickets {float:left; 
+		&:first-child {width:50%;}
+		&:last-child {width:50%;padding-left:10px;}}}
+
+#paymentContainer #checkoutOptions .step .giftCard {float: left; width: 100%; clear: both; padding-bottom:13px;}
+#paymentContainer #checkoutOptions .step .giftCard label {font-size:18px; width:30%; float:left; @include knockout51();}
+#paymentContainer #checkoutOptions .step .giftCard input { width:40%; float:left; border:none; background:#ccc; padding:8px 10px;}
+#paymentContainer #checkoutOptions .step .giftCard a {width:20%; float:left; padding:4px 45px 5px 10px; font-size:16px; margin-top:1px; margin-left:5%; border:none;
+	&:hover {background-color: darken($main-color, 10%);}}
+#paymentContainer #checkoutOptions .step .giftCard .giftDesc {display:none;}
+
+#paymentContainer #checkoutOptions .step .creditCard {float: left; width: 100%; clear: both; padding-bottom:13px;}
+#paymentContainer #checkoutOptions .step .creditCard ul {width:100%; float:left;}
+#paymentContainer #checkoutOptions .step .creditCard ul li {width:100%; float:left; padding-bottom:10px;}
+#paymentContainer #checkoutOptions .step .creditCard .expr select {width:13%; margin-right:2%;}
+#paymentContainer #checkoutOptions .step .creditCard .expr label.cvv {width:13%; text-align:right; margin-right:2%;}
+#paymentContainer #checkoutOptions .step .creditCard .expr input {width:20%; float:left;}
+#paymentContainer #checkoutOptions .step .errorMsg {display: block; width: 70%; float: left; margin-left: 30%; color: red;}
+
+#paymentContainer #checkoutOptions .step label {font-size:18px; width:30%; float:left; padding-top:5px;}
+#paymentContainer #checkoutOptions .step input { width:65%; float:left; border:none; background:#ccc; padding:7px 10px;}
+#paymentContainer #checkoutOptions .step select { width:65%; float:left; border: solid 2px #c6c6c6; padding: 3px;}
+
+#paymentContainer #checkoutOptions .addressBilling .name, #paymentContainer #checkoutOptions .addressBilling address, #paymentContainer #checkoutOptions .addressBilling a {font-size:16px; overflow:hidden;}
+#paymentContainer #checkoutOptions .addressShipping .name, #paymentContainer #checkoutOptions .addressShipping address, #paymentContainer #checkoutOptions .addressShipping a {font-size:16px; overflow:hidden;}
+
+#paymentContainer #checkoutOptions .addressShipping ul {float:left; width:100%; margin-bottom:10px;}
+#paymentContainer #checkoutOptions .addressShipping ul li {float:left; width:100%; padding-bottom:5px;}
+#paymentContainer #checkoutOptions .addressShipping ul li {
+	div {float:left; margin: 3px 5px 0 0;}
+	input[type="radio"] {width: auto; }}
+#paymentContainer #checkoutOptions .addressShipping ul li label {font-size: 18px; width: auto ;float: left; padding:0;}
+#paymentContainer #checkoutOptions .addressShipping #pnlShippingAddress {float:left; width:100%;}
+
+#paymentContainer #checkoutOptions .commentsWrapper {clear:both; padding:13px 0; border-top:3px solid #7e7e7e; float:left; width:100%;}
+#paymentContainer #checkoutOptions .paymentPlan span strong {font-size:18px; display:block;}
+#paymentContainer #checkoutOptions .paymentPlan span {width:90%; float:left; font-size:16px; line-height:1.3;}
+#paymentContainer #checkoutOptions .paymentPlan .checker span {width:100%; float:left; }
+
+#paymentContainer #checkoutOptions .orderComments p {font-size:14px;
+	&:last-child {display:none;}}
+#paymentContainer #checkoutOptions .orderComments textarea {width:100%; min-height:100px; border:none; background:#ccc; padding:7px 10px; resize:vertical;}
+
+#paymentContainer #cartActions {float:left; width:100%; clear:both;}
+#paymentContainer #cartActions .orderSubTotal {padding:13px; border-left:1px solid #7e7e7e; border-bottom:1px solid #7e7e7e;}
+#paymentContainer #cartActions .orderSubTotal ul li {width:100%; float:left; padding-bottom:10px;}
+#paymentContainer #cartActions .orderSubTotal ul li label {font-size:18px; float:left; @include knockout51(); width:50%;}
+#paymentContainer #cartActions .orderSubTotal ul li span {font-size:18px; float:right; width:50%; text-align:right;}
+
+#paymentContainer #cartActions .donationDescription p {font-size:14px; line-height:1.4;}
+#paymentContainer #cartActions ul .suggestedDonation {width:50%; float:right; padding:13px 0;}
+#paymentContainer #cartActions ul .suggestedDonation label {font-size:18px; float:left; @include knockout51(); width:62%; padding-top:5px;}
+#paymentContainer #cartActions ul .suggestedDonation input {width:20%; margin-right:3%; float:left; border:none; background:#ccc; padding:7px 10px;}
+#paymentContainer #cartActions ul .suggestedDonation .textLink {width:70px; float:left; color:#666; padding-left:5px; padding-top:5px; font-size:13px; @include knockout31();}
+#paymentContainer #cartActions ul .suggestedDonation .btn.solid {width:13%; float:left; font-size:14px; padding: 4px 30px 5px 10px; @include knockout31(); border:none;
+	&:hover {background-color: darken($main-color, 10%);}}
+
+#paymentContainer #cartActions ul .donationTotalWrap {width:100%; float:left; border-top:1px solid #7e7e7e;}
+#paymentContainer #cartActions ul .donationTotalWrap .totalBoxWrap {width:50%; background:#eee; float:right; padding:10px;}
+#paymentContainer #cartActions ul .donationTotalWrap .totalBoxWrap span {width:50%; float:left; font-size:18px; @include knockout51();
+	&:last-child {text-align:right;}}
+
+#paymentContainer .continueBtn.checkoutBtns {width:100%; float:left; padding:13px 0;}
+#paymentContainer .continueBtn.checkoutBtns .btn.solid.btnStandOut {width:auto; float:right; border:none; margin-left:10px;
+	&:hover {background-color: darken($main-color, 10%);}}
+
+#paymentContainer .magazineOffer {width:auto; float:right; border:none; margin-top:13px; }
+#paymentContainer .magazineOffer h3 {margin-bottom:0; font-size:18px;}
+#paymentContainer .magazineOffer ul {padding:13px 0;
+	li {padding-left: 28px; text-indent: -28px;}
+	li:last-child {margin-top:13px;}}
+
+.checkoutError.errorBox {width:100%; float:left;}
+.checkoutError.errorBox p {color:red; font-size:16px; margin:0 auto; padding:20px 0;
+	&:last-child {display:none;}}
+
+.loadingContainer .loadingMessage { min-width:300px; max-width:350px; text-align: center; font-size: 18px; color: #fff; font-weight: bold; position: absolute; top: 50%; left: 50%; margin-top:13px; margin-left: -175px; text-shadow: 2px 2px 5px rgba(0,0,0,.3); }
+.loadingContainer { display: none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 110000; }
+.loadingSpinner { position: fixed; top: 50%; left: 50%; margin: -75px 0 0 -38px; z-index: 9999; /*display: none;*/ width: 75px; }
+
+/* Address Edit Pop Up */
+.selectNewSectionContainer {margin:auto!important; position:absolute!important; top:13px!important; left:0!important; right:0!important; max-width: 550px; background: #001111;}
+//.selectNewSectionContainer { max-width: 550px; left: 50% !important; top: 45% !important; margin: -250px 0 0 -400px; background: #001111;}
+.subsModalInner { position: relative; float:left; padding: 13px; margin:13px; background: #fff; -webkit-box-shadow: 0 0 10px #000; -moz-box-shadow: 0 0 10px #000; box-shadow: 0 0 10px #000;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; max-width:100%; }
+.subsModalInner .packageDescription { position:static;  opacity:1;}
+.subsModalInner .packageDescription h2 {color: $main-color; padding:0 0 13px 0; margin: 0; text-align:left; }
+
+.subsModalContent { overflow-x: hidden; overflow-y: auto; }
+.subsModalContent .oldAddress {font-size:16px; margin-bottom:13px;}
+.subsModalContent .oldAddress h4 { font-size:16px; margin:00 0 2px 0;}
+.subsModalContent .oldAddress a {float:left; width:auto; margin:10px 0 20px 0; }
+
+.subsModalContent .newAddress {width:100%; float:left;}
+.subsModalContent .newAddress ul li {padding-bottom:10px; float:left; width:100%;}
+.subsModalContent .newAddress ul li label {font-size:16px; width:25%; float:left; padding-top:3px;}
+.subsModalContent .newAddress ul li input {width:70%; margin-left:5%; float:left; border:none; background:#ccc; padding:7px 10px;}
+.subsModalContent .newAddress ul li select {width:70%; margin-left:5%; float:left; border: solid 2px #c6c6c6; padding: 3px;}
+
+.subsModalContent #addresses label {margin-left:10px;}
+
+#subscriptionBuilder .selectNewSectionContainer .continueBtn { padding: 15px 0 7px;  }
+#subscriptionBuilder .selectNewSectionContainer .continueBtn .btn.btnCancel {color:#666; border-color:#666;}
+
+//GIFT CARD LINE RECEIPT
+#paymentContainer .miniCart .giftCertCartHead {width: 100%; float: left; background: #eee; font-family: 'Knockout 51 A', 'Knockout 51 B'; font-weight: 400; font-style: normal;}
+#paymentContainer .miniCart .giftCertCartHead li {width: 25%; float: left; padding: 10px;}
+
+
+
+
+
+
+
+/* --------------------- CART --------------------- */
+#subscriptionBuilder #cartContainer .miniCart {font-size:18px; width:100%; float:left;}
+
+//might get rid of this?
+#subscriptionBuilder #cartContainer .cartHead {width:100%; float:left; border-top:3px solid #7e7e7e; background:#eee; @include knockout51();}
+#subscriptionBuilder #cartContainer .cartHead li {width:20%; float:left; padding:10px;}
+#subscriptionBuilder #cartContainer .cartHead li:last-child {padding-left: 0;}
+
+#subscriptionBuilder #cartContainer .miniCart .cartBody {width:100%; float:left; border-bottom: 1px solid #ccc; padding: 0 0 10px 0; margin-bottom: 20px;}
+#subscriptionBuilder #cartContainer .miniCart .cartBody li {width:20%; float:left; padding:10px;
+	&:first-child {text-indent: -32px; padding-left: 40px;}
+	&:last-child {width:40%;}
+	.remove.lTeal {border:2px solid $main-color; padding:1px 5px; font-size:14px; margin-right:5px;}
+	ul {padding:0; margin:0;}
+	ul li {float:left; width:100%!important; padding:0!important; text-indent:0!important;}
+	ul li .priceTickets, ul li .seatingTickets {float:left; width:50%;}}
+
+#subscriptionBuilder #cartContainer #cartActions {float:left; margin-top:50px; width:50%; margin-left:50%; padding:13px; border-left:1px solid #7e7e7e; border-bottom:1px solid #7e7e7e;} 
+#subscriptionBuilder #cartContainer #cartActions ul li {width:100%; float:left; padding-bottom:10px;}
+#subscriptionBuilder #cartContainer #cartActions  ul li label {font-size:18px; float:left; @include knockout51(); width:50%;}
+#subscriptionBuilder #cartContainer #cartActions ul li span {font-size:18px; float:right; width:50%; text-align:right;}
+
+#subscriptionBuilder .continueBtn.checkoutBtns {width:100%; float:left; padding:13px 0;}
+#subscriptionBuilder .continueBtn.checkoutBtns .btn.solid.btnStandOut {width:auto; float:right; border:none;margin-left:10px;
+	&:hover {background-color: darken($main-color, 10%);}}
+
+#cartContainer #cartParkingArea {width:50%; margin-left:50%; border-top:solid 3px #838383; margin-top:30px; padding:13px; float:left;}
+#cartContainer #cartParkingArea .addOnDescription p {font-size:18px; @include knockout51(); color:$main-color;}
+#cartContainer #cartParkingArea .selectQty label {float:left; font-size:18px; @include knockout51();}
+#cartContainer #cartParkingArea .selectQty select {float:right; border: solid 2px #c6c6c6; width: auto; padding: 3px;}
+#cartContainer #cartParkingArea .selectQty .parkingSubTotal { font-size:18px; float:left; width:100%; padding:10px 0;
+	label {@include knockout51();}
+	span { float:right;}}
+#cartContainer .alert.alert-error {float: left; width: 50%; margin-left: 50%; color: red; padding: 0 13px; font-size: 16px;}
+
+//GIFT CARD LINE RECEIPT
+#cartContainer .miniCart .giftCertCartHead {width: 100%; float: left; background: #eee; font-family: 'Knockout 51 A', 'Knockout 51 B'; font-weight: 400; font-style: normal;}
+#cartContainer .miniCart .giftCertCartHead li {width: 25%; float: left; padding: 10px;}
+
+
+ /* --------------------- Register --------------------- */
+#registerControl .validatorVisible { display:inline!important; top:-5px;}
+#registerControl .span12 h2 {margin-bottom:20px;}
+#registerControl .leftRegister { display:inline-block; margin-bottom:20px; float:left; }
+#registerControl .leftRegister .formSection { margin-top:0 !important; }
+#registerControl .rightRegister {display:inline-block; margin-bottom:30px; float:right; }
+#registerControl .rightRegister .billAddress { padding-bottom:20px;}
+#registerControl .rightRegister .billAddress a { display:block;}
+#registerControl .rightRegister .mailingAddress { padding-bottom:20px;}
+#registerControl .checkList { float:left; clear:both; width:100%;}
+#registerControl .checkList input { margin-right:7px; margin-top:0; float:left;}
+#registerControl .checkList li { background:none; padding-left:0; padding-bottom:5px; float:left; width:33%;}
+#registerControl .checkList li label {font-size: 14px; float:left; line-height: 16px;margin-bottom: 1px;color: #333;width: 151px; width:87%;}
+#registerControl .form li label {font-size:16px; width:35%; float:left;}
+#registerControl .form input, #registerControl .form select, #registerControl #enterPromoCode input, #courseRegister input, #courseRegister select {border-radius:0; border:solid 2px #c6c6c6; padding:3px; }
+#registerControl .form input { width: 60%; line-height:1.5em; margin:0;}
+#registerControl .form li { padding-bottom:10px; }
+#registerControl .form li .rightCol  { padding-top:10px; }
+#registerControl .form li .rightCol select { margin:0;}
+#registerControl .submitRegister { width:50%; padding:13px 0; }
+#registerControl .submitRegister .formSection a {width:35%; font-size:16px; float:left; padding-top:3px;}
+#registerControl .submitRegister .formSection input {width:60%; float:left;}
+#registerControl .registerSubmitBtn {width:100%; float:left;}
+#registerControl .btn { @include knockout31(); margin:13px 15px 0 0; float: left; width:auto; clear:right; @include icons(caret-right, after){ font-size:16px;right: 20px;position: absolute; top:10px}}
+#registerControl .errorMsg {margin-left:35%;text-decoration: none; color: #ef4135; font-family: 'Knockout 31 A', 'Knockout 31 B'; font-weight: 400; font-style: normal; }
+
+#registerControl .errorBox p {color:red; font-size:16px;}
+
+/* --------------------- CFS Gift Certificates --------------------- */ 
+.giftCerts p {font-size:16px;
+	strong {@include knockout51();}}
+.giftCerts .chooseDesign {width:100%; float:left; padding-bottom:13px; margin-bottom:13px; border-bottom:solid 3px #7e7e7e; }
+.giftCerts .chooseDesign .thumbnails li {width:50%; float:left; padding:13px;}
+.giftCerts .chooseDesign .thumbnails .thumbnail {padding:13px; cursor:pointer;
+	&:hover {background:#eee;}}
+.giftCertCurrent {background:#eee;}
+.giftCerts .chooseDesign .thumbnails p {@include knockout51(); font-size:22px; color:$main-color; margin:5px 0;}
+
+.giftCerts .customizeGiftCert {width:100%; float:left; padding:13px 0; margin-bottom:13px; }
+
+.giftCerts .customizeGiftCert label {font-size: 18px; width: 30%; float: left; padding-top: 5px;}
+.giftCerts .customizeGiftCert input[type="text"] { width: 65%; float: left; border: none; background: #ccc; padding: 7px 10px; margin-bottom:10px; } 
+.giftCerts .customizeGiftCert .previewItem { width: 65%; float: left; border: none; background: #ccc; padding: 7px 10px; margin-bottom:10px;}
+
+.giftCerts .amountRow {width:100%; float:left; padding:13px 0; margin-bottom:13px; border-bottom:solid 3px #7e7e7e; }
+.giftCerts .previewRow {width:100%; float:left; padding:13px 0; margin-bottom:13px; border-bottom:solid 1px #7e7e7e; }
+
+.giftCerts .customizeGiftCert .btn.solid.btnStandOut {width:auto; float:right; border:none; @include knockout31(); @include icons(caret-right, after){ font-size:16px;right: 20px;position: absolute;}
+	&:hover {background-color: darken($main-color, 10%);}}
+
+#MainContent_PrimaryContent_ctrlGiftPurchase_valGiftCertificateErrorSummary {color: red; margin: 0 0 15px 5px;}
+.giftCertcol span {color: red; font-weight: bold; font-size: 1.4em; float: right; margin-right: 13px;}
+@media (max-width: 1180px) {.giftCertcol { width: 100%; } }
+@media (max-width:720px) and (min-width:650px) {
+    .giftCerts .customizeGiftCert input[type="text"], .giftCerts .customizeGiftCert .previewItem {
+        width: 60%;
+    }
+
+    .giftCerts .customizeGiftCert label {
+        font-size: 14px;
+    }
+}
+
+/* --------------------- DONATION PAGE --------------------- */
+#considerDonation { clear: both; width:100%; display:inline-block; }
+
+#donationCallout {width:45%; margin-right:10%; float:left; }
+#donationCallout p {font-size:16px; font-size: 16px; line-height: 1.5;}
+
+#donationEffect { width:45%; float:left;}
+#donationEffect ul {float: left;width: 100%;border-left: 1px solid #000;padding: 0 13px;border-bottom: 1px solid #000;margin-bottom: 30px;}
+#donationEffect ul li {padding-bottom:10px; float:left; width:100%;}
+#donationEffect ul li label {padding-top:5px; font-size:18px; @include knockout51(); width:50%; float:left; }
+#donationEffect ul li div {width:50%; float:right; font-size:18px; text-align:right;
+	input {width: 100%; border: none; background: #ccc; padding: 7px 10px;}}
+
+#donationEffect .recognition p { color:$main-color; width:50%; margin-left:50%; padding-top:5px; display:block; font-size:13px; clear:both; line-height:1.3;}
+
+#donationEffect #donationDecision {width:100%; float:left; }
+#donationEffect #donationDecision .btn.solid.btnStandOut {float:right; display:block; clear:both;}
+#donationEffect #donationDecision .textLink {float:right; color:#666; font-size:16px; display:block; clear:both; padding-top:10px;}
+
+.errorBox p {color:red; font-size:16px;}
+
+/* --------------------- CONFIRMATION --------------------- */
+#confirmationContainer p {font-size:16px;}
+#confirmationContainer #confirmationOptions {float:left; width:100%; margin-bottom:13px; padding-top:20px;}
+#confirmationContainer #confirmationOptions .orderNumber {color:$main-color;}
+#confirmationContainer #confirmationOptions .step {float: left; width: 22%; padding-top:10px; position: relative; border-top: 2px solid #ccc; font-size: 15px; line-height:1.4; margin-right:3%;
+	p {font-size:15px;}}
+
+#confirmationContainer #cartItemDisplay {float:left; width:100%; margin-bottom:13px;}
+#confirmationContainer #cartItemDisplay ul li {padding-bottom:10px;}
+/*#confirmationContainer #cartItemDisplay ul li .packageArea {background:#eee; padding:10px;
+	h2 {padding:0;}
+	table tr td {padding:0;}}*/
+
+#confirmationContainer .cartHead {width:100%; float:left; border-top:3px solid #7e7e7e; background:#eee; @include knockout51();}
+#confirmationContainer .cartHead li {width:20%; float:left; padding:10px;}
+
+#confirmationContainer .miniCart .cartBody {width:100%; float:left; border-bottom: 1px solid #ccc; padding: 0 0 10px 0; margin-bottom: 20px;}
+#confirmationContainer .miniCart .cartBody li {width:20%; float:left; padding:10px;
+	&:last-child {width:40%;}
+	.remove.lTeal {border:2px solid $main-color; padding:1px 5px; font-size:14px; margin-right:5px;}
+	ul {padding:0; margin:0;}
+	ul li {float:left; width:100%!important; padding:0;}
+	ul li .priceTickets, ul li .seatingTickets {float:left; 
+		&:first-child {width:50%;}
+		&:last-child {width:50%; padding-left:10px;}}}
+
+//DONATE LINE RECEIPT
+.packageArea.donationLine {float:left; width:100%; }
+.packageArea.donationLine .packageCart .headerTr {padding-bottom:0!important; width: 100%; float: left; background: #eee; font-family: 'Knockout 51 A', 'Knockout 51 B'; font-weight: 400; font-style: normal;}
+.packageArea.donationLine .packageCart .headerTr span {width: 20%; float: left; padding: 10px;}
+.packageArea.donationLine .packageCart .perfRow {width: 100%; float: left; border-bottom: 1px solid #ccc; padding: 0 0 10px 0; margin-bottom: 20px;}
+.packageArea.donationLine .packageCart .perfRow span {width: 20%; float: left; padding: 10px;}
+/*maybe hide?*/ .packageArea.donationLine .subsFlexHeader {display:none;}
+
+//TOTAL LINE RECEIPT
+#confirmationContainer #cartActions .unstyled {width:100%; float:left; padding:0 10px; }
+#confirmationContainer #cartActions .unstyled li {font-size:16px; padding-bottom:10px;
+	label {@include knockout51();}}
+	
+//GIFT CARD LINE RECEIPT
+#subscriptionBuilder #cartContainer .miniCart .cartBody.giftCertCart li {width:25%;}
+
+#confirmationContainer .miniCart .giftCertCartHead {width: 100%; float: left; background: #eee; font-family: 'Knockout 51 A', 'Knockout 51 B'; font-weight: 400; font-style: normal;}
+#confirmationContainer .miniCart .giftCertCartHead li {width: 25%; float: left; padding: 10px;}
+
+/* --------------------- MY PROFILE --------------------- */
+.ticketHistoryBody p {font-size:18px; padding-right:20px; line-height: 1.3;}
+#ticketHistoryDisplay {margin-bottom: 5px; width: 100%; float: left;}
+#ticketHistoryFooter {width:100%; float:left;}
+#ticketHistoryFooter p {width: 32%; float: left; margin-right: 2%; line-height: 1.4; color: #000; background: #eee; padding: 13px 13px 20px 13px; margin-bottom:20px;
+	&:nth-child(3n+3) {margin-right:0;} }
+
+#ticketHistoryDisplay h2 {padding: 10px 0; margin: 0; color: #000; font-size: 22px; width:100%; float:left; border-bottom:3px solid #ccc;}
+#ticketHistoryDisplay .ticketChart {width:100%; float:left;}
+#ticketHistoryDisplay .ticketChart li {width:100%; float:left; padding:13px 0; border-bottom:1px solid #ccc; font-size:15px;
+	&:last-child {border-bottom:none; margin-bottom:26px;}
+	h3 {font-size:18px; margin-bottom:13px;}
+	.subLabel {padding-right: 10px; border-right: 1px solid $accent-gray; margin-right: 10px;}
+	a.exchangeBtn { display:block; @include icons(exchange, before){padding-right:5px;}}
+	a.printBtn { display:block; @include icons(print, before){padding-right:5px;}}
+	.genSeat {display:block;}}
+
+#ticketHistoryDisplay .ticketChart li .tableChart {width:100%; float:left;}
+#ticketHistoryDisplay .ticketChart li .tableChart li {width:100%; float:left; padding:0; border-bottom:none;}
+
+#ticketHistoryDisplay .imageHolder {display:inline-block; width:100%;}
+
+#ticketHistoryDisplay .alsoInterested { padding:13px; background:#f5f5f5; width:100%; float:left;
+	h2 {border-bottom:none; padding-top:0;}
+	.ticketChart li:last-child {margin-bottom:0;}}
+
+#ticketHistoryDisplay .simplePagerNav li {width:1px; padding-right:20px; float: left;}
+#ticketHistoryDisplay .simplePagerNav li.currentPage a { color: #ddd; text-decoration: none;}
+
+.myProfileWrap .addressManager {margin:20px 0;width: 100%;float: left; border-top: 1px solid #ccc; padding: 20px 0; border-bottom: 1px solid #ccc;}
+.myProfileWrap .addressManager span {font-size:16px; display:block;}
+.myProfileWrap .addressManager a {display: inline-block; font-size: 14px; padding: 5px 10px 20px 0;}
+.myProfileWrap .subsModalContent #addresses label {margin-left:0;}
+.myProfileWrap .subsModalContent .newAddress ul li select {width:60%;}
+.myProfileWrap #registerControl .form li .rightCol {float: left; width: 100%;}
+.myProfileWrap #registerControl .continueBtn.updateButton .btn {width:45%; margin-right:5%; float:left; clear:none; font-size:18px; padding: 10px 45px 10px 10px;}
+.myProfileWrap #registerControl .btn.btnStandOut {width:auto;}
+
+.myProfileWrap .deleteEdit {color:#666;}
+.myProfileWrap .btn.profileAdd {width: 200px; font-size: 18px; margin: 0; padding: 10px 45px 10px 10px;}
+
+.formHeader.accountPages .btn {display: block; float: none; width: 225px; margin-bottom: 20px;}
+
+.subsModalInner .continueBtn.updateButton .btn {width:45%; margin-right:5%; float:left; clear:none; font-size:18px; padding: 10px 45px 10px 10px;}
+
+.loadingCal {width: 100%;height: 49px; display: block; opacity: 0.7; background-color: #fff; z-index: 99; text-align: center;}
+
+.loading-image {height:10px; width:20px !important; z-index: 100;}
+#loading {width: 100%; height: 49px; top: 0px; left: 0px; display: block; opacity: 0.7; background-color: #fff; z-index: 99; text-align: center;}
+
+.calendarMonthDropdown{font-size: 44px;
+color: #ef4135;
+float: left;
+margin: 0;
+font-family: 'Knockout 50 A', 'Knockout 50 B';
+font-weight: 400;
+font-style: normal;background-color:rgba(0,0,0,0.5); border: 3px solid #fff;}

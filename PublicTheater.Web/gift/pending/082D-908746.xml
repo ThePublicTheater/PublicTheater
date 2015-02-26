@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GiftCertificateEmail xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <To>Jolene</To>
+  <From>Katie</From>
+  <Email>katie.magoon@gmail.com</Email>
+  <Amount>0</Amount>
+  <Message>You rock!
+</Message>
+  <DesignPath>/Global/GiftCertificates/GiftCertificates_Joes%20Pub.jpg</DesignPath>
+</GiftCertificateEmail>

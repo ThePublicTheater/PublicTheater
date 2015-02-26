@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GiftCertificateEmail xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <To>Kyle Ranson-Walsh</To>
+  <From>Brendan and Sam</From>
+  <Email>brendanrw@mac.com</Email>
+  <Amount>60</Amount>
+  <Message>Happy Birthday!!! Redeem for a one-year membership. So happy to have you hear in New York. We love you!</Message>
+  <DesignPath>/Global/GiftCertificates/GiftCertificates_2.jpg</DesignPath>
+</GiftCertificateEmail>

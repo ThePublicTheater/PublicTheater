@@ -1,0 +1,17 @@
+{
+	"name": "epi-cms-addons-blocks",
+	"version":"1.0.0",
+	"main":"main",
+	"dependencies": {
+		"dojo": "current",
+		"dijit": "current",
+		"epi-shell": "current",
+		"epi-cms": "current"
+	},
+	"description": "",
+	"licenses": [],
+	"bugs": "",
+	"keywords": [],
+	"homepage": "",
+	"dojoBuild": "epi-cms-addons-blocks.profile.js"
+}

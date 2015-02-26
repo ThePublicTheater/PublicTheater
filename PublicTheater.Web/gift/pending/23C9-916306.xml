@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GiftCertificateEmail xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <To>180</To>
+  <From>180</From>
+  <Email>16873@yahoo.com</Email>
+  <Amount>180</Amount>
+  <Message />
+  <DesignPath />
+</GiftCertificateEmail>

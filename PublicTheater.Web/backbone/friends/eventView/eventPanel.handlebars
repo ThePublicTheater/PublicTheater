@@ -1,0 +1,72 @@
+﻿<div class="row-fluid">
+    <div class="span7">
+        <div class="row-fluid">
+            <div class="span10">
+                {{#if event.onFacebook}}
+                    <h3>{{event.name}}</h3>
+                    <h5>{{event.location}}</h5>
+                    <p>{{event.description}}</p>
+                {{else}}
+                    <h3>Create a Facebook Event</h3>
+                    <br />
+                    <br />
+                    <div class="event-form">
+                        <div class="event-form-field">
+                            <label>Name</label>
+                            <input type="text" data-bind="name" value="{{event.name}}" />
+                        </div>
+                        <div class="event-form-field">
+                            <label>Location</label>
+                            <input type="text" data-bind="location" value="{{event.location}}" />
+                        </div>
+                        <div class="event-form-field">
+                            <label>Description</label>
+                            <textarea data-bind="description">{{event.description}}</textarea>
+                        </div>
+                        <div class="event-form-field">
+                            <label>Time</label>
+                            <input type="date" data-bind="start" />
+                            <input type="date" data-bind="end" />
+                        </div>
+                        <div class="event-form-field">
+                            <label>Privacy</label>
+                            <select data-bind="privacy">
+                                <option value="OPEN">Open</option>
+                                <option value="SECRET">Secret</option>
+                                <option value="FRIENDS">Friends</option>
+                            </select>
+                        </div>
+                    </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+    <div class="span5">
+        {{#if context.hasEventsPermission}}
+            <p class="lead">Invite:</p>
+        		{{#if bag.loadingFriends}}
+			        <p><img src="/images/ajax-loader-squares.gif" /> Loading Friends...</p>
+		        {{/if}}
+            <div data-replace="friendSelection"></div>
+        {{else}}
+            <p>To create events, you must grant this app permission to create an event on your behalf</p>
+            <p>
+                <a href="#" class="btn" data-action="authorizeApp">Authorize</a>
+            </p>
+        {{/if}}
+    </div>
+</div>
+<hr />
+<div class="row-fluid">
+    <div class="span12 clearfix">
+        {{#if bag.creatingEvent}}
+            <p class="pull-right"><img src="/images/dot_load.gif" /> Creating Event</p>
+        {{else}}
+            {{#if event.eventId}}
+                <a href="http://facebook.com/events/{{event.eventId}}" class="pull-right" target="_blank">View event on Facebook</a>
+            {{else}}
+                <span class="btn pull-right" data-action="createEvent">Create</span>
+            {{/if}}
+        {{/if}}
+    </div>
+</div>

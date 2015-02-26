@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GiftCertificateEmail xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <To>Rachel Faith</To>
+  <From>Ishah Janssen-Faith</From>
+  <Email>rfwomon@mac.com</Email>
+  <Amount>65</Amount>
+  <Message>This is a belated gift for a membership to the Public. Just in time for Shakespeare in the Park! Hope you enjoy it. And Happy Birthday and Happy Mothers Day too! Love you. Love, Ishah
+</Message>
+  <DesignPath>/Global/GiftCertificates/GiftCertificates_1.jpg</DesignPath>
+</GiftCertificateEmail>

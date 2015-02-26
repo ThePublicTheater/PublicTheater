@@ -1,0 +1,127 @@
+
+// Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// Responsive
+// @include breakpoint(small || medium || large);
+
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: #{$large-media-query-size}) { @content; } 
+  }
+  @else if $point == medium {
+    @media (max-width: #{$medium-media-query-size}) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: #{$small-media-query-size})  { @content; }
+  }
+}
+
+
+// IE Conditionals
+@mixin ie ($target) {
+        body.ie#{$target} & {
+    @content;
+    }
+}
+
+// Touch or no Touch
+@mixin touchOrHover () {
+        body.touch & {
+            &:active{ @content;}
+    }
+        body.no-touch & {
+            &:hover {@content;}
+    }
+}
+
+// Transparency
+@mixin transparent($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  background-color: transparent;
+  background-color: $rgba;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+}
+
+// Custom Triangles
+@mixin triangle ($direction, $color, $size, $BorderParam1, $BorderParam2) {
+  height: 0;
+  width: 0;
+
+  @if ($direction == up) or ($direction == down) or ($direction == right) or ($direction == left) {
+    border-color: transparent;
+    border-style: solid;
+    border-width: $size / 2;
+
+    @if $direction == up {
+      border-bottom-color: $color;
+      border-left-width:$BorderParam1 ;
+	  border-right-width:$BorderParam2 ;
+
+    } @else if $direction == right {
+      border-left-color:   $color;
+      border-top-width:$BorderParam1;
+      border-bottom-width:$BorderParam2; 
+
+    } @else if $direction == down {
+      border-top-color:    $color;
+      border-left-width: $BorderParam1; 
+	  border-right-width: $BorderParam2;
+
+    } @else if $direction == left {
+      border-right-color:  $color;
+      border-top-width: $BorderParam1;
+      border-bottom-width: $BorderParam2;
+    }
+  }
+
+ 
+  @else if ($direction == up-right) or ($direction == up-left) {
+    border-top: $size solid $color;
+
+    @if $direction == up-right {
+      border-left:  $size solid transparent;
+
+    } @else if $direction == up-left {
+      border-right: $size solid transparent;
+    }
+  }
+
+  @else if ($direction == down-right) or ($direction == down-left) {
+    border-bottom: $size solid $color;
+
+    @if $direction == down-right {
+      border-left:  $size solid transparent;
+
+    } @else if $direction == down-left {
+      border-right: $size solid transparent;
+    }
+  }
+}
+
+
+// Apply clear Fix
+
+@mixin clearfix2() {
+    & {*zoom: 1; }
+    &:before,
+    &:after { content: ""; display: table; }
+    &:after {clear: both;}
+}
+
+// Font Awesome Icons
+@mixin icons ($icon-name, $direction) {
+    &:#{$direction} {
+       @extend .icon-#{$icon-name}:before;
+       font-family:FontAwesome;
+       @content;
+       }
+}
+
+
+

@@ -1,0 +1,4 @@
+﻿/* Display the information node when hovering the overlay. */
+.Sleek .epi-overlay-item-container:hover .epi-overlay-item-info { color: #fff; background-color: #ff3700; border: 3px solid #ff3700; border-radius: 2px 2px 0 0; display: block; font-size: 1em; top: -29px; right: -3px; }
+.Sleek .epi-overlay-item-over .epi-overlay-item-container,
+.Sleek .epi-overlay-blockarea .epi-overlay-block.dojoDndItem>div:hover {border-color:#ff3700!important;}

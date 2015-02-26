@@ -1,0 +1,13 @@
+{
+  "name": "PublicBB",
+  	"version": "0.1.0",
+  	"description": "",
+	"devDependencies": {
+		"grunt": "*",
+		"file": "*",
+		"underscore": "*",
+		"grunt-contrib-handlebars": "*",
+		"grunt-contrib-copy": "*",
+		"grunt-contrib-watch": "*"
+	}
+}

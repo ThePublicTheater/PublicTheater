@@ -1,0 +1,8 @@
+﻿
+{{#if context.loggedIn}}
+    <div class="fb-charm-thumbs" data-bb="charmCount">
+        {{#each reservations}}
+            <img src="{{this.friend.thumb}}" />
+        {{/each}}
+    </div>
+{{/if}}

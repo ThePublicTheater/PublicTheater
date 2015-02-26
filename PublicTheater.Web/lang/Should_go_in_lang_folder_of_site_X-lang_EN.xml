@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="English" id="en">
+    <enums>
+      <acme>
+        <personalization>
+          <visitorgroups>
+            <criteria>
+              <rolecomparecondition>
+                <equal>In role</equal>
+                <notequal>Not in role</notequal>
+              </rolecomparecondition>
+            </criteria>
+          </visitorgroups>
+        </personalization>
+      </acme>
+    </enums>
+    <shell>
+      <cms>
+        <visitorgroups>
+          <criteria>
+            <role>
+              <comparecondition>User is</comparecondition>
+              <rolename>With name</rolename>
+            </role>
+          </criteria>
+        </visitorgroups>
+      </cms>
+    </shell>
+  </language>
+</languages>

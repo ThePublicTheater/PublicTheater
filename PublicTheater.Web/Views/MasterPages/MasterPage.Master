@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" 
+    Inherits="PublicTheater.Web.Views.MasterPages.MasterPage" %>
+
+<%@ Register Src="~/views/Controls/LeftNav.ascx" TagPrefix="uc" TagName="LeftNav" %>
+<%@ Register Src="~/views/Controls/MemberMosCheck.ascx" TagPrefix="uc" TagName="MemberMosCheck" %>
+<%@ Register Src="~/views/Controls/MetaDataHeader.ascx" TagPrefix="uc" TagName="MetaDataHeader" %>
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" runat="server" id="htmlTag">
+<!--<![endif]-->
+<head id="Head1" runat="server">
+    <uc:MetaDataHeader runat="server" Visible="true" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title></title>
+    <link rel="shortcut icon" href="/Static/img/favicon.png">
+    <%--    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Global/Icons/touch_144.jpg" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Global/Icons/touch_114.jpg" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Global/Icons/touch_72.jpg" />
+    <link rel="apple-touch-icon-precomposed" href="/Global/Icons/touch_57.jpg" />--%>
+    <link href="/Static/img/addToHomeLogo.JPG" rel="apple-touch-icon" />
+    <link href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7260052/648482/css/fonts.css" />
+    <link href="/Static/stylesheets/uniform._base.css" rel="stylesheet" />
+    <link href="/Static/stylesheets/main.css" rel="stylesheet" />
+    <link href="/Static/stylesheets/print.css" rel="stylesheet" />
+    <script src="/js/amdShim.js"></script>
+    <script src="/Static/js/lib/modernizr.js"></script>
+    <asp:ContentPlaceHolder ID="Head" runat="server" />
+   
+</head>
+<body runat="server" id="masterBody">
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N24LLL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-N24LLL');</script>
+<!-- End Google Tag Manager -->
+    <form id="form1" runat="server">
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager" runat="server" ScriptMode="Release"
+            CombineScripts="false" />
+        <%--<h1 class="helper"></h1>--%>
+        <asp:ContentPlaceHolder ID="beforeWrapper" runat="server" />
+        <div class="wrapper">
+            <uc:LeftNav runat="server" ID="leftNav1"></uc:LeftNav>
+            <section class="mainContent" runat="server" id="secMainContent">
+                
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                <uc:MemberMosCheck runat="server" ID="memberMosCheck"></uc:MemberMosCheck>
+                <div class="row footRow">
+                    <div class="small-12 medium-12 large-12">
+                        <EPiServer:Property runat="server" PageLink='<%# CurrentHomePage.PageLink %>' PropertyName="SiteFooter" ID="propSiteFooter" CssClass="block footer" CustomTagName="div"></EPiServer:Property>
+                        <EpiServer:Property  runat="server" PropertyName="MediaTags" id="marketingTags" CustomTagName="div" DisplayMissingMessage="False"></EpiServer:Property>
+                    </div>
+                </div>
+
+                <asp:ContentPlaceHolder ID="BeforeCloseBody" runat="server" />
+            </section>
+        </div>
+    
+    <asp:HiddenField runat="server" ID="reservePageUrl" ClientIDMode="Static"/>
+    <asp:HiddenField runat="server" ID="epiPageType" ClientIDMode="Static"/>
+    
+    </form>
+    <script src="/Static/backbone/lib/require.js" data-main="/Static/backbone/main.js"></script>
+    <iframe src="http://img-cdn.mediaplex.com/0/24696/universal.html?page_name=public_site_visitor_tag&Site_Visitor_Pixels=1&mpuid=" HEIGHT=1 WIDTH=1 FRAMEBORDER=0></iframe>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="en" id="en">
+    <enums>
+      <criteriapack>
+        <SelectedLanguageCriterion>
+          <selectedlanguagecondition>
+            <isviewingin>Is</isviewingin>
+            <isnotviewingin>Is Not</isnotviewingin>
+          </selectedlanguagecondition>
+        </SelectedLanguageCriterion>
+      </criteriapack>
+    </enums>
+  </language>
+</languages>

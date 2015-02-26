@@ -1,0 +1,19 @@
+﻿<div class="syos-key mapView">
+  <ul class="baseLegendList">
+    {{#each baseColorCollection}}
+    <li>
+      <span style="background-color:{{this.color}};"></span>
+      <strong>{{this.text}}</strong>
+    </li>
+    {{/each}}
+  </ul>
+
+  <ul class="zoneLegendList">
+    {{#each zoneColorCollection}}
+    <li>
+      <span style="background-color:{{this.color}};"></span>
+      <strong>{{this.text}}</strong>
+    </li>
+    {{/each}}
+  </ul>
+</div>

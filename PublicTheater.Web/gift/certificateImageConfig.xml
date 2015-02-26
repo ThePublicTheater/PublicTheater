@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CertificateImageConfig>
+  <FontFamily>Helvetica, Arial, sans-serif</FontFamily>
+  <FontColor>Black</FontColor>
+  <FontSize>12</FontSize>
+  <Blocks>
+    <RedemptionCode>
+      <X>1800</X>
+      <Y>550</Y>
+    </RedemptionCode>
+    <To>
+      <X>250</X>
+      <Y>430</Y>
+    </To>
+    <From>
+      <X>325</X>
+      <Y>550</Y>
+    </From>
+    <Amount>
+      <X>1830</X>
+      <Y>430</Y>
+    </Amount>
+    <Message>
+      <X>200</X>
+      <Y>700</Y>
+      <Width>2200</Width>
+      <Height>600</Height>
+    </Message>
+  </Blocks>
+</CertificateImageConfig>

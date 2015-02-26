@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+    <language name="en" id="en">
+        <shell>
+            <cms>
+                <visitorgroups>
+                    <criteria>
+                        <querystring>
+                            <key>Key:</key>
+                        </querystring>
+                    </criteria>
+                </visitorgroups>
+            </cms>
+        </shell>
+		
+		<enums>
+			<criteriapack>
+				<querystringcriterion>
+					<querystringvaluecondition>
+						<exists>Exists</exists>
+                        <hasvalue>Has value</hasvalue>
+                    </querystringvaluecondition>
+				</querystringcriterion>
+			</criteriapack>
+		</enums>
+  </language>
+</languages>

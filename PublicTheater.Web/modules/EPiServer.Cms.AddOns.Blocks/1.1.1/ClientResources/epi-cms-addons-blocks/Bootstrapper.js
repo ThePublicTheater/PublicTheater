@@ -1,0 +1,2 @@
+//>>built
+define("epi-cms-addons-blocks/Bootstrapper",["dojo/_base/declare","dojo/dom-style","dijit/_WidgetBase"],function(_1,_2,_3){return _1([_3],{postCreate:function(){_2.set(this.domNode,{display:"none"});}});});

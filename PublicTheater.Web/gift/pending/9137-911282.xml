@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GiftCertificateEmail xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <To>Ally Tufenkjian</To>
+  <From>Team East 66th</From>
+  <Email>klala@lululemon.com</Email>
+  <Amount>50</Amount>
+  <Message>Ally thank you for being such an incredible teammate to work with!  Your passion for your craft inspires us and we want to treat you to night of performance! We love you!</Message>
+  <DesignPath>/Global/GiftCertificates/GiftCertificates_Joes%20Pub.jpg</DesignPath>
+</GiftCertificateEmail>
