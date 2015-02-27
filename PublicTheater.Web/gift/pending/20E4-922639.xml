@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GiftCertificateEmail xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <To>Giovanni Pucci</To>
-  <From>The Parents of Cluster 4D</From>
-  <Email>rubycaster@gmail.com</Email>
-  <Amount>50</Amount>
-  <Message>Thank you for a wonderful year! Enjoy Joe's Pub!</Message>
-  <DesignPath>/Global/GiftCertificates/jp.jpg</DesignPath>
-</GiftCertificateEmail>

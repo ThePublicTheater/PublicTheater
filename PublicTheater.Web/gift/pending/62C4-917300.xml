@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GiftCertificateEmail xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <To>Mom and Dad</To>
-  <From>Laura </From>
-  <Email>lauradeyoung@gmail.com</Email>
-  <Amount>50</Amount>
-  <Message>For Mother's and Father's Day. Love you. </Message>
-  <DesignPath>/Global/GiftCertificates/jp.jpg</DesignPath>
-</GiftCertificateEmail>

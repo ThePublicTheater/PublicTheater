@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GiftCertificateEmail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <To>Brian</To>
-  <From>Brian</From>
-  <Email>spence0021@gmail.com</Email>
-  <Amount>1</Amount>
-  <Message>fg</Message>
-  <DesignPath>/Global/GiftCertificates/GiftCertificates_1.jpg</DesignPath>
-</GiftCertificateEmail>

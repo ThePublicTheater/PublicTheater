@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<VSGrunt>
-  <triggers>
-    <trigger pattern="\.html" gruntTask="default" />
-    <trigger pattern="\.js" gruntTask="default" />
-  </triggers>
-  <Settings />
-</VSGrunt>

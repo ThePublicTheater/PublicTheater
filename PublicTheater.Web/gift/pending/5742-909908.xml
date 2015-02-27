@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GiftCertificateEmail xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <To>Ms. Stauber</To>
-  <From>The Cast of HSM!!</From>
-  <Email>empalermo@packer.edu</Email>
-  <Amount>0</Amount>
-  <Message>Dear Ms. Stauber - Please enjoy some time at the Public Theater on us!  We've so loved having you as our director.  Thank you for everything!!  Love, The Pelicats </Message>
-  <DesignPath>/Global/GiftCertificates/GiftCertificates_3.jpg</DesignPath>
-</GiftCertificateEmail>

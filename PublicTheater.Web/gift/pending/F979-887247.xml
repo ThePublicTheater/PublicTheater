@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GiftCertificateEmail xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <To>Me</To>
-  <From>Nobody</From>
-  <Email>mkopp@adagetechnologies.com</Email>
-  <Amount>200</Amount>
-  <Message>Hi there!</Message>
-  <DesignPath>/Global/GiftCertificates/GiftCertificates_4.jpg</DesignPath>
-</GiftCertificateEmail>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GiftCertificateEmail xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <To>Bruce Epstein</To>
-  <From>The Public Theater</From>
-  <Email>Bruce.Epstein@revhealth.com</Email>
-  <Amount>250</Amount>
-  <Message>We look forward to seeing you at the theater!</Message>
-  <DesignPath>/Global/GiftCertificates/GiftCertificates_3.jpg</DesignPath>
-</GiftCertificateEmail>

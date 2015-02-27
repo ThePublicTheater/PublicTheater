@@ -1,2 +1,0 @@
-//>>built
-define("epi-cms-addons-blocks/BlocksModule",["dojo/_base/declare","dojo/_base/lang","epi","epi/_Module","epi/routes"],function(_1,_2,_3,_4,_5){return _1([_4],{initialize:function(){this.inherited(arguments);this._initializeStores();},_initializeStores:function(){var _6=this.resolveDependency("epi.storeregistry"),_7=_6.create("epi.cms.addons.optimizingblock",this._getRestPath("optimizingblock"),{id:"contentLink"});},_getRestPath:function(_8){return _5.getRestPath({moduleArea:"episerver.cms.addons.blocks",storeName:_8});}});});

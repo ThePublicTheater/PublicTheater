@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GiftCertificateEmail xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <To>Michael and Enrique</To>
-  <From>David</From>
-  <Email>michael.buchanan@disney.com</Email>
-  <Amount>100</Amount>
-  <Message>Congratlations!!  Sorry I can't be there for the big day.  Thought you could use this to introduce Enrique to Betty, Queen of Darkness - October 7 - 11!!!  Much love and best wishes - David</Message>
-  <DesignPath>/Global/GiftCertificates/GiftCertificatesJoesPub.jpg</DesignPath>
-</GiftCertificateEmail>

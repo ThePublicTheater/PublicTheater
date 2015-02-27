@@ -1,1 +1,0 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RssFeed.aspx.cs" Inherits="TheaterTemplate.Web.Views.Pages.RssFeed" %>

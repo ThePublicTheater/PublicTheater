@@ -1,2 +1,0 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="vtixNextPerf.ascx.cs" Inherits="PublicTheater.Web.modules.VTIXNextPerf.vtixNextPerf" %>
-<asp:Literal ID="ltlVtixNextPerf" runat="server"></asp:Literal>

@@ -1,2 +1,0 @@
-//>>built
-define("epi-cms-addons-blocks/packaged-layer",["epi-cms-addons-blocks/BlocksModule","epi-cms-addons-blocks/Bootstrapper","epi-cms-addons-blocks/OptimizingBlock/BlockOverlay","epi-cms-addons-blocks/OptimizingBlock/VariationsEditor","epi-cms-addons-blocks/OptimizingBlock/OptimizingBlockArea"],1);
