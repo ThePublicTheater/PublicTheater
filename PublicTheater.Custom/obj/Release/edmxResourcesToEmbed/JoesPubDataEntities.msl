@@ -1,0 +1,1303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="joespubModelStoreContainer" CdmEntityContainer="JoesPubDataEntities">
+    <EntitySetMapping Name="jos_artists">
+      <EntityTypeMapping TypeName="joespubModel.jos_artists">
+        <MappingFragment StoreEntitySet="jos_artists">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="createdOn" ColumnName="createdOn" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="updatedOn" ColumnName="updatedOn" />
+          <ScalarProperty Name="updatedBy" ColumnName="updatedBy" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="shortName" ColumnName="shortName" />
+          <ScalarProperty Name="subtitle" ColumnName="subtitle" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="webpage" ColumnName="webpage" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="tileFilename" ColumnName="tileFilename" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_artists_genres">
+      <EntityTypeMapping TypeName="joespubModel.jos_artists_genres">
+        <MappingFragment StoreEntitySet="jos_artists_genres">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="artistID" ColumnName="artistID" />
+          <ScalarProperty Name="genreID" ColumnName="genreID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_artists_mp3s">
+      <EntityTypeMapping TypeName="joespubModel.jos_artists_mp3s">
+        <MappingFragment StoreEntitySet="jos_artists_mp3s">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="artistID" ColumnName="artistID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_artists_photos">
+      <EntityTypeMapping TypeName="joespubModel.jos_artists_photos">
+        <MappingFragment StoreEntitySet="jos_artists_photos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="artistID" ColumnName="artistID" />
+          <ScalarProperty Name="caption" ColumnName="caption" />
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_artists_videos">
+      <EntityTypeMapping TypeName="joespubModel.jos_artists_videos">
+        <MappingFragment StoreEntitySet="jos_artists_videos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="artistID" ColumnName="artistID" />
+          <ScalarProperty Name="caption" ColumnName="caption" />
+          <ScalarProperty Name="youtubelink" ColumnName="youtubelink" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_banner">
+      <EntityTypeMapping TypeName="joespubModel.jos_banner">
+        <MappingFragment StoreEntitySet="jos_banner">
+          <ScalarProperty Name="bid" ColumnName="bid" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="imptotal" ColumnName="imptotal" />
+          <ScalarProperty Name="impmade" ColumnName="impmade" />
+          <ScalarProperty Name="clicks" ColumnName="clicks" />
+          <ScalarProperty Name="imageurl" ColumnName="imageurl" />
+          <ScalarProperty Name="clickurl" ColumnName="clickurl" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="showBanner" ColumnName="showBanner" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="editor" ColumnName="editor" />
+          <ScalarProperty Name="custombannercode" ColumnName="custombannercode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_bannerclient">
+      <EntityTypeMapping TypeName="joespubModel.jos_bannerclient">
+        <MappingFragment StoreEntitySet="jos_bannerclient">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="contact" ColumnName="contact" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="extrainfo" ColumnName="extrainfo" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="editor" ColumnName="editor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_bannerfinish">
+      <EntityTypeMapping TypeName="joespubModel.jos_bannerfinish">
+        <MappingFragment StoreEntitySet="jos_bannerfinish">
+          <ScalarProperty Name="bid" ColumnName="bid" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="impressions" ColumnName="impressions" />
+          <ScalarProperty Name="clicks" ColumnName="clicks" />
+          <ScalarProperty Name="imageurl" ColumnName="imageurl" />
+          <ScalarProperty Name="datestart" ColumnName="datestart" />
+          <ScalarProperty Name="dateend" ColumnName="dateend" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_categories">
+      <EntityTypeMapping TypeName="joespubModel.jos_categories">
+        <MappingFragment StoreEntitySet="jos_categories">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="section" ColumnName="section" />
+          <ScalarProperty Name="image_position" ColumnName="image_position" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="editor" ColumnName="editor" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="access" ColumnName="access" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="params" ColumnName="params" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_comments">
+      <EntityTypeMapping TypeName="joespubModel.jos_comments">
+        <MappingFragment StoreEntitySet="jos_comments">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="createdOn" ColumnName="createdOn" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="updatedOn" ColumnName="updatedOn" />
+          <ScalarProperty Name="updatedBy" ColumnName="updatedBy" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="body" ColumnName="body" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="front_page" ColumnName="front_page" />
+          <ScalarProperty Name="foreign_id" ColumnName="foreign_id" />
+          <ScalarProperty Name="foreign_id_type" ColumnName="foreign_id_type" />
+          <ScalarProperty Name="member_id" ColumnName="member_id" />
+          <ScalarProperty Name="reports" ColumnName="reports" />
+          <ScalarProperty Name="thumbs_up" ColumnName="thumbs_up" />
+          <ScalarProperty Name="thumbs_down" ColumnName="thumbs_down" />
+          <ScalarProperty Name="parent_comment_id" ColumnName="parent_comment_id" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_components">
+      <EntityTypeMapping TypeName="joespubModel.jos_components">
+        <MappingFragment StoreEntitySet="jos_components">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="menuid" ColumnName="menuid" />
+          <ScalarProperty Name="parent" ColumnName="parent" />
+          <ScalarProperty Name="admin_menu_link" ColumnName="admin_menu_link" />
+          <ScalarProperty Name="admin_menu_alt" ColumnName="admin_menu_alt" />
+          <ScalarProperty Name="option" ColumnName="option" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="admin_menu_img" ColumnName="admin_menu_img" />
+          <ScalarProperty Name="iscore" ColumnName="iscore" />
+          <ScalarProperty Name="params" ColumnName="params" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_comprofiler">
+      <EntityTypeMapping TypeName="joespubModel.jos_comprofiler">
+        <MappingFragment StoreEntitySet="jos_comprofiler">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="middlename" ColumnName="middlename" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="hits" ColumnName="hits" />
+          <ScalarProperty Name="message_last_sent" ColumnName="message_last_sent" />
+          <ScalarProperty Name="message_number_sent" ColumnName="message_number_sent" />
+          <ScalarProperty Name="avatar" ColumnName="avatar" />
+          <ScalarProperty Name="avatarapproved" ColumnName="avatarapproved" />
+          <ScalarProperty Name="approved" ColumnName="approved" />
+          <ScalarProperty Name="confirmed" ColumnName="confirmed" />
+          <ScalarProperty Name="lastupdatedate" ColumnName="lastupdatedate" />
+          <ScalarProperty Name="registeripaddr" ColumnName="registeripaddr" />
+          <ScalarProperty Name="cbactivation" ColumnName="cbactivation" />
+          <ScalarProperty Name="banned" ColumnName="banned" />
+          <ScalarProperty Name="banneddate" ColumnName="banneddate" />
+          <ScalarProperty Name="bannedby" ColumnName="bannedby" />
+          <ScalarProperty Name="bannedreason" ColumnName="bannedreason" />
+          <ScalarProperty Name="acceptedterms" ColumnName="acceptedterms" />
+          <ScalarProperty Name="cb_test" ColumnName="cb_test" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_comprofiler_field_values">
+      <EntityTypeMapping TypeName="joespubModel.jos_comprofiler_field_values">
+        <MappingFragment StoreEntitySet="jos_comprofiler_field_values">
+          <ScalarProperty Name="fieldvalueid" ColumnName="fieldvalueid" />
+          <ScalarProperty Name="fieldid" ColumnName="fieldid" />
+          <ScalarProperty Name="fieldtitle" ColumnName="fieldtitle" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="sys" ColumnName="sys" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_comprofiler_fields">
+      <EntityTypeMapping TypeName="joespubModel.jos_comprofiler_fields">
+        <MappingFragment StoreEntitySet="jos_comprofiler_fields">
+          <ScalarProperty Name="fieldid" ColumnName="fieldid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="table" ColumnName="table" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="maxlength" ColumnName="maxlength" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="required" ColumnName="required" />
+          <ScalarProperty Name="tabid" ColumnName="tabid" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="cols" ColumnName="cols" />
+          <ScalarProperty Name="rows" ColumnName="rows" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="default" ColumnName="default" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="registration" ColumnName="registration" />
+          <ScalarProperty Name="profile" ColumnName="profile" />
+          <ScalarProperty Name="readonly" ColumnName="readonly" />
+          <ScalarProperty Name="calculated" ColumnName="calculated" />
+          <ScalarProperty Name="sys" ColumnName="sys" />
+          <ScalarProperty Name="pluginid" ColumnName="pluginid" />
+          <ScalarProperty Name="params" ColumnName="params" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_comprofiler_lists">
+      <EntityTypeMapping TypeName="joespubModel.jos_comprofiler_lists">
+        <MappingFragment StoreEntitySet="jos_comprofiler_lists">
+          <ScalarProperty Name="listid" ColumnName="listid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="default" ColumnName="default" />
+          <ScalarProperty Name="usergroupids" ColumnName="usergroupids" />
+          <ScalarProperty Name="useraccessgroupid" ColumnName="useraccessgroupid" />
+          <ScalarProperty Name="sortfields" ColumnName="sortfields" />
+          <ScalarProperty Name="filterfields" ColumnName="filterfields" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="col1title" ColumnName="col1title" />
+          <ScalarProperty Name="col1enabled" ColumnName="col1enabled" />
+          <ScalarProperty Name="col1fields" ColumnName="col1fields" />
+          <ScalarProperty Name="col2title" ColumnName="col2title" />
+          <ScalarProperty Name="col2enabled" ColumnName="col2enabled" />
+          <ScalarProperty Name="col1captions" ColumnName="col1captions" />
+          <ScalarProperty Name="col2fields" ColumnName="col2fields" />
+          <ScalarProperty Name="col2captions" ColumnName="col2captions" />
+          <ScalarProperty Name="col3title" ColumnName="col3title" />
+          <ScalarProperty Name="col3enabled" ColumnName="col3enabled" />
+          <ScalarProperty Name="col3fields" ColumnName="col3fields" />
+          <ScalarProperty Name="col3captions" ColumnName="col3captions" />
+          <ScalarProperty Name="col4title" ColumnName="col4title" />
+          <ScalarProperty Name="col4enabled" ColumnName="col4enabled" />
+          <ScalarProperty Name="col4fields" ColumnName="col4fields" />
+          <ScalarProperty Name="col4captions" ColumnName="col4captions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_comprofiler_members">
+      <EntityTypeMapping TypeName="joespubModel.jos_comprofiler_members">
+        <MappingFragment StoreEntitySet="jos_comprofiler_members">
+          <ScalarProperty Name="referenceid" ColumnName="referenceid" />
+          <ScalarProperty Name="memberid" ColumnName="memberid" />
+          <ScalarProperty Name="accepted" ColumnName="accepted" />
+          <ScalarProperty Name="pending" ColumnName="pending" />
+          <ScalarProperty Name="membersince" ColumnName="membersince" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_comprofiler_plugin">
+      <EntityTypeMapping TypeName="joespubModel.jos_comprofiler_plugin">
+        <MappingFragment StoreEntitySet="jos_comprofiler_plugin">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="element" ColumnName="element" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="folder" ColumnName="folder" />
+          <ScalarProperty Name="access" ColumnName="access" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="iscore" ColumnName="iscore" />
+          <ScalarProperty Name="client_id" ColumnName="client_id" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="params" ColumnName="params" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_comprofiler_tabs">
+      <EntityTypeMapping TypeName="joespubModel.jos_comprofiler_tabs">
+        <MappingFragment StoreEntitySet="jos_comprofiler_tabs">
+          <ScalarProperty Name="tabid" ColumnName="tabid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="width" ColumnName="width" />
+          <ScalarProperty Name="enabled" ColumnName="enabled" />
+          <ScalarProperty Name="pluginclass" ColumnName="pluginclass" />
+          <ScalarProperty Name="pluginid" ColumnName="pluginid" />
+          <ScalarProperty Name="fields" ColumnName="fields" />
+          <ScalarProperty Name="params" ColumnName="params" />
+          <ScalarProperty Name="sys" ColumnName="sys" />
+          <ScalarProperty Name="displaytype" ColumnName="displaytype" />
+          <ScalarProperty Name="position" ColumnName="position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_comprofiler_userreports">
+      <EntityTypeMapping TypeName="joespubModel.jos_comprofiler_userreports">
+        <MappingFragment StoreEntitySet="jos_comprofiler_userreports">
+          <ScalarProperty Name="reportid" ColumnName="reportid" />
+          <ScalarProperty Name="reporteduser" ColumnName="reporteduser" />
+          <ScalarProperty Name="reportedbyuser" ColumnName="reportedbyuser" />
+          <ScalarProperty Name="reportedondate" ColumnName="reportedondate" />
+          <ScalarProperty Name="reportexplaination" ColumnName="reportexplaination" />
+          <ScalarProperty Name="reportedstatus" ColumnName="reportedstatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_comprofiler_views">
+      <EntityTypeMapping TypeName="joespubModel.jos_comprofiler_views">
+        <MappingFragment StoreEntitySet="jos_comprofiler_views">
+          <ScalarProperty Name="viewer_id" ColumnName="viewer_id" />
+          <ScalarProperty Name="profile_id" ColumnName="profile_id" />
+          <ScalarProperty Name="lastip" ColumnName="lastip" />
+          <ScalarProperty Name="lastview" ColumnName="lastview" />
+          <ScalarProperty Name="viewscount" ColumnName="viewscount" />
+          <ScalarProperty Name="vote" ColumnName="vote" />
+          <ScalarProperty Name="lastvote" ColumnName="lastvote" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_contact_details">
+      <EntityTypeMapping TypeName="joespubModel.jos_contact_details">
+        <MappingFragment StoreEntitySet="jos_contact_details">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="con_position" ColumnName="con_position" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="suburb" ColumnName="suburb" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="postcode" ColumnName="postcode" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="misc" ColumnName="misc" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="imagepos" ColumnName="imagepos" />
+          <ScalarProperty Name="email_to" ColumnName="email_to" />
+          <ScalarProperty Name="default_con" ColumnName="default_con" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="params" ColumnName="params" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="catid" ColumnName="catid" />
+          <ScalarProperty Name="access" ColumnName="access" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_content">
+      <EntityTypeMapping TypeName="joespubModel.jos_content">
+        <MappingFragment StoreEntitySet="jos_content">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="title_alias" ColumnName="title_alias" />
+          <ScalarProperty Name="introtext" ColumnName="introtext" />
+          <ScalarProperty Name="fulltext" ColumnName="fulltext" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="sectionid" ColumnName="sectionid" />
+          <ScalarProperty Name="mask" ColumnName="mask" />
+          <ScalarProperty Name="catid" ColumnName="catid" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_by_alias" ColumnName="created_by_alias" />
+          <ScalarProperty Name="modified" ColumnName="modified" />
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="publish_up" ColumnName="publish_up" />
+          <ScalarProperty Name="publish_down" ColumnName="publish_down" />
+          <ScalarProperty Name="images" ColumnName="images" />
+          <ScalarProperty Name="urls" ColumnName="urls" />
+          <ScalarProperty Name="attribs" ColumnName="attribs" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="parentid" ColumnName="parentid" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="metakey" ColumnName="metakey" />
+          <ScalarProperty Name="metadesc" ColumnName="metadesc" />
+          <ScalarProperty Name="access" ColumnName="access" />
+          <ScalarProperty Name="hits" ColumnName="hits" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_content_frontpage">
+      <EntityTypeMapping TypeName="joespubModel.jos_content_frontpage">
+        <MappingFragment StoreEntitySet="jos_content_frontpage">
+          <ScalarProperty Name="content_id" ColumnName="content_id" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_content_rating">
+      <EntityTypeMapping TypeName="joespubModel.jos_content_rating">
+        <MappingFragment StoreEntitySet="jos_content_rating">
+          <ScalarProperty Name="content_id" ColumnName="content_id" />
+          <ScalarProperty Name="rating_sum" ColumnName="rating_sum" />
+          <ScalarProperty Name="rating_count" ColumnName="rating_count" />
+          <ScalarProperty Name="lastip" ColumnName="lastip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_core_acl_aro">
+      <EntityTypeMapping TypeName="joespubModel.jos_core_acl_aro">
+        <MappingFragment StoreEntitySet="jos_core_acl_aro">
+          <ScalarProperty Name="aro_id" ColumnName="aro_id" />
+          <ScalarProperty Name="section_value" ColumnName="section_value" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="order_value" ColumnName="order_value" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="hidden" ColumnName="hidden" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_core_acl_aro_groups">
+      <EntityTypeMapping TypeName="joespubModel.jos_core_acl_aro_groups">
+        <MappingFragment StoreEntitySet="jos_core_acl_aro_groups">
+          <ScalarProperty Name="group_id" ColumnName="group_id" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="lft" ColumnName="lft" />
+          <ScalarProperty Name="rgt" ColumnName="rgt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_core_acl_aro_sections">
+      <EntityTypeMapping TypeName="joespubModel.jos_core_acl_aro_sections">
+        <MappingFragment StoreEntitySet="jos_core_acl_aro_sections">
+          <ScalarProperty Name="section_id" ColumnName="section_id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="order_value" ColumnName="order_value" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="hidden" ColumnName="hidden" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_core_acl_groups_aro_map">
+      <EntityTypeMapping TypeName="joespubModel.jos_core_acl_groups_aro_map">
+        <MappingFragment StoreEntitySet="jos_core_acl_groups_aro_map">
+          <ScalarProperty Name="group_id" ColumnName="group_id" />
+          <ScalarProperty Name="section_value" ColumnName="section_value" />
+          <ScalarProperty Name="aro_id" ColumnName="aro_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_core_log_items">
+      <EntityTypeMapping TypeName="joespubModel.jos_core_log_items">
+        <MappingFragment StoreEntitySet="jos_core_log_items">
+          <ScalarProperty Name="time_stamp" ColumnName="time_stamp" />
+          <ScalarProperty Name="item_table" ColumnName="item_table" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="hits" ColumnName="hits" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_core_log_searches">
+      <EntityTypeMapping TypeName="joespubModel.jos_core_log_searches">
+        <MappingFragment StoreEntitySet="jos_core_log_searches">
+          <ScalarProperty Name="search_term" ColumnName="search_term" />
+          <ScalarProperty Name="hits" ColumnName="hits" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_dbquery">
+      <EntityTypeMapping TypeName="joespubModel.jos_dbquery">
+        <MappingFragment StoreEntitySet="jos_dbquery">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="display_name" ColumnName="display_name" />
+          <ScalarProperty Name="db_id" ColumnName="db_id" />
+          <ScalarProperty Name="sql" ColumnName="sql" />
+          <ScalarProperty Name="catid" ColumnName="catid" />
+          <ScalarProperty Name="template" ColumnName="template" />
+          <ScalarProperty Name="expect_rows" ColumnName="expect_rows" />
+          <ScalarProperty Name="page_navigation" ColumnName="page_navigation" />
+          <ScalarProperty Name="rotate_results" ColumnName="rotate_results" />
+          <ScalarProperty Name="display_regex" ColumnName="display_regex" />
+          <ScalarProperty Name="stats" ColumnName="stats" />
+          <ScalarProperty Name="count_sql" ColumnName="count_sql" />
+          <ScalarProperty Name="access" ColumnName="access" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="archived" ColumnName="archived" />
+          <ScalarProperty Name="debug" ColumnName="debug" />
+          <ScalarProperty Name="uses_vars" ColumnName="uses_vars" />
+          <ScalarProperty Name="hits" ColumnName="hits" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="parse" ColumnName="parse" />
+          <ScalarProperty Name="contacts_id" ColumnName="contacts_id" />
+          <ScalarProperty Name="params" ColumnName="params" />
+          <ScalarProperty Name="use_confirmation" ColumnName="use_confirmation" />
+          <ScalarProperty Name="use_notification" ColumnName="use_notification" />
+          <ScalarProperty Name="notification_emails" ColumnName="notification_emails" />
+          <ScalarProperty Name="notification_subject" ColumnName="notification_subject" />
+          <ScalarProperty Name="notification_message" ColumnName="notification_message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_dbquery_config">
+      <EntityTypeMapping TypeName="joespubModel.jos_dbquery_config">
+        <MappingFragment StoreEntitySet="jos_dbquery_config">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="key" ColumnName="key" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="params" ColumnName="params" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_dbquery_databases">
+      <EntityTypeMapping TypeName="joespubModel.jos_dbquery_databases">
+        <MappingFragment StoreEntitySet="jos_dbquery_databases">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="driver" ColumnName="driver" />
+          <ScalarProperty Name="persistent" ColumnName="persistent" />
+          <ScalarProperty Name="debug" ColumnName="debug" />
+          <ScalarProperty Name="hostname" ColumnName="hostname" />
+          <ScalarProperty Name="schemaname" ColumnName="schemaname" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="on_line" ColumnName="on_line" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="archived" ColumnName="archived" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="params" ColumnName="params" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_dbquery_drivers">
+      <EntityTypeMapping TypeName="joespubModel.jos_dbquery_drivers">
+        <MappingFragment StoreEntitySet="jos_dbquery_drivers">
+          <ScalarProperty Name="tobeimplemented" ColumnName="tobeimplemented" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_dbquery_errors">
+      <EntityTypeMapping TypeName="joespubModel.jos_dbquery_errors">
+        <MappingFragment StoreEntitySet="jos_dbquery_errors">
+          <ScalarProperty Name="source" ColumnName="source" />
+          <ScalarProperty Name="oid" ColumnName="oid" />
+          <ScalarProperty Name="oname" ColumnName="oname" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+          <ScalarProperty Name="date_reported" ColumnName="date_reported" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_dbquery_stats">
+      <EntityTypeMapping TypeName="joespubModel.jos_dbquery_stats">
+        <MappingFragment StoreEntitySet="jos_dbquery_stats">
+          <ScalarProperty Name="query_id" ColumnName="query_id" />
+          <ScalarProperty Name="variable_id" ColumnName="variable_id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="date_queried" ColumnName="date_queried" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_dbquery_substitutions">
+      <EntityTypeMapping TypeName="joespubModel.jos_dbquery_substitutions">
+        <MappingFragment StoreEntitySet="jos_dbquery_substitutions">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="variable_id" ColumnName="variable_id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="default" ColumnName="default" />
+          <ScalarProperty Name="params" ColumnName="params" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_dbquery_templates">
+      <EntityTypeMapping TypeName="joespubModel.jos_dbquery_templates">
+        <MappingFragment StoreEntitySet="jos_dbquery_templates">
+          <ScalarProperty Name="tobeimplemented" ColumnName="tobeimplemented" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_dbquery_variables">
+      <EntityTypeMapping TypeName="joespubModel.jos_dbquery_variables">
+        <MappingFragment StoreEntitySet="jos_dbquery_variables">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="query_id" ColumnName="query_id" />
+          <ScalarProperty Name="display_name" ColumnName="display_name" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="input" ColumnName="input" />
+          <ScalarProperty Name="regex" ColumnName="regex" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="required" ColumnName="required" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="uses_custom_query" ColumnName="uses_custom_query" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="debug" ColumnName="debug" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="stats" ColumnName="stats" />
+          <ScalarProperty Name="default_value" ColumnName="default_value" />
+          <ScalarProperty Name="page" ColumnName="page" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="params" ColumnName="params" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_genres">
+      <EntityTypeMapping TypeName="joespubModel.jos_genres">
+        <MappingFragment StoreEntitySet="jos_genres">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="createdOn" ColumnName="createdOn" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="updatedOn" ColumnName="updatedOn" />
+          <ScalarProperty Name="updatedBy" ColumnName="updatedBy" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_groups">
+      <EntityTypeMapping TypeName="joespubModel.jos_groups">
+        <MappingFragment StoreEntitySet="jos_groups">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_jce_langs">
+      <EntityTypeMapping TypeName="joespubModel.jos_jce_langs">
+        <MappingFragment StoreEntitySet="jos_jce_langs">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="lang" ColumnName="lang" />
+          <ScalarProperty Name="published" ColumnName="published" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_jce_plugins">
+      <EntityTypeMapping TypeName="joespubModel.jos_jce_plugins">
+        <MappingFragment StoreEntitySet="jos_jce_plugins">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="plugin" ColumnName="plugin" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="icon" ColumnName="icon" />
+          <ScalarProperty Name="layout_icon" ColumnName="layout_icon" />
+          <ScalarProperty Name="access" ColumnName="access" />
+          <ScalarProperty Name="row" ColumnName="row" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="editable" ColumnName="editable" />
+          <ScalarProperty Name="elements" ColumnName="elements" />
+          <ScalarProperty Name="iscore" ColumnName="iscore" />
+          <ScalarProperty Name="client_id" ColumnName="client_id" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="params" ColumnName="params" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_jstats_bots">
+      <EntityTypeMapping TypeName="joespubModel.jos_jstats_bots">
+        <MappingFragment StoreEntitySet="jos_jstats_bots">
+          <ScalarProperty Name="bot_id" ColumnName="bot_id" />
+          <ScalarProperty Name="bot_string" ColumnName="bot_string" />
+          <ScalarProperty Name="bot_fullname" ColumnName="bot_fullname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_jstats_browsers">
+      <EntityTypeMapping TypeName="joespubModel.jos_jstats_browsers">
+        <MappingFragment StoreEntitySet="jos_jstats_browsers">
+          <ScalarProperty Name="browser_id" ColumnName="browser_id" />
+          <ScalarProperty Name="browser_string" ColumnName="browser_string" />
+          <ScalarProperty Name="browser_fullname" ColumnName="browser_fullname" />
+          <ScalarProperty Name="browser_img" ColumnName="browser_img" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_jstats_configuration">
+      <EntityTypeMapping TypeName="joespubModel.jos_jstats_configuration">
+        <MappingFragment StoreEntitySet="jos_jstats_configuration">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_jstats_ipaddresses">
+      <EntityTypeMapping TypeName="joespubModel.jos_jstats_ipaddresses">
+        <MappingFragment StoreEntitySet="jos_jstats_ipaddresses">
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="nslookup" ColumnName="nslookup" />
+          <ScalarProperty Name="tld" ColumnName="tld" />
+          <ScalarProperty Name="useragent" ColumnName="useragent" />
+          <ScalarProperty Name="system" ColumnName="system" />
+          <ScalarProperty Name="browser" ColumnName="browser" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="exclude" ColumnName="exclude" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_jstats_iptocountry">
+      <EntityTypeMapping TypeName="joespubModel.jos_jstats_iptocountry">
+        <MappingFragment StoreEntitySet="jos_jstats_iptocountry">
+          <ScalarProperty Name="IP_FROM" ColumnName="IP_FROM" />
+          <ScalarProperty Name="IP_TO" ColumnName="IP_TO" />
+          <ScalarProperty Name="COUNTRY_CODE2" ColumnName="COUNTRY_CODE2" />
+          <ScalarProperty Name="COUNTRY_NAME" ColumnName="COUNTRY_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_jstats_keywords">
+      <EntityTypeMapping TypeName="joespubModel.jos_jstats_keywords">
+        <MappingFragment StoreEntitySet="jos_jstats_keywords">
+          <ScalarProperty Name="kwdate" ColumnName="kwdate" />
+          <ScalarProperty Name="searchid" ColumnName="searchid" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_jstats_page_request">
+      <EntityTypeMapping TypeName="joespubModel.jos_jstats_page_request">
+        <MappingFragment StoreEntitySet="jos_jstats_page_request">
+          <ScalarProperty Name="page_id" ColumnName="page_id" />
+          <ScalarProperty Name="hour" ColumnName="hour" />
+          <ScalarProperty Name="day" ColumnName="day" />
+          <ScalarProperty Name="month" ColumnName="month" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="ip_id" ColumnName="ip_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_jstats_page_request_c">
+      <EntityTypeMapping TypeName="joespubModel.jos_jstats_page_request_c">
+        <MappingFragment StoreEntitySet="jos_jstats_page_request_c">
+          <ScalarProperty Name="page_id" ColumnName="page_id" />
+          <ScalarProperty Name="hour" ColumnName="hour" />
+          <ScalarProperty Name="day" ColumnName="day" />
+          <ScalarProperty Name="month" ColumnName="month" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="count" ColumnName="count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_jstats_pages">
+      <EntityTypeMapping TypeName="joespubModel.jos_jstats_pages">
+        <MappingFragment StoreEntitySet="jos_jstats_pages">
+          <ScalarProperty Name="page_id" ColumnName="page_id" />
+          <ScalarProperty Name="page" ColumnName="page" />
+          <ScalarProperty Name="page_title" ColumnName="page_title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_jstats_referrer">
+      <EntityTypeMapping TypeName="joespubModel.jos_jstats_referrer">
+        <MappingFragment StoreEntitySet="jos_jstats_referrer">
+          <ScalarProperty Name="referrer" ColumnName="referrer" />
+          <ScalarProperty Name="domain" ColumnName="domain" />
+          <ScalarProperty Name="refid" ColumnName="refid" />
+          <ScalarProperty Name="day" ColumnName="day" />
+          <ScalarProperty Name="month" ColumnName="month" />
+          <ScalarProperty Name="year" ColumnName="year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_jstats_search_engines">
+      <EntityTypeMapping TypeName="joespubModel.jos_jstats_search_engines">
+        <MappingFragment StoreEntitySet="jos_jstats_search_engines">
+          <ScalarProperty Name="searchid" ColumnName="searchid" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="search" ColumnName="search" />
+          <ScalarProperty Name="searchvar" ColumnName="searchvar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_jstats_systems">
+      <EntityTypeMapping TypeName="joespubModel.jos_jstats_systems">
+        <MappingFragment StoreEntitySet="jos_jstats_systems">
+          <ScalarProperty Name="sys_id" ColumnName="sys_id" />
+          <ScalarProperty Name="sys_string" ColumnName="sys_string" />
+          <ScalarProperty Name="sys_fullname" ColumnName="sys_fullname" />
+          <ScalarProperty Name="sys_img" ColumnName="sys_img" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_jstats_topleveldomains">
+      <EntityTypeMapping TypeName="joespubModel.jos_jstats_topleveldomains">
+        <MappingFragment StoreEntitySet="jos_jstats_topleveldomains">
+          <ScalarProperty Name="tld_id" ColumnName="tld_id" />
+          <ScalarProperty Name="tld" ColumnName="tld" />
+          <ScalarProperty Name="fullname" ColumnName="fullname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_jstats_visits">
+      <EntityTypeMapping TypeName="joespubModel.jos_jstats_visits">
+        <MappingFragment StoreEntitySet="jos_jstats_visits">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ip_id" ColumnName="ip_id" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="hour" ColumnName="hour" />
+          <ScalarProperty Name="day" ColumnName="day" />
+          <ScalarProperty Name="month" ColumnName="month" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="time" ColumnName="time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_letterman">
+      <EntityTypeMapping TypeName="joespubModel.jos_letterman">
+        <MappingFragment StoreEntitySet="jos_letterman">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="headers" ColumnName="headers" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="html_message" ColumnName="html_message" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="publish_up" ColumnName="publish_up" />
+          <ScalarProperty Name="publish_down" ColumnName="publish_down" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="send" ColumnName="send" />
+          <ScalarProperty Name="hits" ColumnName="hits" />
+          <ScalarProperty Name="access" ColumnName="access" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_letterman_subscribers">
+      <EntityTypeMapping TypeName="joespubModel.jos_letterman_subscribers">
+        <MappingFragment StoreEntitySet="jos_letterman_subscribers">
+          <ScalarProperty Name="subscriber_id" ColumnName="subscriber_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="subscriber_name" ColumnName="subscriber_name" />
+          <ScalarProperty Name="subscriber_email" ColumnName="subscriber_email" />
+          <ScalarProperty Name="confirmed" ColumnName="confirmed" />
+          <ScalarProperty Name="subscribe_date" ColumnName="subscribe_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_mambots">
+      <EntityTypeMapping TypeName="joespubModel.jos_mambots">
+        <MappingFragment StoreEntitySet="jos_mambots">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="element" ColumnName="element" />
+          <ScalarProperty Name="folder" ColumnName="folder" />
+          <ScalarProperty Name="access" ColumnName="access" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="iscore" ColumnName="iscore" />
+          <ScalarProperty Name="client_id" ColumnName="client_id" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="params" ColumnName="params" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_members">
+      <EntityTypeMapping TypeName="joespubModel.jos_members">
+        <MappingFragment StoreEntitySet="jos_members">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="tessi_customer_no" ColumnName="tessi_customer_no" />
+          <ScalarProperty Name="createdOn" ColumnName="createdOn" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="updatedOn" ColumnName="updatedOn" />
+          <ScalarProperty Name="updatedBy" ColumnName="updatedBy" />
+          <ScalarProperty Name="bio" ColumnName="bio" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="avatarFilename" ColumnName="avatarFilename" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_members_artists">
+      <EntityTypeMapping TypeName="joespubModel.jos_members_artists">
+        <MappingFragment StoreEntitySet="jos_members_artists">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="memberID" ColumnName="memberID" />
+          <ScalarProperty Name="artistID" ColumnName="artistID" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+          <ScalarProperty Name="published" ColumnName="published" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_members_genres">
+      <EntityTypeMapping TypeName="joespubModel.jos_members_genres">
+        <MappingFragment StoreEntitySet="jos_members_genres">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="memberID" ColumnName="memberID" />
+          <ScalarProperty Name="genreID" ColumnName="genreID" />
+          <ScalarProperty Name="published" ColumnName="published" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_members_mp3s">
+      <EntityTypeMapping TypeName="joespubModel.jos_members_mp3s">
+        <MappingFragment StoreEntitySet="jos_members_mp3s">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="memberID" ColumnName="memberID" />
+          <ScalarProperty Name="mp3ID" ColumnName="mp3ID" />
+          <ScalarProperty Name="mp3IDType" ColumnName="mp3IDType" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+          <ScalarProperty Name="published" ColumnName="published" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_menu">
+      <EntityTypeMapping TypeName="joespubModel.jos_menu">
+        <MappingFragment StoreEntitySet="jos_menu">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="menutype" ColumnName="menutype" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="parent" ColumnName="parent" />
+          <ScalarProperty Name="componentid" ColumnName="componentid" />
+          <ScalarProperty Name="sublevel" ColumnName="sublevel" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="pollid" ColumnName="pollid" />
+          <ScalarProperty Name="browserNav" ColumnName="browserNav" />
+          <ScalarProperty Name="access" ColumnName="access" />
+          <ScalarProperty Name="utaccess" ColumnName="utaccess" />
+          <ScalarProperty Name="params" ColumnName="params" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_messages">
+      <EntityTypeMapping TypeName="joespubModel.jos_messages">
+        <MappingFragment StoreEntitySet="jos_messages">
+          <ScalarProperty Name="message_id" ColumnName="message_id" />
+          <ScalarProperty Name="user_id_from" ColumnName="user_id_from" />
+          <ScalarProperty Name="user_id_to" ColumnName="user_id_to" />
+          <ScalarProperty Name="folder_id" ColumnName="folder_id" />
+          <ScalarProperty Name="date_time" ColumnName="date_time" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_messages_cfg">
+      <EntityTypeMapping TypeName="joespubModel.jos_messages_cfg">
+        <MappingFragment StoreEntitySet="jos_messages_cfg">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="cfg_name" ColumnName="cfg_name" />
+          <ScalarProperty Name="cfg_value" ColumnName="cfg_value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_modules">
+      <EntityTypeMapping TypeName="joespubModel.jos_modules">
+        <MappingFragment StoreEntitySet="jos_modules">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="numnews" ColumnName="numnews" />
+          <ScalarProperty Name="access" ColumnName="access" />
+          <ScalarProperty Name="showtitle" ColumnName="showtitle" />
+          <ScalarProperty Name="params" ColumnName="params" />
+          <ScalarProperty Name="iscore" ColumnName="iscore" />
+          <ScalarProperty Name="client_id" ColumnName="client_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_modules_menu">
+      <EntityTypeMapping TypeName="joespubModel.jos_modules_menu">
+        <MappingFragment StoreEntitySet="jos_modules_menu">
+          <ScalarProperty Name="moduleid" ColumnName="moduleid" />
+          <ScalarProperty Name="menuid" ColumnName="menuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_newsfeeds">
+      <EntityTypeMapping TypeName="joespubModel.jos_newsfeeds">
+        <MappingFragment StoreEntitySet="jos_newsfeeds">
+          <ScalarProperty Name="catid" ColumnName="catid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="numarticles" ColumnName="numarticles" />
+          <ScalarProperty Name="cache_time" ColumnName="cache_time" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_poll_date">
+      <EntityTypeMapping TypeName="joespubModel.jos_poll_date">
+        <MappingFragment StoreEntitySet="jos_poll_date">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="vote_id" ColumnName="vote_id" />
+          <ScalarProperty Name="poll_id" ColumnName="poll_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_poll_menu">
+      <EntityTypeMapping TypeName="joespubModel.jos_poll_menu">
+        <MappingFragment StoreEntitySet="jos_poll_menu">
+          <ScalarProperty Name="pollid" ColumnName="pollid" />
+          <ScalarProperty Name="menuid" ColumnName="menuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_polls">
+      <EntityTypeMapping TypeName="joespubModel.jos_polls">
+        <MappingFragment StoreEntitySet="jos_polls">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="voters" ColumnName="voters" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="access" ColumnName="access" />
+          <ScalarProperty Name="lag" ColumnName="lag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_redirect">
+      <EntityTypeMapping TypeName="joespubModel.jos_redirect">
+        <MappingFragment StoreEntitySet="jos_redirect">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="original" ColumnName="original" />
+          <ScalarProperty Name="redirect" ColumnName="redirect" />
+          <ScalarProperty Name="error_code" ColumnName="error_code" />
+          <ScalarProperty Name="hits" ColumnName="hits" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_sections">
+      <EntityTypeMapping TypeName="joespubModel.jos_sections">
+        <MappingFragment StoreEntitySet="jos_sections">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="scope" ColumnName="scope" />
+          <ScalarProperty Name="image_position" ColumnName="image_position" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="access" ColumnName="access" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="params" ColumnName="params" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_session">
+      <EntityTypeMapping TypeName="joespubModel.jos_session">
+        <MappingFragment StoreEntitySet="jos_session">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="session_id" ColumnName="session_id" />
+          <ScalarProperty Name="guest" ColumnName="guest" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="usertype" ColumnName="usertype" />
+          <ScalarProperty Name="gid" ColumnName="gid" />
+          <ScalarProperty Name="tessi_session_key" ColumnName="tessi_session_key" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_shows">
+      <EntityTypeMapping TypeName="joespubModel.jos_shows">
+        <MappingFragment StoreEntitySet="jos_shows">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tessi_prod_no" ColumnName="tessi_prod_no" />
+          <ScalarProperty Name="createdOn" ColumnName="createdOn" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="updatedOn" ColumnName="updatedOn" />
+          <ScalarProperty Name="updatedBy" ColumnName="updatedBy" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="shortTitle" ColumnName="shortTitle" />
+          <ScalarProperty Name="subtitle" ColumnName="subtitle" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="showDate" ColumnName="showDate" />
+          <ScalarProperty Name="private" ColumnName="private" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="priceInWords" ColumnName="priceInWords" />
+          <ScalarProperty Name="tileFilename" ColumnName="tileFilename" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_shows_artists">
+      <EntityTypeMapping TypeName="joespubModel.jos_shows_artists">
+        <MappingFragment StoreEntitySet="jos_shows_artists">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="showID" ColumnName="showID" />
+          <ScalarProperty Name="artistID" ColumnName="artistID" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_shows_genres">
+      <EntityTypeMapping TypeName="joespubModel.jos_shows_genres">
+        <MappingFragment StoreEntitySet="jos_shows_genres">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="showID" ColumnName="showID" />
+          <ScalarProperty Name="genreID" ColumnName="genreID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_shows_mp3s">
+      <EntityTypeMapping TypeName="joespubModel.jos_shows_mp3s">
+        <MappingFragment StoreEntitySet="jos_shows_mp3s">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="showID" ColumnName="showID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_shows_photos">
+      <EntityTypeMapping TypeName="joespubModel.jos_shows_photos">
+        <MappingFragment StoreEntitySet="jos_shows_photos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="showID" ColumnName="showID" />
+          <ScalarProperty Name="caption" ColumnName="caption" />
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_shows_videos">
+      <EntityTypeMapping TypeName="joespubModel.jos_shows_videos">
+        <MappingFragment StoreEntitySet="jos_shows_videos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="showID" ColumnName="showID" />
+          <ScalarProperty Name="caption" ColumnName="caption" />
+          <ScalarProperty Name="youtubelink" ColumnName="youtubelink" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_stats_agents">
+      <EntityTypeMapping TypeName="joespubModel.jos_stats_agents">
+        <MappingFragment StoreEntitySet="jos_stats_agents">
+          <ScalarProperty Name="agent" ColumnName="agent" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="hits" ColumnName="hits" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_template_positions">
+      <EntityTypeMapping TypeName="joespubModel.jos_template_positions">
+        <MappingFragment StoreEntitySet="jos_template_positions">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_templates_menu">
+      <EntityTypeMapping TypeName="joespubModel.jos_templates_menu">
+        <MappingFragment StoreEntitySet="jos_templates_menu">
+          <ScalarProperty Name="template" ColumnName="template" />
+          <ScalarProperty Name="menuid" ColumnName="menuid" />
+          <ScalarProperty Name="client_id" ColumnName="client_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_tiles">
+      <EntityTypeMapping TypeName="joespubModel.jos_tiles">
+        <MappingFragment StoreEntitySet="jos_tiles">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="createdOn" ColumnName="createdOn" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="updatedOn" ColumnName="updatedOn" />
+          <ScalarProperty Name="updatedBy" ColumnName="updatedBy" />
+          <ScalarProperty Name="tileFilename" ColumnName="tileFilename" />
+          <ScalarProperty Name="caption" ColumnName="caption" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="sticky" ColumnName="sticky" />
+          <ScalarProperty Name="publish_up" ColumnName="publish_up" />
+          <ScalarProperty Name="publish_down" ColumnName="publish_down" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_users">
+      <EntityTypeMapping TypeName="joespubModel.jos_users">
+        <MappingFragment StoreEntitySet="jos_users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="usertype" ColumnName="usertype" />
+          <ScalarProperty Name="block" ColumnName="block" />
+          <ScalarProperty Name="sendEmail" ColumnName="sendEmail" />
+          <ScalarProperty Name="gid" ColumnName="gid" />
+          <ScalarProperty Name="registerDate" ColumnName="registerDate" />
+          <ScalarProperty Name="lastvisitDate" ColumnName="lastvisitDate" />
+          <ScalarProperty Name="activation" ColumnName="activation" />
+          <ScalarProperty Name="params" ColumnName="params" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_usertypes">
+      <EntityTypeMapping TypeName="joespubModel.jos_usertypes">
+        <MappingFragment StoreEntitySet="jos_usertypes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="mask" ColumnName="mask" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jos_weblinks">
+      <EntityTypeMapping TypeName="joespubModel.jos_weblinks">
+        <MappingFragment StoreEntitySet="jos_weblinks">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="catid" ColumnName="catid" />
+          <ScalarProperty Name="sid" ColumnName="sid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="hits" ColumnName="hits" />
+          <ScalarProperty Name="published" ColumnName="published" />
+          <ScalarProperty Name="checked_out" ColumnName="checked_out" />
+          <ScalarProperty Name="checked_out_time" ColumnName="checked_out_time" />
+          <ScalarProperty Name="ordering" ColumnName="ordering" />
+          <ScalarProperty Name="archived" ColumnName="archived" />
+          <ScalarProperty Name="approved" ColumnName="approved" />
+          <ScalarProperty Name="params" ColumnName="params" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

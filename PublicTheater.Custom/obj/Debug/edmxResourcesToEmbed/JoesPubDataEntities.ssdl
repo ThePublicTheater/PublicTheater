@@ -1,0 +1,1447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="joespubModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="joespubModelStoreContainer">
+    <EntitySet Name="jos_artists" EntityType="joespubModel.Store.jos_artists" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_artists_genres" EntityType="joespubModel.Store.jos_artists_genres" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_artists_mp3s" EntityType="joespubModel.Store.jos_artists_mp3s" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_artists_photos" EntityType="joespubModel.Store.jos_artists_photos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_artists_videos" EntityType="joespubModel.Store.jos_artists_videos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_banner" EntityType="joespubModel.Store.jos_banner" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_bannerclient" EntityType="joespubModel.Store.jos_bannerclient" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_bannerfinish" EntityType="joespubModel.Store.jos_bannerfinish" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_categories" EntityType="joespubModel.Store.jos_categories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_comments" EntityType="joespubModel.Store.jos_comments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_components" EntityType="joespubModel.Store.jos_components" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_comprofiler" EntityType="joespubModel.Store.jos_comprofiler" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_comprofiler_field_values" EntityType="joespubModel.Store.jos_comprofiler_field_values" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_comprofiler_fields" EntityType="joespubModel.Store.jos_comprofiler_fields" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_comprofiler_lists" EntityType="joespubModel.Store.jos_comprofiler_lists" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_comprofiler_members" EntityType="joespubModel.Store.jos_comprofiler_members" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_comprofiler_plugin" EntityType="joespubModel.Store.jos_comprofiler_plugin" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_comprofiler_tabs" EntityType="joespubModel.Store.jos_comprofiler_tabs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_comprofiler_userreports" EntityType="joespubModel.Store.jos_comprofiler_userreports" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_comprofiler_views" EntityType="joespubModel.Store.jos_comprofiler_views" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_contact_details" EntityType="joespubModel.Store.jos_contact_details" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_content" EntityType="joespubModel.Store.jos_content" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_content_frontpage" EntityType="joespubModel.Store.jos_content_frontpage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_content_rating" EntityType="joespubModel.Store.jos_content_rating" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_core_acl_aro" EntityType="joespubModel.Store.jos_core_acl_aro" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_core_acl_aro_groups" EntityType="joespubModel.Store.jos_core_acl_aro_groups" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_core_acl_aro_sections" EntityType="joespubModel.Store.jos_core_acl_aro_sections" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_core_acl_groups_aro_map" EntityType="joespubModel.Store.jos_core_acl_groups_aro_map" store:Type="Tables" store:Schema="dbo" store:Name="jos_core_acl_groups_aro_map">
+      <DefiningQuery>SELECT 
+      [jos_core_acl_groups_aro_map].[group_id] AS [group_id], 
+      [jos_core_acl_groups_aro_map].[section_value] AS [section_value], 
+      [jos_core_acl_groups_aro_map].[aro_id] AS [aro_id]
+      FROM [dbo].[jos_core_acl_groups_aro_map] AS [jos_core_acl_groups_aro_map]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="jos_core_log_items" EntityType="joespubModel.Store.jos_core_log_items" store:Type="Tables" store:Schema="dbo" store:Name="jos_core_log_items">
+      <DefiningQuery>SELECT 
+      [jos_core_log_items].[time_stamp] AS [time_stamp], 
+      [jos_core_log_items].[item_table] AS [item_table], 
+      [jos_core_log_items].[item_id] AS [item_id], 
+      [jos_core_log_items].[hits] AS [hits]
+      FROM [dbo].[jos_core_log_items] AS [jos_core_log_items]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="jos_core_log_searches" EntityType="joespubModel.Store.jos_core_log_searches" store:Type="Tables" store:Schema="dbo" store:Name="jos_core_log_searches">
+      <DefiningQuery>SELECT 
+      [jos_core_log_searches].[search_term] AS [search_term], 
+      [jos_core_log_searches].[hits] AS [hits]
+      FROM [dbo].[jos_core_log_searches] AS [jos_core_log_searches]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="jos_dbquery" EntityType="joespubModel.Store.jos_dbquery" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_dbquery_config" EntityType="joespubModel.Store.jos_dbquery_config" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_dbquery_databases" EntityType="joespubModel.Store.jos_dbquery_databases" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_dbquery_drivers" EntityType="joespubModel.Store.jos_dbquery_drivers" store:Type="Tables" store:Schema="dbo" store:Name="jos_dbquery_drivers">
+      <DefiningQuery>SELECT 
+      [jos_dbquery_drivers].[tobeimplemented] AS [tobeimplemented]
+      FROM [dbo].[jos_dbquery_drivers] AS [jos_dbquery_drivers]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="jos_dbquery_errors" EntityType="joespubModel.Store.jos_dbquery_errors" store:Type="Tables" store:Schema="dbo" store:Name="jos_dbquery_errors">
+      <DefiningQuery>SELECT 
+      [jos_dbquery_errors].[source] AS [source], 
+      [jos_dbquery_errors].[oid] AS [oid], 
+      [jos_dbquery_errors].[oname] AS [oname], 
+      [jos_dbquery_errors].[uid] AS [uid], 
+      [jos_dbquery_errors].[priority] AS [priority], 
+      [jos_dbquery_errors].[date_reported] AS [date_reported], 
+      [jos_dbquery_errors].[message] AS [message]
+      FROM [dbo].[jos_dbquery_errors] AS [jos_dbquery_errors]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="jos_dbquery_stats" EntityType="joespubModel.Store.jos_dbquery_stats" store:Type="Tables" store:Schema="dbo" store:Name="jos_dbquery_stats">
+      <DefiningQuery>SELECT 
+      [jos_dbquery_stats].[query_id] AS [query_id], 
+      [jos_dbquery_stats].[variable_id] AS [variable_id], 
+      [jos_dbquery_stats].[value] AS [value], 
+      [jos_dbquery_stats].[date_queried] AS [date_queried]
+      FROM [dbo].[jos_dbquery_stats] AS [jos_dbquery_stats]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="jos_dbquery_substitutions" EntityType="joespubModel.Store.jos_dbquery_substitutions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_dbquery_templates" EntityType="joespubModel.Store.jos_dbquery_templates" store:Type="Tables" store:Schema="dbo" store:Name="jos_dbquery_templates">
+      <DefiningQuery>SELECT 
+      [jos_dbquery_templates].[tobeimplemented] AS [tobeimplemented]
+      FROM [dbo].[jos_dbquery_templates] AS [jos_dbquery_templates]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="jos_dbquery_variables" EntityType="joespubModel.Store.jos_dbquery_variables" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_genres" EntityType="joespubModel.Store.jos_genres" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_groups" EntityType="joespubModel.Store.jos_groups" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_jce_langs" EntityType="joespubModel.Store.jos_jce_langs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_jce_plugins" EntityType="joespubModel.Store.jos_jce_plugins" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_jstats_bots" EntityType="joespubModel.Store.jos_jstats_bots" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_jstats_browsers" EntityType="joespubModel.Store.jos_jstats_browsers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_jstats_configuration" EntityType="joespubModel.Store.jos_jstats_configuration" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_jstats_ipaddresses" EntityType="joespubModel.Store.jos_jstats_ipaddresses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_jstats_iptocountry" EntityType="joespubModel.Store.jos_jstats_iptocountry" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_jstats_keywords" EntityType="joespubModel.Store.jos_jstats_keywords" store:Type="Tables" store:Schema="dbo" store:Name="jos_jstats_keywords">
+      <DefiningQuery>SELECT 
+      [jos_jstats_keywords].[kwdate] AS [kwdate], 
+      [jos_jstats_keywords].[searchid] AS [searchid], 
+      [jos_jstats_keywords].[keywords] AS [keywords]
+      FROM [dbo].[jos_jstats_keywords] AS [jos_jstats_keywords]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="jos_jstats_page_request" EntityType="joespubModel.Store.jos_jstats_page_request" store:Type="Tables" store:Schema="dbo" store:Name="jos_jstats_page_request">
+      <DefiningQuery>SELECT 
+      [jos_jstats_page_request].[page_id] AS [page_id], 
+      [jos_jstats_page_request].[hour] AS [hour], 
+      [jos_jstats_page_request].[day] AS [day], 
+      [jos_jstats_page_request].[month] AS [month], 
+      [jos_jstats_page_request].[year] AS [year], 
+      [jos_jstats_page_request].[ip_id] AS [ip_id]
+      FROM [dbo].[jos_jstats_page_request] AS [jos_jstats_page_request]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="jos_jstats_page_request_c" EntityType="joespubModel.Store.jos_jstats_page_request_c" store:Type="Tables" store:Schema="dbo" store:Name="jos_jstats_page_request_c">
+      <DefiningQuery>SELECT 
+      [jos_jstats_page_request_c].[page_id] AS [page_id], 
+      [jos_jstats_page_request_c].[hour] AS [hour], 
+      [jos_jstats_page_request_c].[day] AS [day], 
+      [jos_jstats_page_request_c].[month] AS [month], 
+      [jos_jstats_page_request_c].[year] AS [year], 
+      [jos_jstats_page_request_c].[count] AS [count]
+      FROM [dbo].[jos_jstats_page_request_c] AS [jos_jstats_page_request_c]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="jos_jstats_pages" EntityType="joespubModel.Store.jos_jstats_pages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_jstats_referrer" EntityType="joespubModel.Store.jos_jstats_referrer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_jstats_search_engines" EntityType="joespubModel.Store.jos_jstats_search_engines" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_jstats_systems" EntityType="joespubModel.Store.jos_jstats_systems" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_jstats_topleveldomains" EntityType="joespubModel.Store.jos_jstats_topleveldomains" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_jstats_visits" EntityType="joespubModel.Store.jos_jstats_visits" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_letterman" EntityType="joespubModel.Store.jos_letterman" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_letterman_subscribers" EntityType="joespubModel.Store.jos_letterman_subscribers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_mambots" EntityType="joespubModel.Store.jos_mambots" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_members" EntityType="joespubModel.Store.jos_members" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_members_artists" EntityType="joespubModel.Store.jos_members_artists" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_members_genres" EntityType="joespubModel.Store.jos_members_genres" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_members_mp3s" EntityType="joespubModel.Store.jos_members_mp3s" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_menu" EntityType="joespubModel.Store.jos_menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_messages" EntityType="joespubModel.Store.jos_messages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_messages_cfg" EntityType="joespubModel.Store.jos_messages_cfg" store:Type="Tables" store:Schema="dbo" store:Name="jos_messages_cfg">
+      <DefiningQuery>SELECT 
+      [jos_messages_cfg].[user_id] AS [user_id], 
+      [jos_messages_cfg].[cfg_name] AS [cfg_name], 
+      [jos_messages_cfg].[cfg_value] AS [cfg_value]
+      FROM [dbo].[jos_messages_cfg] AS [jos_messages_cfg]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="jos_modules" EntityType="joespubModel.Store.jos_modules" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_modules_menu" EntityType="joespubModel.Store.jos_modules_menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_newsfeeds" EntityType="joespubModel.Store.jos_newsfeeds" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_poll_date" EntityType="joespubModel.Store.jos_poll_date" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_poll_menu" EntityType="joespubModel.Store.jos_poll_menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_polls" EntityType="joespubModel.Store.jos_polls" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_redirect" EntityType="joespubModel.Store.jos_redirect" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_sections" EntityType="joespubModel.Store.jos_sections" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_session" EntityType="joespubModel.Store.jos_session" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_shows" EntityType="joespubModel.Store.jos_shows" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_shows_artists" EntityType="joespubModel.Store.jos_shows_artists" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_shows_genres" EntityType="joespubModel.Store.jos_shows_genres" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_shows_mp3s" EntityType="joespubModel.Store.jos_shows_mp3s" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_shows_photos" EntityType="joespubModel.Store.jos_shows_photos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_shows_videos" EntityType="joespubModel.Store.jos_shows_videos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_stats_agents" EntityType="joespubModel.Store.jos_stats_agents" store:Type="Tables" store:Schema="dbo" store:Name="jos_stats_agents">
+      <DefiningQuery>SELECT 
+      [jos_stats_agents].[agent] AS [agent], 
+      [jos_stats_agents].[type] AS [type], 
+      [jos_stats_agents].[hits] AS [hits]
+      FROM [dbo].[jos_stats_agents] AS [jos_stats_agents]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="jos_template_positions" EntityType="joespubModel.Store.jos_template_positions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_templates_menu" EntityType="joespubModel.Store.jos_templates_menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_tiles" EntityType="joespubModel.Store.jos_tiles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_users" EntityType="joespubModel.Store.jos_users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_usertypes" EntityType="joespubModel.Store.jos_usertypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jos_weblinks" EntityType="joespubModel.Store.jos_weblinks" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="jos_artists">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="createdOn" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="createdBy" Type="int" Nullable="false" />
+    <Property Name="updatedOn" Type="datetime2" Precision="0" />
+    <Property Name="updatedBy" Type="int" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="128" />
+    <Property Name="shortName" Type="varchar" MaxLength="64" />
+    <Property Name="subtitle" Type="varchar" MaxLength="128" />
+    <Property Name="description" Type="varchar(max)" />
+    <Property Name="webpage" Type="varchar" MaxLength="128" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="tileFilename" Type="varchar" Nullable="false" MaxLength="64" />
+    <Property Name="checked_out" Type="int" />
+    <Property Name="checked_out_time" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="jos_artists_genres">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="artistID" Type="int" />
+    <Property Name="genreID" Type="int" />
+  </EntityType>
+  <EntityType Name="jos_artists_mp3s">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="artistID" Type="int" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="64" />
+    <Property Name="filename" Type="varchar" Nullable="false" MaxLength="128" />
+    <Property Name="priority" Type="int" />
+  </EntityType>
+  <EntityType Name="jos_artists_photos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="artistID" Type="int" />
+    <Property Name="caption" Type="varchar" MaxLength="128" />
+    <Property Name="filename" Type="varchar" Nullable="false" MaxLength="128" />
+    <Property Name="priority" Type="int" />
+  </EntityType>
+  <EntityType Name="jos_artists_videos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="artistID" Type="int" />
+    <Property Name="caption" Type="varchar" Nullable="false" MaxLength="64" />
+    <Property Name="youtubelink" Type="varchar" Nullable="false" MaxLength="64" />
+    <Property Name="priority" Type="int" />
+  </EntityType>
+  <EntityType Name="jos_banner">
+    <Key>
+      <PropertyRef Name="bid" />
+    </Key>
+    <Property Name="bid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="cid" Type="int" Nullable="false" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="imptotal" Type="int" Nullable="false" />
+    <Property Name="impmade" Type="int" Nullable="false" />
+    <Property Name="clicks" Type="int" Nullable="false" />
+    <Property Name="imageurl" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="clickurl" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="date" Type="datetime2" Precision="0" />
+    <Property Name="showBanner" Type="smallint" Nullable="false" />
+    <Property Name="checked_out" Type="smallint" Nullable="false" />
+    <Property Name="checked_out_time" Type="datetime2" Precision="0" />
+    <Property Name="editor" Type="nvarchar" MaxLength="50" />
+    <Property Name="custombannercode" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="jos_bannerclient">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="contact" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="email" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="extrainfo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="checked_out" Type="smallint" Nullable="false" />
+    <Property Name="checked_out_time" Type="time" />
+    <Property Name="editor" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="jos_bannerfinish">
+    <Key>
+      <PropertyRef Name="bid" />
+    </Key>
+    <Property Name="bid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="cid" Type="int" Nullable="false" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="impressions" Type="int" Nullable="false" />
+    <Property Name="clicks" Type="int" Nullable="false" />
+    <Property Name="imageurl" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="datestart" Type="datetime2" Precision="0" />
+    <Property Name="dateend" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="jos_categories">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="parent_id" Type="int" Nullable="false" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="image" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="section" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="image_position" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="checked_out" Type="bigint" Nullable="false" />
+    <Property Name="checked_out_time" Type="datetime2" Precision="0" />
+    <Property Name="editor" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordering" Type="int" Nullable="false" />
+    <Property Name="access" Type="tinyint" Nullable="false" />
+    <Property Name="count" Type="int" Nullable="false" />
+    <Property Name="params" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_comments">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="createdOn" Type="datetime2" Precision="0" />
+    <Property Name="createdBy" Type="int" Nullable="false" />
+    <Property Name="updatedOn" Type="datetime2" Precision="0" />
+    <Property Name="updatedBy" Type="int" />
+    <Property Name="title" Type="varchar" Nullable="false" MaxLength="64" />
+    <Property Name="body" Type="varchar(max)" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="front_page" Type="smallint" />
+    <Property Name="foreign_id" Type="int" Nullable="false" />
+    <Property Name="foreign_id_type" Type="varchar" Nullable="false" MaxLength="64" />
+    <Property Name="member_id" Type="int" Nullable="false" />
+    <Property Name="reports" Type="int" />
+    <Property Name="thumbs_up" Type="int" />
+    <Property Name="thumbs_down" Type="int" />
+    <Property Name="parent_comment_id" Type="int" />
+    <Property Name="checked_out" Type="int" />
+    <Property Name="checked_out_time" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="jos_components">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="link" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="menuid" Type="bigint" Nullable="false" />
+    <Property Name="parent" Type="bigint" Nullable="false" />
+    <Property Name="admin_menu_link" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="admin_menu_alt" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="option" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ordering" Type="int" Nullable="false" />
+    <Property Name="admin_menu_img" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="iscore" Type="smallint" Nullable="false" />
+    <Property Name="params" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="firstname" Type="nvarchar" MaxLength="100" />
+    <Property Name="middlename" Type="nvarchar" MaxLength="100" />
+    <Property Name="lastname" Type="nvarchar" MaxLength="100" />
+    <Property Name="hits" Type="int" Nullable="false" />
+    <Property Name="message_last_sent" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="message_number_sent" Type="int" Nullable="false" />
+    <Property Name="avatar" Type="nvarchar" MaxLength="255" />
+    <Property Name="avatarapproved" Type="smallint" />
+    <Property Name="approved" Type="smallint" Nullable="false" />
+    <Property Name="confirmed" Type="smallint" Nullable="false" />
+    <Property Name="lastupdatedate" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="registeripaddr" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="cbactivation" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="banned" Type="smallint" Nullable="false" />
+    <Property Name="banneddate" Type="datetime2" Precision="0" />
+    <Property Name="bannedby" Type="int" />
+    <Property Name="bannedreason" Type="nvarchar(max)" />
+    <Property Name="acceptedterms" Type="smallint" Nullable="false" />
+    <Property Name="cb_test" Type="smallint" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler_field_values">
+    <Key>
+      <PropertyRef Name="fieldvalueid" />
+    </Key>
+    <Property Name="fieldvalueid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fieldid" Type="int" Nullable="false" />
+    <Property Name="fieldtitle" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ordering" Type="int" Nullable="false" />
+    <Property Name="sys" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler_fields">
+    <Key>
+      <PropertyRef Name="fieldid" />
+    </Key>
+    <Property Name="fieldid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="table" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="maxlength" Type="int" />
+    <Property Name="size" Type="int" />
+    <Property Name="required" Type="smallint" />
+    <Property Name="tabid" Type="int" />
+    <Property Name="ordering" Type="int" />
+    <Property Name="cols" Type="int" />
+    <Property Name="rows" Type="int" />
+    <Property Name="value" Type="nvarchar" MaxLength="50" />
+    <Property Name="default" Type="nvarchar(max)" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="registration" Type="smallint" Nullable="false" />
+    <Property Name="profile" Type="smallint" Nullable="false" />
+    <Property Name="readonly" Type="smallint" Nullable="false" />
+    <Property Name="calculated" Type="smallint" Nullable="false" />
+    <Property Name="sys" Type="smallint" Nullable="false" />
+    <Property Name="pluginid" Type="int" />
+    <Property Name="params" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler_lists">
+    <Key>
+      <PropertyRef Name="listid" />
+    </Key>
+    <Property Name="listid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="default" Type="smallint" Nullable="false" />
+    <Property Name="usergroupids" Type="nvarchar" MaxLength="255" />
+    <Property Name="useraccessgroupid" Type="int" Nullable="false" />
+    <Property Name="sortfields" Type="nvarchar" MaxLength="255" />
+    <Property Name="filterfields" Type="nvarchar" MaxLength="255" />
+    <Property Name="ordering" Type="int" Nullable="false" />
+    <Property Name="col1title" Type="nvarchar" MaxLength="255" />
+    <Property Name="col1enabled" Type="smallint" Nullable="false" />
+    <Property Name="col1fields" Type="nvarchar(max)" />
+    <Property Name="col2title" Type="nvarchar" MaxLength="255" />
+    <Property Name="col2enabled" Type="smallint" Nullable="false" />
+    <Property Name="col1captions" Type="smallint" Nullable="false" />
+    <Property Name="col2fields" Type="nvarchar(max)" />
+    <Property Name="col2captions" Type="smallint" Nullable="false" />
+    <Property Name="col3title" Type="nvarchar" MaxLength="255" />
+    <Property Name="col3enabled" Type="smallint" Nullable="false" />
+    <Property Name="col3fields" Type="nvarchar(max)" />
+    <Property Name="col3captions" Type="smallint" Nullable="false" />
+    <Property Name="col4title" Type="nvarchar" MaxLength="255" />
+    <Property Name="col4enabled" Type="smallint" Nullable="false" />
+    <Property Name="col4fields" Type="nvarchar(max)" />
+    <Property Name="col4captions" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler_members">
+    <Key>
+      <PropertyRef Name="referenceid" />
+      <PropertyRef Name="memberid" />
+    </Key>
+    <Property Name="referenceid" Type="int" Nullable="false" />
+    <Property Name="memberid" Type="int" Nullable="false" />
+    <Property Name="accepted" Type="smallint" Nullable="false" />
+    <Property Name="pending" Type="smallint" Nullable="false" />
+    <Property Name="membersince" Type="date" Nullable="false" />
+    <Property Name="reason" Type="nvarchar(max)" />
+    <Property Name="description" Type="nvarchar" MaxLength="255" />
+    <Property Name="type" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler_plugin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="element" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="type" Type="nvarchar" MaxLength="100" />
+    <Property Name="folder" Type="nvarchar" MaxLength="100" />
+    <Property Name="access" Type="tinyint" Nullable="false" />
+    <Property Name="ordering" Type="int" Nullable="false" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="iscore" Type="smallint" Nullable="false" />
+    <Property Name="client_id" Type="smallint" Nullable="false" />
+    <Property Name="checked_out" Type="bigint" Nullable="false" />
+    <Property Name="checked_out_time" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="params" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler_tabs">
+    <Key>
+      <PropertyRef Name="tabid" />
+    </Key>
+    <Property Name="tabid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="ordering" Type="int" Nullable="false" />
+    <Property Name="width" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="enabled" Type="smallint" Nullable="false" />
+    <Property Name="pluginclass" Type="nvarchar" MaxLength="255" />
+    <Property Name="pluginid" Type="int" />
+    <Property Name="fields" Type="smallint" Nullable="false" />
+    <Property Name="params" Type="nvarchar(max)" />
+    <Property Name="sys" Type="smallint" Nullable="false" />
+    <Property Name="displaytype" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="position" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler_userreports">
+    <Key>
+      <PropertyRef Name="reportid" />
+    </Key>
+    <Property Name="reportid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="reporteduser" Type="int" Nullable="false" />
+    <Property Name="reportedbyuser" Type="int" Nullable="false" />
+    <Property Name="reportedondate" Type="date" Nullable="false" />
+    <Property Name="reportexplaination" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="reportedstatus" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler_views">
+    <Key>
+      <PropertyRef Name="viewer_id" />
+      <PropertyRef Name="profile_id" />
+      <PropertyRef Name="lastip" />
+    </Key>
+    <Property Name="viewer_id" Type="int" Nullable="false" />
+    <Property Name="profile_id" Type="int" Nullable="false" />
+    <Property Name="lastip" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="lastview" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="viewscount" Type="int" Nullable="false" />
+    <Property Name="vote" Type="smallint" />
+    <Property Name="lastvote" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="jos_contact_details">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="con_position" Type="nvarchar" MaxLength="50" />
+    <Property Name="address" Type="nvarchar(max)" />
+    <Property Name="suburb" Type="nvarchar" MaxLength="50" />
+    <Property Name="state" Type="nvarchar" MaxLength="20" />
+    <Property Name="country" Type="nvarchar" MaxLength="50" />
+    <Property Name="postcode" Type="nvarchar" MaxLength="10" />
+    <Property Name="telephone" Type="nvarchar" MaxLength="25" />
+    <Property Name="fax" Type="nvarchar" MaxLength="25" />
+    <Property Name="misc" Type="nvarchar(max)" />
+    <Property Name="image" Type="nvarchar" MaxLength="100" />
+    <Property Name="imagepos" Type="nvarchar" MaxLength="20" />
+    <Property Name="email_to" Type="nvarchar" MaxLength="100" />
+    <Property Name="default_con" Type="tinyint" Nullable="false" />
+    <Property Name="published" Type="tinyint" Nullable="false" />
+    <Property Name="checked_out" Type="bigint" Nullable="false" />
+    <Property Name="checked_out_time" Type="datetime2" Precision="0" />
+    <Property Name="ordering" Type="int" Nullable="false" />
+    <Property Name="params" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="catid" Type="int" Nullable="false" />
+    <Property Name="access" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_content">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="title_alias" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="introtext" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="fulltext" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="state" Type="smallint" Nullable="false" />
+    <Property Name="sectionid" Type="bigint" Nullable="false" />
+    <Property Name="mask" Type="bigint" Nullable="false" />
+    <Property Name="catid" Type="bigint" Nullable="false" />
+    <Property Name="created" Type="datetime2" Precision="0" />
+    <Property Name="created_by" Type="bigint" Nullable="false" />
+    <Property Name="created_by_alias" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="modified" Type="datetime2" Precision="0" />
+    <Property Name="modified_by" Type="bigint" Nullable="false" />
+    <Property Name="checked_out" Type="bigint" Nullable="false" />
+    <Property Name="checked_out_time" Type="datetime2" Precision="0" />
+    <Property Name="publish_up" Type="datetime2" Precision="0" />
+    <Property Name="publish_down" Type="datetime2" Precision="0" />
+    <Property Name="images" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="urls" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="attribs" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="version" Type="bigint" Nullable="false" />
+    <Property Name="parentid" Type="bigint" Nullable="false" />
+    <Property Name="ordering" Type="int" Nullable="false" />
+    <Property Name="metakey" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="metadesc" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="access" Type="bigint" Nullable="false" />
+    <Property Name="hits" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_content_frontpage">
+    <Key>
+      <PropertyRef Name="content_id" />
+    </Key>
+    <Property Name="content_id" Type="int" Nullable="false" />
+    <Property Name="ordering" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_content_rating">
+    <Key>
+      <PropertyRef Name="content_id" />
+    </Key>
+    <Property Name="content_id" Type="int" Nullable="false" />
+    <Property Name="rating_sum" Type="bigint" Nullable="false" />
+    <Property Name="rating_count" Type="bigint" Nullable="false" />
+    <Property Name="lastip" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="jos_core_acl_aro">
+    <Key>
+      <PropertyRef Name="aro_id" />
+    </Key>
+    <Property Name="aro_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="section_value" Type="nvarchar" Nullable="false" MaxLength="240" />
+    <Property Name="value" Type="nvarchar" Nullable="false" MaxLength="240" />
+    <Property Name="order_value" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="hidden" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_core_acl_aro_groups">
+    <Key>
+      <PropertyRef Name="group_id" />
+    </Key>
+    <Property Name="group_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="parent_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="lft" Type="int" Nullable="false" />
+    <Property Name="rgt" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_core_acl_aro_sections">
+    <Key>
+      <PropertyRef Name="section_id" />
+    </Key>
+    <Property Name="section_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="value" Type="nvarchar" Nullable="false" MaxLength="230" />
+    <Property Name="order_value" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="230" />
+    <Property Name="hidden" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'joespub.dbo.jos_core_acl_groups_aro_map' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="jos_core_acl_groups_aro_map">
+    <Key>
+      <PropertyRef Name="group_id" />
+      <PropertyRef Name="section_value" />
+      <PropertyRef Name="aro_id" />
+    </Key>
+    <Property Name="group_id" Type="int" Nullable="false" />
+    <Property Name="section_value" Type="nvarchar" Nullable="false" MaxLength="240" />
+    <Property Name="aro_id" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'joespub.dbo.jos_core_log_items' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="jos_core_log_items">
+    <Key>
+      <PropertyRef Name="time_stamp" />
+      <PropertyRef Name="item_table" />
+      <PropertyRef Name="item_id" />
+      <PropertyRef Name="hits" />
+    </Key>
+    <Property Name="time_stamp" Type="date" Nullable="false" />
+    <Property Name="item_table" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="item_id" Type="bigint" Nullable="false" />
+    <Property Name="hits" Type="bigint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'joespub.dbo.jos_core_log_searches' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="jos_core_log_searches">
+    <Key>
+      <PropertyRef Name="search_term" />
+      <PropertyRef Name="hits" />
+    </Key>
+    <Property Name="search_term" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="hits" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_dbquery">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="display_name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="db_id" Type="bigint" Nullable="false" />
+    <Property Name="sql" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="catid" Type="bigint" Nullable="false" />
+    <Property Name="template" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="expect_rows" Type="smallint" />
+    <Property Name="page_navigation" Type="smallint" />
+    <Property Name="rotate_results" Type="smallint" />
+    <Property Name="display_regex" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="stats" Type="smallint" />
+    <Property Name="count_sql" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="access" Type="bigint" Nullable="false" />
+    <Property Name="published" Type="smallint" />
+    <Property Name="ordering" Type="bigint" />
+    <Property Name="archived" Type="smallint" />
+    <Property Name="debug" Type="smallint" />
+    <Property Name="uses_vars" Type="smallint" />
+    <Property Name="hits" Type="bigint" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="comment" Type="nvarchar" MaxLength="250" />
+    <Property Name="checked_out" Type="bigint" />
+    <Property Name="checked_out_time" Type="datetime2" Precision="0" />
+    <Property Name="parse" Type="nvarchar(max)" />
+    <Property Name="contacts_id" Type="int" />
+    <Property Name="params" Type="nvarchar(max)" />
+    <Property Name="use_confirmation" Type="smallint" />
+    <Property Name="use_notification" Type="smallint" />
+    <Property Name="notification_emails" Type="nvarchar(max)" />
+    <Property Name="notification_subject" Type="nvarchar" MaxLength="250" />
+    <Property Name="notification_message" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="jos_dbquery_config">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="key" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="value" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="ordering" Type="bigint" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="comment" Type="nvarchar" MaxLength="100" />
+    <Property Name="checked_out" Type="bigint" />
+    <Property Name="checked_out_time" Type="datetime2" Precision="0" />
+    <Property Name="params" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="jos_dbquery_databases">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="driver" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="persistent" Type="smallint" />
+    <Property Name="debug" Type="smallint" />
+    <Property Name="hostname" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="schemaname" Type="nvarchar" Nullable="false" MaxLength="48" />
+    <Property Name="username" Type="nvarchar" MaxLength="48" />
+    <Property Name="password" Type="nvarchar" MaxLength="48" />
+    <Property Name="on_line" Type="smallint" />
+    <Property Name="ordering" Type="bigint" />
+    <Property Name="archived" Type="smallint" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="comment" Type="nvarchar" MaxLength="200" />
+    <Property Name="checked_out" Type="bigint" />
+    <Property Name="checked_out_time" Type="datetime2" Precision="0" />
+    <Property Name="params" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'joespub.dbo.jos_dbquery_drivers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="jos_dbquery_drivers">
+    <Key>
+      <PropertyRef Name="tobeimplemented" />
+    </Key>
+    <Property Name="tobeimplemented" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'joespub.dbo.jos_dbquery_errors' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="jos_dbquery_errors">
+    <Key>
+      <PropertyRef Name="date_reported" />
+    </Key>
+    <Property Name="source" Type="nvarchar" MaxLength="64" />
+    <Property Name="oid" Type="int" />
+    <Property Name="oname" Type="nvarchar" MaxLength="255" />
+    <Property Name="uid" Type="int" />
+    <Property Name="priority" Type="int" />
+    <Property Name="date_reported" Type="datetime" Nullable="false" />
+    <Property Name="message" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'joespub.dbo.jos_dbquery_stats' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="jos_dbquery_stats">
+    <Key>
+      <PropertyRef Name="query_id" />
+      <PropertyRef Name="variable_id" />
+      <PropertyRef Name="value" />
+      <PropertyRef Name="date_queried" />
+    </Key>
+    <Property Name="query_id" Type="int" Nullable="false" />
+    <Property Name="variable_id" Type="int" Nullable="false" />
+    <Property Name="value" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="date_queried" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_dbquery_substitutions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="variable_id" Type="int" />
+    <Property Name="value" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="label" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="ordering" Type="bigint" />
+    <Property Name="checked_out" Type="bigint" />
+    <Property Name="checked_out_time" Type="datetime2" Precision="0" />
+    <Property Name="default" Type="smallint" />
+    <Property Name="params" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'joespub.dbo.jos_dbquery_templates' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="jos_dbquery_templates">
+    <Key>
+      <PropertyRef Name="tobeimplemented" />
+    </Key>
+    <Property Name="tobeimplemented" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_dbquery_variables">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="query_id" Type="int" />
+    <Property Name="display_name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="input" Type="nvarchar" MaxLength="16" />
+    <Property Name="regex" Type="nvarchar" MaxLength="16" />
+    <Property Name="size" Type="int" />
+    <Property Name="required" Type="nvarchar" MaxLength="16" />
+    <Property Name="active" Type="smallint" />
+    <Property Name="uses_custom_query" Type="smallint" />
+    <Property Name="ordering" Type="bigint" />
+    <Property Name="debug" Type="tinyint" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="checked_out" Type="bigint" />
+    <Property Name="checked_out_time" Type="datetime2" Precision="0" />
+    <Property Name="stats" Type="smallint" />
+    <Property Name="default_value" Type="nvarchar(max)" />
+    <Property Name="page" Type="int" />
+    <Property Name="code" Type="nvarchar(max)" />
+    <Property Name="params" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="jos_genres">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="createdOn" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="createdBy" Type="int" Nullable="false" />
+    <Property Name="updatedOn" Type="datetime2" Precision="0" />
+    <Property Name="updatedBy" Type="int" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="128" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="checked_out" Type="int" />
+    <Property Name="checked_out_time" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="jos_groups">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="tinyint" Nullable="false" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="jos_jce_langs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="lang" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_jce_plugins">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="plugin" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="icon" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="layout_icon" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="access" Type="tinyint" Nullable="false" />
+    <Property Name="row" Type="int" Nullable="false" />
+    <Property Name="ordering" Type="int" Nullable="false" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="editable" Type="smallint" Nullable="false" />
+    <Property Name="elements" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="iscore" Type="smallint" Nullable="false" />
+    <Property Name="client_id" Type="smallint" Nullable="false" />
+    <Property Name="checked_out" Type="bigint" Nullable="false" />
+    <Property Name="checked_out_time" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="params" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_bots">
+    <Key>
+      <PropertyRef Name="bot_id" />
+    </Key>
+    <Property Name="bot_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="bot_string" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="bot_fullname" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="jos_jstats_browsers">
+    <Key>
+      <PropertyRef Name="browser_id" />
+    </Key>
+    <Property Name="browser_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="browser_string" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="browser_fullname" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="browser_img" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_configuration">
+    <Key>
+      <PropertyRef Name="description" />
+    </Key>
+    <Property Name="description" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="value" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="jos_jstats_ipaddresses">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="ip" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="nslookup" Type="nvarchar" MaxLength="255" />
+    <Property Name="tld" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="useragent" Type="nvarchar" MaxLength="255" />
+    <Property Name="system" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="browser" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="type" Type="smallint" Nullable="false" />
+    <Property Name="exclude" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_iptocountry">
+    <Key>
+      <PropertyRef Name="IP_FROM" />
+    </Key>
+    <Property Name="IP_FROM" Type="bigint" Nullable="false" />
+    <Property Name="IP_TO" Type="bigint" Nullable="false" />
+    <Property Name="COUNTRY_CODE2" Type="nvarchar" Nullable="false" MaxLength="2" />
+    <Property Name="COUNTRY_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'joespub.dbo.jos_jstats_keywords' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="jos_jstats_keywords">
+    <Key>
+      <PropertyRef Name="kwdate" />
+      <PropertyRef Name="searchid" />
+      <PropertyRef Name="keywords" />
+    </Key>
+    <Property Name="kwdate" Type="date" Nullable="false" />
+    <Property Name="searchid" Type="int" Nullable="false" />
+    <Property Name="keywords" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'joespub.dbo.jos_jstats_page_request' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="jos_jstats_page_request">
+    <Key>
+      <PropertyRef Name="page_id" />
+      <PropertyRef Name="hour" />
+      <PropertyRef Name="day" />
+      <PropertyRef Name="month" />
+      <PropertyRef Name="year" />
+    </Key>
+    <Property Name="page_id" Type="int" Nullable="false" />
+    <Property Name="hour" Type="smallint" Nullable="false" />
+    <Property Name="day" Type="smallint" Nullable="false" />
+    <Property Name="month" Type="smallint" Nullable="false" />
+    <Property Name="year" Type="smallint" Nullable="false" />
+    <Property Name="ip_id" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'joespub.dbo.jos_jstats_page_request_c' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="jos_jstats_page_request_c">
+    <Key>
+      <PropertyRef Name="page_id" />
+      <PropertyRef Name="hour" />
+      <PropertyRef Name="day" />
+      <PropertyRef Name="month" />
+      <PropertyRef Name="year" />
+    </Key>
+    <Property Name="page_id" Type="int" Nullable="false" />
+    <Property Name="hour" Type="smallint" Nullable="false" />
+    <Property Name="day" Type="smallint" Nullable="false" />
+    <Property Name="month" Type="smallint" Nullable="false" />
+    <Property Name="year" Type="smallint" Nullable="false" />
+    <Property Name="count" Type="int" />
+  </EntityType>
+  <EntityType Name="jos_jstats_pages">
+    <Key>
+      <PropertyRef Name="page_id" />
+    </Key>
+    <Property Name="page_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="page" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="page_title" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="jos_jstats_referrer">
+    <Key>
+      <PropertyRef Name="refid" />
+    </Key>
+    <Property Name="referrer" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="domain" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="refid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="day" Type="smallint" Nullable="false" />
+    <Property Name="month" Type="smallint" Nullable="false" />
+    <Property Name="year" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_search_engines">
+    <Key>
+      <PropertyRef Name="searchid" />
+    </Key>
+    <Property Name="searchid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="search" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="searchvar" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="jos_jstats_systems">
+    <Key>
+      <PropertyRef Name="sys_id" />
+    </Key>
+    <Property Name="sys_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="sys_string" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="sys_fullname" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="sys_img" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_topleveldomains">
+    <Key>
+      <PropertyRef Name="tld_id" />
+    </Key>
+    <Property Name="tld_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="tld" Type="nvarchar" Nullable="false" MaxLength="6" />
+    <Property Name="fullname" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="jos_jstats_visits">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ip_id" Type="int" Nullable="false" />
+    <Property Name="userid" Type="int" Nullable="false" />
+    <Property Name="hour" Type="smallint" Nullable="false" />
+    <Property Name="day" Type="smallint" Nullable="false" />
+    <Property Name="month" Type="smallint" Nullable="false" />
+    <Property Name="year" Type="smallint" Nullable="false" />
+    <Property Name="time" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="jos_letterman">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="subject" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="headers" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="message" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="html_message" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="checked_out" Type="int" Nullable="false" />
+    <Property Name="checked_out_time" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="publish_up" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="publish_down" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="created" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="send" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="hits" Type="int" Nullable="false" />
+    <Property Name="access" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_letterman_subscribers">
+    <Key>
+      <PropertyRef Name="subscriber_id" />
+    </Key>
+    <Property Name="subscriber_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="subscriber_name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="subscriber_email" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="confirmed" Type="smallint" Nullable="false" />
+    <Property Name="subscribe_date" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="jos_mambots">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="element" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="folder" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="access" Type="tinyint" Nullable="false" />
+    <Property Name="ordering" Type="int" Nullable="false" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="iscore" Type="smallint" Nullable="false" />
+    <Property Name="client_id" Type="smallint" Nullable="false" />
+    <Property Name="checked_out" Type="bigint" Nullable="false" />
+    <Property Name="checked_out_time" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="params" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_members">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="tessi_customer_no" Type="int" />
+    <Property Name="createdOn" Type="datetime2" Precision="0" />
+    <Property Name="createdBy" Type="int" Nullable="false" />
+    <Property Name="updatedOn" Type="datetime2" Precision="0" />
+    <Property Name="updatedBy" Type="int" />
+    <Property Name="bio" Type="varchar(max)" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="avatarFilename" Type="varchar" Nullable="false" MaxLength="64" />
+    <Property Name="checked_out" Type="int" />
+    <Property Name="checked_out_time" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="jos_members_artists">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="memberID" Type="int" />
+    <Property Name="artistID" Type="int" />
+    <Property Name="priority" Type="int" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_members_genres">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="memberID" Type="int" />
+    <Property Name="genreID" Type="int" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_members_mp3s">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="memberID" Type="int" />
+    <Property Name="mp3ID" Type="int" />
+    <Property Name="mp3IDType" Type="varchar" MaxLength="64" />
+    <Property Name="priority" Type="int" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_menu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="menutype" Type="nvarchar" MaxLength="25" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+    <Property Name="link" Type="nvarchar(max)" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="parent" Type="bigint" Nullable="false" />
+    <Property Name="componentid" Type="bigint" Nullable="false" />
+    <Property Name="sublevel" Type="int" />
+    <Property Name="ordering" Type="int" />
+    <Property Name="checked_out" Type="bigint" Nullable="false" />
+    <Property Name="checked_out_time" Type="datetime2" Precision="0" />
+    <Property Name="pollid" Type="int" Nullable="false" />
+    <Property Name="browserNav" Type="smallint" />
+    <Property Name="access" Type="tinyint" Nullable="false" />
+    <Property Name="utaccess" Type="tinyint" Nullable="false" />
+    <Property Name="params" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_messages">
+    <Key>
+      <PropertyRef Name="message_id" />
+    </Key>
+    <Property Name="message_id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="user_id_from" Type="bigint" Nullable="false" />
+    <Property Name="user_id_to" Type="bigint" Nullable="false" />
+    <Property Name="folder_id" Type="bigint" Nullable="false" />
+    <Property Name="date_time" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="state" Type="int" Nullable="false" />
+    <Property Name="priority" Type="bigint" Nullable="false" />
+    <Property Name="subject" Type="nvarchar" Nullable="false" MaxLength="230" />
+    <Property Name="message" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'joespub.dbo.jos_messages_cfg' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="jos_messages_cfg">
+    <Key>
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="cfg_name" />
+      <PropertyRef Name="cfg_value" />
+    </Key>
+    <Property Name="user_id" Type="bigint" Nullable="false" />
+    <Property Name="cfg_name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="cfg_value" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="jos_modules">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ordering" Type="int" Nullable="false" />
+    <Property Name="position" Type="nvarchar" MaxLength="10" />
+    <Property Name="checked_out" Type="bigint" Nullable="false" />
+    <Property Name="checked_out_time" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="module" Type="nvarchar" MaxLength="50" />
+    <Property Name="numnews" Type="int" Nullable="false" />
+    <Property Name="access" Type="tinyint" Nullable="false" />
+    <Property Name="showtitle" Type="tinyint" Nullable="false" />
+    <Property Name="params" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="iscore" Type="smallint" Nullable="false" />
+    <Property Name="client_id" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_modules_menu">
+    <Key>
+      <PropertyRef Name="moduleid" />
+      <PropertyRef Name="menuid" />
+    </Key>
+    <Property Name="moduleid" Type="int" Nullable="false" />
+    <Property Name="menuid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_newsfeeds">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="catid" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="link" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="filename" Type="nvarchar" MaxLength="200" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="numarticles" Type="bigint" Nullable="false" />
+    <Property Name="cache_time" Type="bigint" Nullable="false" />
+    <Property Name="checked_out" Type="tinyint" Nullable="false" />
+    <Property Name="checked_out_time" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="ordering" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_poll_date">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="vote_id" Type="int" Nullable="false" />
+    <Property Name="poll_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_poll_menu">
+    <Key>
+      <PropertyRef Name="pollid" />
+      <PropertyRef Name="menuid" />
+    </Key>
+    <Property Name="pollid" Type="int" Nullable="false" />
+    <Property Name="menuid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_polls">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="voters" Type="int" Nullable="false" />
+    <Property Name="checked_out" Type="int" Nullable="false" />
+    <Property Name="checked_out_time" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="access" Type="int" Nullable="false" />
+    <Property Name="lag" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_redirect">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="original" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="redirect" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="error_code" Type="int" Nullable="false" />
+    <Property Name="hits" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_sections">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="image" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="scope" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="image_position" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="checked_out" Type="bigint" Nullable="false" />
+    <Property Name="checked_out_time" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="ordering" Type="int" Nullable="false" />
+    <Property Name="access" Type="tinyint" Nullable="false" />
+    <Property Name="count" Type="int" Nullable="false" />
+    <Property Name="params" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_session">
+    <Key>
+      <PropertyRef Name="session_id" />
+    </Key>
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="time" Type="nvarchar" MaxLength="14" />
+    <Property Name="session_id" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="guest" Type="smallint" />
+    <Property Name="userid" Type="int" />
+    <Property Name="usertype" Type="nvarchar" MaxLength="50" />
+    <Property Name="gid" Type="tinyint" Nullable="false" />
+    <Property Name="tessi_session_key" Type="nvarchar" MaxLength="64" />
+  </EntityType>
+  <EntityType Name="jos_shows">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="tessi_prod_no" Type="int" />
+    <Property Name="createdOn" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="createdBy" Type="int" Nullable="false" />
+    <Property Name="updatedOn" Type="datetime2" Precision="0" />
+    <Property Name="updatedBy" Type="int" />
+    <Property Name="title" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="shortTitle" Type="varchar" MaxLength="64" />
+    <Property Name="subtitle" Type="varchar" MaxLength="128" />
+    <Property Name="description" Type="varchar(max)" />
+    <Property Name="showDate" Type="datetime2" Precision="0" />
+    <Property Name="private" Type="smallint" Nullable="false" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="priceInWords" Type="varchar" MaxLength="128" />
+    <Property Name="tileFilename" Type="varchar" Nullable="false" MaxLength="64" />
+    <Property Name="checked_out" Type="int" />
+    <Property Name="checked_out_time" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="jos_shows_artists">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="showID" Type="int" />
+    <Property Name="artistID" Type="int" />
+    <Property Name="priority" Type="int" />
+  </EntityType>
+  <EntityType Name="jos_shows_genres">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="showID" Type="int" />
+    <Property Name="genreID" Type="int" />
+  </EntityType>
+  <EntityType Name="jos_shows_mp3s">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="showID" Type="int" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="64" />
+    <Property Name="filename" Type="varchar" Nullable="false" MaxLength="128" />
+    <Property Name="priority" Type="int" />
+  </EntityType>
+  <EntityType Name="jos_shows_photos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="showID" Type="int" />
+    <Property Name="caption" Type="varchar" MaxLength="128" />
+    <Property Name="filename" Type="varchar" Nullable="false" MaxLength="128" />
+    <Property Name="priority" Type="int" />
+  </EntityType>
+  <EntityType Name="jos_shows_videos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="showID" Type="int" />
+    <Property Name="caption" Type="varchar" Nullable="false" MaxLength="64" />
+    <Property Name="youtubelink" Type="varchar" Nullable="false" MaxLength="64" />
+    <Property Name="priority" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'joespub.dbo.jos_stats_agents' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="jos_stats_agents">
+    <Key>
+      <PropertyRef Name="agent" />
+      <PropertyRef Name="type" />
+      <PropertyRef Name="hits" />
+    </Key>
+    <Property Name="agent" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="type" Type="tinyint" Nullable="false" />
+    <Property Name="hits" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_template_positions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="position" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="description" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="jos_templates_menu">
+    <Key>
+      <PropertyRef Name="template" />
+      <PropertyRef Name="menuid" />
+    </Key>
+    <Property Name="template" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="menuid" Type="int" Nullable="false" />
+    <Property Name="client_id" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_tiles">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="createdOn" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="createdBy" Type="int" Nullable="false" />
+    <Property Name="updatedOn" Type="datetime2" Precision="0" />
+    <Property Name="updatedBy" Type="int" />
+    <Property Name="tileFilename" Type="varchar" Nullable="false" MaxLength="64" />
+    <Property Name="caption" Type="varchar" MaxLength="128" />
+    <Property Name="url" Type="varchar" MaxLength="128" />
+    <Property Name="sticky" Type="smallint" />
+    <Property Name="publish_up" Type="datetime2" Precision="0" />
+    <Property Name="publish_down" Type="datetime2" Precision="0" />
+    <Property Name="checked_out" Type="int" />
+    <Property Name="checked_out_time" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="jos_users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="username" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="email" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="password" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="usertype" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="block" Type="smallint" Nullable="false" />
+    <Property Name="sendEmail" Type="smallint" />
+    <Property Name="gid" Type="tinyint" Nullable="false" />
+    <Property Name="registerDate" Type="datetime2" Precision="0" />
+    <Property Name="lastvisitDate" Type="datetime2" Precision="0" />
+    <Property Name="activation" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="params" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_usertypes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="tinyint" Nullable="false" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="mask" Type="nvarchar" Nullable="false" MaxLength="11" />
+  </EntityType>
+  <EntityType Name="jos_weblinks">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="catid" Type="int" Nullable="false" />
+    <Property Name="sid" Type="int" Nullable="false" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="url" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="description" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="date" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="hits" Type="int" Nullable="false" />
+    <Property Name="published" Type="smallint" Nullable="false" />
+    <Property Name="checked_out" Type="int" Nullable="false" />
+    <Property Name="checked_out_time" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="ordering" Type="int" Nullable="false" />
+    <Property Name="archived" Type="smallint" Nullable="false" />
+    <Property Name="approved" Type="smallint" Nullable="false" />
+    <Property Name="params" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+</Schema>

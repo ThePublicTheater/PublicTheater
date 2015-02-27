@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Adage.HtmlSyos</name>
+    </assembly>
+    <members>
+        <member name="F:Adage.HtmlSyos.Code.HtmlSyosControl.scriptManager">
+            <summary>
+            scriptManager control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Adage.HtmlSyos.Code.HtmlSyosControl.HfSelectedLevel">
+            <summary>
+            HfSelectedLevel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Adage.HtmlSyos.Code.HtmlSyosControl.HfIsAdminMode">
+            <summary>
+            HfIsAdminMode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Adage.HtmlSyos.Code.HtmlSyosControl.seatCartWrapper">
+            <summary>
+            seatCartWrapper control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Adage.HtmlSyos.Code.HtmlSyosControl.ReserveSeats">
+            <summary>
+            ReserveSeats control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Adage.HtmlSyos.Code.HtmlSyosControl.syosAdmin">
+            <summary>
+            syosAdmin control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="P:Adage.HtmlSyos.Code.HtmlSyosControl.Enabled">
+            <summary>
+            Determines whether to load and show the control.
+            </summary>
+        </member>
+        <member name="T:Adage.HtmlSyos.Code.BaseSYOSService">
+            <summary>
+            Summary description for SYOSService
+            </summary>
+        </member>
+        <member name="M:Adage.HtmlSyos.Code.BaseSYOSService.GetRootConfigData(System.Int32,System.String)">
+            <param name="syosType">"package", "performance" or "exchange"</param>
+        </member>
+        <member name="M:Adage.HtmlSyos.Code.BaseSYOSService.GetLevelInformation(System.String,System.String,System.String,System.String,System.String)">
+            <param name="syosType">"package", "performance" or "exchange"</param>        
+        </member>
+        <member name="M:Adage.HtmlSyos.Code.BaseSYOSService.ReserveSeats(System.String,System.String,System.String)">
+            <param name="syosType">"package", "performance" or "exchange"</param>
+        </member>
+        <member name="M:Adage.HtmlSyos.Code.BaseSYOSService.GetZonesPrices(System.String,System.String,System.String)">
+            <param name="syosType">"package", "performance" or "exchange"</param>
+        </member>
+        <member name="T:Adage.HtmlSyos.Code.SyosBackgroundImage">
+            <summary>
+            SyosBackgroundImage returns the image from the CMS
+            </summary>
+        </member>
+        <member name="M:Adage.HtmlSyos.Code.SyosBackgroundImage.GetBackgroundImageUrl(System.String,Adage.HtmlSyos.Code.SYOSLevelData,System.String)">
+            <summary>
+            Returns the background image url from the CMS for the entered performance.
+            </summary>
+            <param name="itemNumber"></param>
+            <param name="levelData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Adage.HtmlSyos.Code.SyosBackgroundImage.GetMatch(System.Collections.Generic.IEnumerable{Adage.HtmlSyos.Code.KeyImagePair},System.String)">
+            <summary>
+            Gets the image from a set of StringImagePairs by the string value
+            </summary>
+            <param name="thumbs"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

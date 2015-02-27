@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InsertVTIXEntry">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="lineType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ipAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="inputName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="inputAddress" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertVTIXEntryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertVTIXEntryResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="boolean" type="s:boolean" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertVTIXEntrySoapIn">
+    <wsdl:part name="parameters" element="tns:InsertVTIXEntry" />
+  </wsdl:message>
+  <wsdl:message name="InsertVTIXEntrySoapOut">
+    <wsdl:part name="parameters" element="tns:InsertVTIXEntryResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertVTIXEntryHttpGetIn">
+    <wsdl:part name="sessionKey" type="s:string" />
+    <wsdl:part name="lineType" type="s:string" />
+    <wsdl:part name="ipAddress" type="s:string" />
+    <wsdl:part name="inputName" type="s:string" />
+    <wsdl:part name="inputAddress" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertVTIXEntryHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="InsertVTIXEntryHttpPostIn">
+    <wsdl:part name="sessionKey" type="s:string" />
+    <wsdl:part name="lineType" type="s:string" />
+    <wsdl:part name="ipAddress" type="s:string" />
+    <wsdl:part name="inputName" type="s:string" />
+    <wsdl:part name="inputAddress" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertVTIXEntryHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:portType name="VTIXSoap">
+    <wsdl:operation name="InsertVTIXEntry">
+      <wsdl:input message="tns:InsertVTIXEntrySoapIn" />
+      <wsdl:output message="tns:InsertVTIXEntrySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="VTIXHttpGet">
+    <wsdl:operation name="InsertVTIXEntry">
+      <wsdl:input message="tns:InsertVTIXEntryHttpGetIn" />
+      <wsdl:output message="tns:InsertVTIXEntryHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="VTIXHttpPost">
+    <wsdl:operation name="InsertVTIXEntry">
+      <wsdl:input message="tns:InsertVTIXEntryHttpPostIn" />
+      <wsdl:output message="tns:InsertVTIXEntryHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VTIXSoap" type="tns:VTIXSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertVTIXEntry">
+      <soap:operation soapAction="http://tempuri.org/InsertVTIXEntry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VTIXSoap12" type="tns:VTIXSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertVTIXEntry">
+      <soap12:operation soapAction="http://tempuri.org/InsertVTIXEntry" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VTIXHttpGet" type="tns:VTIXHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="InsertVTIXEntry">
+      <http:operation location="/InsertVTIXEntry" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VTIXHttpPost" type="tns:VTIXHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="InsertVTIXEntry">
+      <http:operation location="/InsertVTIXEntry" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VTIX">
+    <wsdl:port name="VTIXSoap" binding="tns:VTIXSoap">
+      <soap:address location="http://vtixservice.publictheater.org/vtix.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VTIXSoap12" binding="tns:VTIXSoap12">
+      <soap12:address location="http://vtixservice.publictheater.org/vtix.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VTIXHttpGet" binding="tns:VTIXHttpGet">
+      <http:address location="http://vtixservice.publictheater.org/vtix.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VTIXHttpPost" binding="tns:VTIXHttpPost">
+      <http:address location="http://vtixservice.publictheater.org/vtix.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,1332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="joespubModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="JoesPubDataEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="jos_artists" EntityType="joespubModel.jos_artists" />
+    <EntitySet Name="jos_artists_genres" EntityType="joespubModel.jos_artists_genres" />
+    <EntitySet Name="jos_artists_mp3s" EntityType="joespubModel.jos_artists_mp3s" />
+    <EntitySet Name="jos_artists_photos" EntityType="joespubModel.jos_artists_photos" />
+    <EntitySet Name="jos_artists_videos" EntityType="joespubModel.jos_artists_videos" />
+    <EntitySet Name="jos_banner" EntityType="joespubModel.jos_banner" />
+    <EntitySet Name="jos_bannerclient" EntityType="joespubModel.jos_bannerclient" />
+    <EntitySet Name="jos_bannerfinish" EntityType="joespubModel.jos_bannerfinish" />
+    <EntitySet Name="jos_categories" EntityType="joespubModel.jos_categories" />
+    <EntitySet Name="jos_comments" EntityType="joespubModel.jos_comments" />
+    <EntitySet Name="jos_components" EntityType="joespubModel.jos_components" />
+    <EntitySet Name="jos_comprofiler" EntityType="joespubModel.jos_comprofiler" />
+    <EntitySet Name="jos_comprofiler_field_values" EntityType="joespubModel.jos_comprofiler_field_values" />
+    <EntitySet Name="jos_comprofiler_fields" EntityType="joespubModel.jos_comprofiler_fields" />
+    <EntitySet Name="jos_comprofiler_lists" EntityType="joespubModel.jos_comprofiler_lists" />
+    <EntitySet Name="jos_comprofiler_members" EntityType="joespubModel.jos_comprofiler_members" />
+    <EntitySet Name="jos_comprofiler_plugin" EntityType="joespubModel.jos_comprofiler_plugin" />
+    <EntitySet Name="jos_comprofiler_tabs" EntityType="joespubModel.jos_comprofiler_tabs" />
+    <EntitySet Name="jos_comprofiler_userreports" EntityType="joespubModel.jos_comprofiler_userreports" />
+    <EntitySet Name="jos_comprofiler_views" EntityType="joespubModel.jos_comprofiler_views" />
+    <EntitySet Name="jos_contact_details" EntityType="joespubModel.jos_contact_details" />
+    <EntitySet Name="jos_content" EntityType="joespubModel.jos_content" />
+    <EntitySet Name="jos_content_frontpage" EntityType="joespubModel.jos_content_frontpage" />
+    <EntitySet Name="jos_content_rating" EntityType="joespubModel.jos_content_rating" />
+    <EntitySet Name="jos_core_acl_aro" EntityType="joespubModel.jos_core_acl_aro" />
+    <EntitySet Name="jos_core_acl_aro_groups" EntityType="joespubModel.jos_core_acl_aro_groups" />
+    <EntitySet Name="jos_core_acl_aro_sections" EntityType="joespubModel.jos_core_acl_aro_sections" />
+    <EntitySet Name="jos_core_acl_groups_aro_map" EntityType="joespubModel.jos_core_acl_groups_aro_map" />
+    <EntitySet Name="jos_core_log_items" EntityType="joespubModel.jos_core_log_items" />
+    <EntitySet Name="jos_core_log_searches" EntityType="joespubModel.jos_core_log_searches" />
+    <EntitySet Name="jos_dbquery" EntityType="joespubModel.jos_dbquery" />
+    <EntitySet Name="jos_dbquery_config" EntityType="joespubModel.jos_dbquery_config" />
+    <EntitySet Name="jos_dbquery_databases" EntityType="joespubModel.jos_dbquery_databases" />
+    <EntitySet Name="jos_dbquery_drivers" EntityType="joespubModel.jos_dbquery_drivers" />
+    <EntitySet Name="jos_dbquery_errors" EntityType="joespubModel.jos_dbquery_errors" />
+    <EntitySet Name="jos_dbquery_stats" EntityType="joespubModel.jos_dbquery_stats" />
+    <EntitySet Name="jos_dbquery_substitutions" EntityType="joespubModel.jos_dbquery_substitutions" />
+    <EntitySet Name="jos_dbquery_templates" EntityType="joespubModel.jos_dbquery_templates" />
+    <EntitySet Name="jos_dbquery_variables" EntityType="joespubModel.jos_dbquery_variables" />
+    <EntitySet Name="jos_genres" EntityType="joespubModel.jos_genres" />
+    <EntitySet Name="jos_groups" EntityType="joespubModel.jos_groups" />
+    <EntitySet Name="jos_jce_langs" EntityType="joespubModel.jos_jce_langs" />
+    <EntitySet Name="jos_jce_plugins" EntityType="joespubModel.jos_jce_plugins" />
+    <EntitySet Name="jos_jstats_bots" EntityType="joespubModel.jos_jstats_bots" />
+    <EntitySet Name="jos_jstats_browsers" EntityType="joespubModel.jos_jstats_browsers" />
+    <EntitySet Name="jos_jstats_configuration" EntityType="joespubModel.jos_jstats_configuration" />
+    <EntitySet Name="jos_jstats_ipaddresses" EntityType="joespubModel.jos_jstats_ipaddresses" />
+    <EntitySet Name="jos_jstats_iptocountry" EntityType="joespubModel.jos_jstats_iptocountry" />
+    <EntitySet Name="jos_jstats_keywords" EntityType="joespubModel.jos_jstats_keywords" />
+    <EntitySet Name="jos_jstats_page_request" EntityType="joespubModel.jos_jstats_page_request" />
+    <EntitySet Name="jos_jstats_page_request_c" EntityType="joespubModel.jos_jstats_page_request_c" />
+    <EntitySet Name="jos_jstats_pages" EntityType="joespubModel.jos_jstats_pages" />
+    <EntitySet Name="jos_jstats_referrer" EntityType="joespubModel.jos_jstats_referrer" />
+    <EntitySet Name="jos_jstats_search_engines" EntityType="joespubModel.jos_jstats_search_engines" />
+    <EntitySet Name="jos_jstats_systems" EntityType="joespubModel.jos_jstats_systems" />
+    <EntitySet Name="jos_jstats_topleveldomains" EntityType="joespubModel.jos_jstats_topleveldomains" />
+    <EntitySet Name="jos_jstats_visits" EntityType="joespubModel.jos_jstats_visits" />
+    <EntitySet Name="jos_letterman" EntityType="joespubModel.jos_letterman" />
+    <EntitySet Name="jos_letterman_subscribers" EntityType="joespubModel.jos_letterman_subscribers" />
+    <EntitySet Name="jos_mambots" EntityType="joespubModel.jos_mambots" />
+    <EntitySet Name="jos_members" EntityType="joespubModel.jos_members" />
+    <EntitySet Name="jos_members_artists" EntityType="joespubModel.jos_members_artists" />
+    <EntitySet Name="jos_members_genres" EntityType="joespubModel.jos_members_genres" />
+    <EntitySet Name="jos_members_mp3s" EntityType="joespubModel.jos_members_mp3s" />
+    <EntitySet Name="jos_menu" EntityType="joespubModel.jos_menu" />
+    <EntitySet Name="jos_messages" EntityType="joespubModel.jos_messages" />
+    <EntitySet Name="jos_messages_cfg" EntityType="joespubModel.jos_messages_cfg" />
+    <EntitySet Name="jos_modules" EntityType="joespubModel.jos_modules" />
+    <EntitySet Name="jos_modules_menu" EntityType="joespubModel.jos_modules_menu" />
+    <EntitySet Name="jos_newsfeeds" EntityType="joespubModel.jos_newsfeeds" />
+    <EntitySet Name="jos_poll_date" EntityType="joespubModel.jos_poll_date" />
+    <EntitySet Name="jos_poll_menu" EntityType="joespubModel.jos_poll_menu" />
+    <EntitySet Name="jos_polls" EntityType="joespubModel.jos_polls" />
+    <EntitySet Name="jos_redirect" EntityType="joespubModel.jos_redirect" />
+    <EntitySet Name="jos_sections" EntityType="joespubModel.jos_sections" />
+    <EntitySet Name="jos_session" EntityType="joespubModel.jos_session" />
+    <EntitySet Name="jos_shows" EntityType="joespubModel.jos_shows" />
+    <EntitySet Name="jos_shows_artists" EntityType="joespubModel.jos_shows_artists" />
+    <EntitySet Name="jos_shows_genres" EntityType="joespubModel.jos_shows_genres" />
+    <EntitySet Name="jos_shows_mp3s" EntityType="joespubModel.jos_shows_mp3s" />
+    <EntitySet Name="jos_shows_photos" EntityType="joespubModel.jos_shows_photos" />
+    <EntitySet Name="jos_shows_videos" EntityType="joespubModel.jos_shows_videos" />
+    <EntitySet Name="jos_stats_agents" EntityType="joespubModel.jos_stats_agents" />
+    <EntitySet Name="jos_template_positions" EntityType="joespubModel.jos_template_positions" />
+    <EntitySet Name="jos_templates_menu" EntityType="joespubModel.jos_templates_menu" />
+    <EntitySet Name="jos_tiles" EntityType="joespubModel.jos_tiles" />
+    <EntitySet Name="jos_users" EntityType="joespubModel.jos_users" />
+    <EntitySet Name="jos_usertypes" EntityType="joespubModel.jos_usertypes" />
+    <EntitySet Name="jos_weblinks" EntityType="joespubModel.jos_weblinks" />
+  </EntityContainer>
+  <EntityType Name="jos_artists">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="createdOn" Type="DateTime" Nullable="false" />
+    <Property Name="createdBy" Type="Int32" Nullable="false" />
+    <Property Name="updatedOn" Type="DateTime" />
+    <Property Name="updatedBy" Type="Int32" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+    <Property Name="shortName" Type="String" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="subtitle" Type="String" MaxLength="128" Unicode="false" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="webpage" Type="String" MaxLength="128" Unicode="false" FixedLength="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="tileFilename" Type="String" Nullable="false" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="checked_out" Type="Int32" />
+    <Property Name="checked_out_time" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="jos_artists_genres">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="artistID" Type="Int32" />
+    <Property Name="genreID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="jos_artists_mp3s">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="artistID" Type="Int32" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="filename" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+    <Property Name="priority" Type="Int32" />
+  </EntityType>
+  <EntityType Name="jos_artists_photos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="artistID" Type="Int32" />
+    <Property Name="caption" Type="String" MaxLength="128" Unicode="false" FixedLength="false" />
+    <Property Name="filename" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+    <Property Name="priority" Type="Int32" />
+  </EntityType>
+  <EntityType Name="jos_artists_videos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="artistID" Type="Int32" />
+    <Property Name="caption" Type="String" Nullable="false" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="youtubelink" Type="String" Nullable="false" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="priority" Type="Int32" />
+  </EntityType>
+  <EntityType Name="jos_banner">
+    <Key>
+      <PropertyRef Name="bid" />
+    </Key>
+    <Property Name="bid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cid" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="imptotal" Type="Int32" Nullable="false" />
+    <Property Name="impmade" Type="Int32" Nullable="false" />
+    <Property Name="clicks" Type="Int32" Nullable="false" />
+    <Property Name="imageurl" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="clickurl" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="date" Type="DateTime" />
+    <Property Name="showBanner" Type="Int16" Nullable="false" />
+    <Property Name="checked_out" Type="Int16" Nullable="false" />
+    <Property Name="checked_out_time" Type="DateTime" />
+    <Property Name="editor" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="custombannercode" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_bannerclient">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="contact" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="extrainfo" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="checked_out" Type="Int16" Nullable="false" />
+    <Property Name="checked_out_time" Type="Time" />
+    <Property Name="editor" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_bannerfinish">
+    <Key>
+      <PropertyRef Name="bid" />
+    </Key>
+    <Property Name="bid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cid" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="impressions" Type="Int32" Nullable="false" />
+    <Property Name="clicks" Type="Int32" Nullable="false" />
+    <Property Name="imageurl" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="datestart" Type="DateTime" />
+    <Property Name="dateend" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="jos_categories">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="parent_id" Type="Int32" Nullable="false" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="image" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="section" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="image_position" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="checked_out" Type="Int64" Nullable="false" />
+    <Property Name="checked_out_time" Type="DateTime" />
+    <Property Name="editor" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ordering" Type="Int32" Nullable="false" />
+    <Property Name="access" Type="Byte" Nullable="false" />
+    <Property Name="count" Type="Int32" Nullable="false" />
+    <Property Name="params" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_comments">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="createdOn" Type="DateTime" />
+    <Property Name="createdBy" Type="Int32" Nullable="false" />
+    <Property Name="updatedOn" Type="DateTime" />
+    <Property Name="updatedBy" Type="Int32" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="body" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="front_page" Type="Int16" />
+    <Property Name="foreign_id" Type="Int32" Nullable="false" />
+    <Property Name="foreign_id_type" Type="String" Nullable="false" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="member_id" Type="Int32" Nullable="false" />
+    <Property Name="reports" Type="Int32" />
+    <Property Name="thumbs_up" Type="Int32" />
+    <Property Name="thumbs_down" Type="Int32" />
+    <Property Name="parent_comment_id" Type="Int32" />
+    <Property Name="checked_out" Type="Int32" />
+    <Property Name="checked_out_time" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="jos_components">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="link" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="menuid" Type="Int64" Nullable="false" />
+    <Property Name="parent" Type="Int64" Nullable="false" />
+    <Property Name="admin_menu_link" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="admin_menu_alt" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="option" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ordering" Type="Int32" Nullable="false" />
+    <Property Name="admin_menu_img" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="iscore" Type="Int16" Nullable="false" />
+    <Property Name="params" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="firstname" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="middlename" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="lastname" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="hits" Type="Int32" Nullable="false" />
+    <Property Name="message_last_sent" Type="DateTime" Nullable="false" />
+    <Property Name="message_number_sent" Type="Int32" Nullable="false" />
+    <Property Name="avatar" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="avatarapproved" Type="Int16" />
+    <Property Name="approved" Type="Int16" Nullable="false" />
+    <Property Name="confirmed" Type="Int16" Nullable="false" />
+    <Property Name="lastupdatedate" Type="DateTime" Nullable="false" />
+    <Property Name="registeripaddr" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="cbactivation" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="banned" Type="Int16" Nullable="false" />
+    <Property Name="banneddate" Type="DateTime" />
+    <Property Name="bannedby" Type="Int32" />
+    <Property Name="bannedreason" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="acceptedterms" Type="Int16" Nullable="false" />
+    <Property Name="cb_test" Type="Int16" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler_field_values">
+    <Key>
+      <PropertyRef Name="fieldvalueid" />
+    </Key>
+    <Property Name="fieldvalueid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fieldid" Type="Int32" Nullable="false" />
+    <Property Name="fieldtitle" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ordering" Type="Int32" Nullable="false" />
+    <Property Name="sys" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler_fields">
+    <Key>
+      <PropertyRef Name="fieldid" />
+    </Key>
+    <Property Name="fieldid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="table" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="maxlength" Type="Int32" />
+    <Property Name="size" Type="Int32" />
+    <Property Name="required" Type="Int16" />
+    <Property Name="tabid" Type="Int32" />
+    <Property Name="ordering" Type="Int32" />
+    <Property Name="cols" Type="Int32" />
+    <Property Name="rows" Type="Int32" />
+    <Property Name="value" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="default" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="registration" Type="Int16" Nullable="false" />
+    <Property Name="profile" Type="Int16" Nullable="false" />
+    <Property Name="readonly" Type="Int16" Nullable="false" />
+    <Property Name="calculated" Type="Int16" Nullable="false" />
+    <Property Name="sys" Type="Int16" Nullable="false" />
+    <Property Name="pluginid" Type="Int32" />
+    <Property Name="params" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler_lists">
+    <Key>
+      <PropertyRef Name="listid" />
+    </Key>
+    <Property Name="listid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="default" Type="Int16" Nullable="false" />
+    <Property Name="usergroupids" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="useraccessgroupid" Type="Int32" Nullable="false" />
+    <Property Name="sortfields" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="filterfields" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ordering" Type="Int32" Nullable="false" />
+    <Property Name="col1title" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="col1enabled" Type="Int16" Nullable="false" />
+    <Property Name="col1fields" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="col2title" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="col2enabled" Type="Int16" Nullable="false" />
+    <Property Name="col1captions" Type="Int16" Nullable="false" />
+    <Property Name="col2fields" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="col2captions" Type="Int16" Nullable="false" />
+    <Property Name="col3title" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="col3enabled" Type="Int16" Nullable="false" />
+    <Property Name="col3fields" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="col3captions" Type="Int16" Nullable="false" />
+    <Property Name="col4title" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="col4enabled" Type="Int16" Nullable="false" />
+    <Property Name="col4fields" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="col4captions" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler_members">
+    <Key>
+      <PropertyRef Name="referenceid" />
+      <PropertyRef Name="memberid" />
+    </Key>
+    <Property Name="referenceid" Type="Int32" Nullable="false" />
+    <Property Name="memberid" Type="Int32" Nullable="false" />
+    <Property Name="accepted" Type="Int16" Nullable="false" />
+    <Property Name="pending" Type="Int16" Nullable="false" />
+    <Property Name="membersince" Type="DateTime" Nullable="false" />
+    <Property Name="reason" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler_plugin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="element" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="folder" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="access" Type="Byte" Nullable="false" />
+    <Property Name="ordering" Type="Int32" Nullable="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="iscore" Type="Int16" Nullable="false" />
+    <Property Name="client_id" Type="Int16" Nullable="false" />
+    <Property Name="checked_out" Type="Int64" Nullable="false" />
+    <Property Name="checked_out_time" Type="DateTime" Nullable="false" />
+    <Property Name="params" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler_tabs">
+    <Key>
+      <PropertyRef Name="tabid" />
+    </Key>
+    <Property Name="tabid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ordering" Type="Int32" Nullable="false" />
+    <Property Name="width" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="enabled" Type="Int16" Nullable="false" />
+    <Property Name="pluginclass" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="pluginid" Type="Int32" />
+    <Property Name="fields" Type="Int16" Nullable="false" />
+    <Property Name="params" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="sys" Type="Int16" Nullable="false" />
+    <Property Name="displaytype" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="position" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler_userreports">
+    <Key>
+      <PropertyRef Name="reportid" />
+    </Key>
+    <Property Name="reportid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="reporteduser" Type="Int32" Nullable="false" />
+    <Property Name="reportedbyuser" Type="Int32" Nullable="false" />
+    <Property Name="reportedondate" Type="DateTime" Nullable="false" />
+    <Property Name="reportexplaination" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="reportedstatus" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_comprofiler_views">
+    <Key>
+      <PropertyRef Name="viewer_id" />
+      <PropertyRef Name="profile_id" />
+      <PropertyRef Name="lastip" />
+    </Key>
+    <Property Name="viewer_id" Type="Int32" Nullable="false" />
+    <Property Name="profile_id" Type="Int32" Nullable="false" />
+    <Property Name="lastip" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="lastview" Type="DateTime" Nullable="false" />
+    <Property Name="viewscount" Type="Int32" Nullable="false" />
+    <Property Name="vote" Type="Int16" />
+    <Property Name="lastvote" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_contact_details">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="con_position" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="address" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="suburb" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="state" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="country" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="postcode" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="telephone" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="fax" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="misc" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="image" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="imagepos" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="email_to" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="default_con" Type="Byte" Nullable="false" />
+    <Property Name="published" Type="Byte" Nullable="false" />
+    <Property Name="checked_out" Type="Int64" Nullable="false" />
+    <Property Name="checked_out_time" Type="DateTime" />
+    <Property Name="ordering" Type="Int32" Nullable="false" />
+    <Property Name="params" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="catid" Type="Int32" Nullable="false" />
+    <Property Name="access" Type="Byte" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_content">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="title_alias" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="introtext" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="fulltext" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="state" Type="Int16" Nullable="false" />
+    <Property Name="sectionid" Type="Int64" Nullable="false" />
+    <Property Name="mask" Type="Int64" Nullable="false" />
+    <Property Name="catid" Type="Int64" Nullable="false" />
+    <Property Name="created" Type="DateTime" />
+    <Property Name="created_by" Type="Int64" Nullable="false" />
+    <Property Name="created_by_alias" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="modified" Type="DateTime" />
+    <Property Name="modified_by" Type="Int64" Nullable="false" />
+    <Property Name="checked_out" Type="Int64" Nullable="false" />
+    <Property Name="checked_out_time" Type="DateTime" />
+    <Property Name="publish_up" Type="DateTime" />
+    <Property Name="publish_down" Type="DateTime" />
+    <Property Name="images" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="urls" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="attribs" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="version" Type="Int64" Nullable="false" />
+    <Property Name="parentid" Type="Int64" Nullable="false" />
+    <Property Name="ordering" Type="Int32" Nullable="false" />
+    <Property Name="metakey" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="metadesc" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="access" Type="Int64" Nullable="false" />
+    <Property Name="hits" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_content_frontpage">
+    <Key>
+      <PropertyRef Name="content_id" />
+    </Key>
+    <Property Name="content_id" Type="Int32" Nullable="false" />
+    <Property Name="ordering" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_content_rating">
+    <Key>
+      <PropertyRef Name="content_id" />
+    </Key>
+    <Property Name="content_id" Type="Int32" Nullable="false" />
+    <Property Name="rating_sum" Type="Int64" Nullable="false" />
+    <Property Name="rating_count" Type="Int64" Nullable="false" />
+    <Property Name="lastip" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_core_acl_aro">
+    <Key>
+      <PropertyRef Name="aro_id" />
+    </Key>
+    <Property Name="aro_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="section_value" Type="String" Nullable="false" MaxLength="240" Unicode="true" FixedLength="false" />
+    <Property Name="value" Type="String" Nullable="false" MaxLength="240" Unicode="true" FixedLength="false" />
+    <Property Name="order_value" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="hidden" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_core_acl_aro_groups">
+    <Key>
+      <PropertyRef Name="group_id" />
+    </Key>
+    <Property Name="group_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="parent_id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="lft" Type="Int32" Nullable="false" />
+    <Property Name="rgt" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_core_acl_aro_sections">
+    <Key>
+      <PropertyRef Name="section_id" />
+    </Key>
+    <Property Name="section_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="value" Type="String" Nullable="false" MaxLength="230" Unicode="true" FixedLength="false" />
+    <Property Name="order_value" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="230" Unicode="true" FixedLength="false" />
+    <Property Name="hidden" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_core_acl_groups_aro_map">
+    <Key>
+      <PropertyRef Name="group_id" />
+      <PropertyRef Name="section_value" />
+      <PropertyRef Name="aro_id" />
+    </Key>
+    <Property Name="group_id" Type="Int32" Nullable="false" />
+    <Property Name="section_value" Type="String" Nullable="false" MaxLength="240" Unicode="true" FixedLength="false" />
+    <Property Name="aro_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_core_log_items">
+    <Key>
+      <PropertyRef Name="time_stamp" />
+      <PropertyRef Name="item_table" />
+      <PropertyRef Name="item_id" />
+      <PropertyRef Name="hits" />
+    </Key>
+    <Property Name="time_stamp" Type="DateTime" Nullable="false" />
+    <Property Name="item_table" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="item_id" Type="Int64" Nullable="false" />
+    <Property Name="hits" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_core_log_searches">
+    <Key>
+      <PropertyRef Name="search_term" />
+      <PropertyRef Name="hits" />
+    </Key>
+    <Property Name="search_term" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="hits" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_dbquery">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="display_name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="db_id" Type="Int64" Nullable="false" />
+    <Property Name="sql" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="catid" Type="Int64" Nullable="false" />
+    <Property Name="template" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="expect_rows" Type="Int16" />
+    <Property Name="page_navigation" Type="Int16" />
+    <Property Name="rotate_results" Type="Int16" />
+    <Property Name="display_regex" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="stats" Type="Int16" />
+    <Property Name="count_sql" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="access" Type="Int64" Nullable="false" />
+    <Property Name="published" Type="Int16" />
+    <Property Name="ordering" Type="Int64" />
+    <Property Name="archived" Type="Int16" />
+    <Property Name="debug" Type="Int16" />
+    <Property Name="uses_vars" Type="Int16" />
+    <Property Name="hits" Type="Int64" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="comment" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="checked_out" Type="Int64" />
+    <Property Name="checked_out_time" Type="DateTime" />
+    <Property Name="parse" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="contacts_id" Type="Int32" />
+    <Property Name="params" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="use_confirmation" Type="Int16" />
+    <Property Name="use_notification" Type="Int16" />
+    <Property Name="notification_emails" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="notification_subject" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="notification_message" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_dbquery_config">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="key" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="value" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="ordering" Type="Int64" />
+    <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="comment" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="checked_out" Type="Int64" />
+    <Property Name="checked_out_time" Type="DateTime" />
+    <Property Name="params" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_dbquery_databases">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="driver" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="persistent" Type="Int16" />
+    <Property Name="debug" Type="Int16" />
+    <Property Name="hostname" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="schemaname" Type="String" Nullable="false" MaxLength="48" Unicode="true" FixedLength="false" />
+    <Property Name="username" Type="String" MaxLength="48" Unicode="true" FixedLength="false" />
+    <Property Name="password" Type="String" MaxLength="48" Unicode="true" FixedLength="false" />
+    <Property Name="on_line" Type="Int16" />
+    <Property Name="ordering" Type="Int64" />
+    <Property Name="archived" Type="Int16" />
+    <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="comment" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="checked_out" Type="Int64" />
+    <Property Name="checked_out_time" Type="DateTime" />
+    <Property Name="params" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_dbquery_drivers">
+    <Key>
+      <PropertyRef Name="tobeimplemented" />
+    </Key>
+    <Property Name="tobeimplemented" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_dbquery_errors">
+    <Key>
+      <PropertyRef Name="date_reported" />
+    </Key>
+    <Property Name="source" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="oid" Type="Int32" />
+    <Property Name="oname" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="uid" Type="Int32" />
+    <Property Name="priority" Type="Int32" />
+    <Property Name="date_reported" Type="DateTime" Nullable="false" />
+    <Property Name="message" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_dbquery_stats">
+    <Key>
+      <PropertyRef Name="query_id" />
+      <PropertyRef Name="variable_id" />
+      <PropertyRef Name="value" />
+      <PropertyRef Name="date_queried" />
+    </Key>
+    <Property Name="query_id" Type="Int32" Nullable="false" />
+    <Property Name="variable_id" Type="Int32" Nullable="false" />
+    <Property Name="value" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="date_queried" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_dbquery_substitutions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="variable_id" Type="Int32" />
+    <Property Name="value" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="label" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="ordering" Type="Int64" />
+    <Property Name="checked_out" Type="Int64" />
+    <Property Name="checked_out_time" Type="DateTime" />
+    <Property Name="default" Type="Int16" />
+    <Property Name="params" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_dbquery_templates">
+    <Key>
+      <PropertyRef Name="tobeimplemented" />
+    </Key>
+    <Property Name="tobeimplemented" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_dbquery_variables">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="query_id" Type="Int32" />
+    <Property Name="display_name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="input" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="regex" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="size" Type="Int32" />
+    <Property Name="required" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="active" Type="Int16" />
+    <Property Name="uses_custom_query" Type="Int16" />
+    <Property Name="ordering" Type="Int64" />
+    <Property Name="debug" Type="Byte" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="checked_out" Type="Int64" />
+    <Property Name="checked_out_time" Type="DateTime" />
+    <Property Name="stats" Type="Int16" />
+    <Property Name="default_value" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="page" Type="Int32" />
+    <Property Name="code" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="params" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_genres">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="createdOn" Type="DateTime" Nullable="false" />
+    <Property Name="createdBy" Type="Int32" Nullable="false" />
+    <Property Name="updatedOn" Type="DateTime" />
+    <Property Name="updatedBy" Type="Int32" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="checked_out" Type="Int32" />
+    <Property Name="checked_out_time" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="jos_groups">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Byte" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_jce_langs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="lang" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_jce_plugins">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="plugin" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="icon" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="layout_icon" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="access" Type="Byte" Nullable="false" />
+    <Property Name="row" Type="Int32" Nullable="false" />
+    <Property Name="ordering" Type="Int32" Nullable="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="editable" Type="Int16" Nullable="false" />
+    <Property Name="elements" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="iscore" Type="Int16" Nullable="false" />
+    <Property Name="client_id" Type="Int16" Nullable="false" />
+    <Property Name="checked_out" Type="Int64" Nullable="false" />
+    <Property Name="checked_out_time" Type="DateTime" Nullable="false" />
+    <Property Name="params" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_bots">
+    <Key>
+      <PropertyRef Name="bot_id" />
+    </Key>
+    <Property Name="bot_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="bot_string" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="bot_fullname" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_browsers">
+    <Key>
+      <PropertyRef Name="browser_id" />
+    </Key>
+    <Property Name="browser_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="browser_string" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="browser_fullname" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="browser_img" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_configuration">
+    <Key>
+      <PropertyRef Name="description" />
+    </Key>
+    <Property Name="description" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="value" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_ipaddresses">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="ip" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="nslookup" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="tld" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="useragent" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="system" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="browser" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="type" Type="Int16" Nullable="false" />
+    <Property Name="exclude" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_iptocountry">
+    <Key>
+      <PropertyRef Name="IP_FROM" />
+    </Key>
+    <Property Name="IP_FROM" Type="Int64" Nullable="false" />
+    <Property Name="IP_TO" Type="Int64" Nullable="false" />
+    <Property Name="COUNTRY_CODE2" Type="String" Nullable="false" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="COUNTRY_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_keywords">
+    <Key>
+      <PropertyRef Name="kwdate" />
+      <PropertyRef Name="searchid" />
+      <PropertyRef Name="keywords" />
+    </Key>
+    <Property Name="kwdate" Type="DateTime" Nullable="false" />
+    <Property Name="searchid" Type="Int32" Nullable="false" />
+    <Property Name="keywords" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_page_request">
+    <Key>
+      <PropertyRef Name="page_id" />
+      <PropertyRef Name="hour" />
+      <PropertyRef Name="day" />
+      <PropertyRef Name="month" />
+      <PropertyRef Name="year" />
+    </Key>
+    <Property Name="page_id" Type="Int32" Nullable="false" />
+    <Property Name="hour" Type="Int16" Nullable="false" />
+    <Property Name="day" Type="Int16" Nullable="false" />
+    <Property Name="month" Type="Int16" Nullable="false" />
+    <Property Name="year" Type="Int16" Nullable="false" />
+    <Property Name="ip_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="jos_jstats_page_request_c">
+    <Key>
+      <PropertyRef Name="page_id" />
+      <PropertyRef Name="hour" />
+      <PropertyRef Name="day" />
+      <PropertyRef Name="month" />
+      <PropertyRef Name="year" />
+    </Key>
+    <Property Name="page_id" Type="Int32" Nullable="false" />
+    <Property Name="hour" Type="Int16" Nullable="false" />
+    <Property Name="day" Type="Int16" Nullable="false" />
+    <Property Name="month" Type="Int16" Nullable="false" />
+    <Property Name="year" Type="Int16" Nullable="false" />
+    <Property Name="count" Type="Int32" />
+  </EntityType>
+  <EntityType Name="jos_jstats_pages">
+    <Key>
+      <PropertyRef Name="page_id" />
+    </Key>
+    <Property Name="page_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="page" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="page_title" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_referrer">
+    <Key>
+      <PropertyRef Name="refid" />
+    </Key>
+    <Property Name="referrer" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="domain" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="refid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="day" Type="Int16" Nullable="false" />
+    <Property Name="month" Type="Int16" Nullable="false" />
+    <Property Name="year" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_search_engines">
+    <Key>
+      <PropertyRef Name="searchid" />
+    </Key>
+    <Property Name="searchid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="search" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="searchvar" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_systems">
+    <Key>
+      <PropertyRef Name="sys_id" />
+    </Key>
+    <Property Name="sys_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sys_string" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="sys_fullname" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="sys_img" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_topleveldomains">
+    <Key>
+      <PropertyRef Name="tld_id" />
+    </Key>
+    <Property Name="tld_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tld" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
+    <Property Name="fullname" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_jstats_visits">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ip_id" Type="Int32" Nullable="false" />
+    <Property Name="userid" Type="Int32" Nullable="false" />
+    <Property Name="hour" Type="Int16" Nullable="false" />
+    <Property Name="day" Type="Int16" Nullable="false" />
+    <Property Name="month" Type="Int16" Nullable="false" />
+    <Property Name="year" Type="Int16" Nullable="false" />
+    <Property Name="time" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_letterman">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="subject" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="headers" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="message" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="html_message" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="checked_out" Type="Int32" Nullable="false" />
+    <Property Name="checked_out_time" Type="DateTime" Nullable="false" />
+    <Property Name="publish_up" Type="DateTime" Nullable="false" />
+    <Property Name="publish_down" Type="DateTime" Nullable="false" />
+    <Property Name="created" Type="DateTime" Nullable="false" />
+    <Property Name="send" Type="DateTime" Nullable="false" />
+    <Property Name="hits" Type="Int32" Nullable="false" />
+    <Property Name="access" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_letterman_subscribers">
+    <Key>
+      <PropertyRef Name="subscriber_id" />
+    </Key>
+    <Property Name="subscriber_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="subscriber_name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="subscriber_email" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="confirmed" Type="Int16" Nullable="false" />
+    <Property Name="subscribe_date" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_mambots">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="element" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="folder" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="access" Type="Byte" Nullable="false" />
+    <Property Name="ordering" Type="Int32" Nullable="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="iscore" Type="Int16" Nullable="false" />
+    <Property Name="client_id" Type="Int16" Nullable="false" />
+    <Property Name="checked_out" Type="Int64" Nullable="false" />
+    <Property Name="checked_out_time" Type="DateTime" Nullable="false" />
+    <Property Name="params" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_members">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="tessi_customer_no" Type="Int32" />
+    <Property Name="createdOn" Type="DateTime" />
+    <Property Name="createdBy" Type="Int32" Nullable="false" />
+    <Property Name="updatedOn" Type="DateTime" />
+    <Property Name="updatedBy" Type="Int32" />
+    <Property Name="bio" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="avatarFilename" Type="String" Nullable="false" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="checked_out" Type="Int32" />
+    <Property Name="checked_out_time" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="jos_members_artists">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="memberID" Type="Int32" />
+    <Property Name="artistID" Type="Int32" />
+    <Property Name="priority" Type="Int32" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_members_genres">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="memberID" Type="Int32" />
+    <Property Name="genreID" Type="Int32" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_members_mp3s">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="memberID" Type="Int32" />
+    <Property Name="mp3ID" Type="Int32" />
+    <Property Name="mp3IDType" Type="String" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="priority" Type="Int32" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_menu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="menutype" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="link" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="parent" Type="Int64" Nullable="false" />
+    <Property Name="componentid" Type="Int64" Nullable="false" />
+    <Property Name="sublevel" Type="Int32" />
+    <Property Name="ordering" Type="Int32" />
+    <Property Name="checked_out" Type="Int64" Nullable="false" />
+    <Property Name="checked_out_time" Type="DateTime" />
+    <Property Name="pollid" Type="Int32" Nullable="false" />
+    <Property Name="browserNav" Type="Int16" />
+    <Property Name="access" Type="Byte" Nullable="false" />
+    <Property Name="utaccess" Type="Byte" Nullable="false" />
+    <Property Name="params" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_messages">
+    <Key>
+      <PropertyRef Name="message_id" />
+    </Key>
+    <Property Name="message_id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id_from" Type="Int64" Nullable="false" />
+    <Property Name="user_id_to" Type="Int64" Nullable="false" />
+    <Property Name="folder_id" Type="Int64" Nullable="false" />
+    <Property Name="date_time" Type="DateTime" Nullable="false" />
+    <Property Name="state" Type="Int32" Nullable="false" />
+    <Property Name="priority" Type="Int64" Nullable="false" />
+    <Property Name="subject" Type="String" Nullable="false" MaxLength="230" Unicode="true" FixedLength="false" />
+    <Property Name="message" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_messages_cfg">
+    <Key>
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="cfg_name" />
+      <PropertyRef Name="cfg_value" />
+    </Key>
+    <Property Name="user_id" Type="Int64" Nullable="false" />
+    <Property Name="cfg_name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="cfg_value" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_modules">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="content" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ordering" Type="Int32" Nullable="false" />
+    <Property Name="position" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="checked_out" Type="Int64" Nullable="false" />
+    <Property Name="checked_out_time" Type="DateTime" Nullable="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="module" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="numnews" Type="Int32" Nullable="false" />
+    <Property Name="access" Type="Byte" Nullable="false" />
+    <Property Name="showtitle" Type="Byte" Nullable="false" />
+    <Property Name="params" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="iscore" Type="Int16" Nullable="false" />
+    <Property Name="client_id" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_modules_menu">
+    <Key>
+      <PropertyRef Name="moduleid" />
+      <PropertyRef Name="menuid" />
+    </Key>
+    <Property Name="moduleid" Type="Int32" Nullable="false" />
+    <Property Name="menuid" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_newsfeeds">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="catid" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="link" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="filename" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="numarticles" Type="Int64" Nullable="false" />
+    <Property Name="cache_time" Type="Int64" Nullable="false" />
+    <Property Name="checked_out" Type="Byte" Nullable="false" />
+    <Property Name="checked_out_time" Type="DateTime" Nullable="false" />
+    <Property Name="ordering" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_poll_date">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="DateTime" Nullable="false" />
+    <Property Name="vote_id" Type="Int32" Nullable="false" />
+    <Property Name="poll_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_poll_menu">
+    <Key>
+      <PropertyRef Name="pollid" />
+      <PropertyRef Name="menuid" />
+    </Key>
+    <Property Name="pollid" Type="Int32" Nullable="false" />
+    <Property Name="menuid" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_polls">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="voters" Type="Int32" Nullable="false" />
+    <Property Name="checked_out" Type="Int32" Nullable="false" />
+    <Property Name="checked_out_time" Type="DateTime" Nullable="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="access" Type="Int32" Nullable="false" />
+    <Property Name="lag" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_redirect">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="original" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="redirect" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="error_code" Type="Int32" Nullable="false" />
+    <Property Name="hits" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_sections">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="image" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="scope" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="image_position" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="checked_out" Type="Int64" Nullable="false" />
+    <Property Name="checked_out_time" Type="DateTime" Nullable="false" />
+    <Property Name="ordering" Type="Int32" Nullable="false" />
+    <Property Name="access" Type="Byte" Nullable="false" />
+    <Property Name="count" Type="Int32" Nullable="false" />
+    <Property Name="params" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_session">
+    <Key>
+      <PropertyRef Name="session_id" />
+    </Key>
+    <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="time" Type="String" MaxLength="14" Unicode="true" FixedLength="false" />
+    <Property Name="session_id" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="guest" Type="Int16" />
+    <Property Name="userid" Type="Int32" />
+    <Property Name="usertype" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="gid" Type="Byte" Nullable="false" />
+    <Property Name="tessi_session_key" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_shows">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tessi_prod_no" Type="Int32" />
+    <Property Name="createdOn" Type="DateTime" Nullable="false" />
+    <Property Name="createdBy" Type="Int32" Nullable="false" />
+    <Property Name="updatedOn" Type="DateTime" />
+    <Property Name="updatedBy" Type="Int32" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="shortTitle" Type="String" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="subtitle" Type="String" MaxLength="128" Unicode="false" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="showDate" Type="DateTime" />
+    <Property Name="private" Type="Int16" Nullable="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="priceInWords" Type="String" MaxLength="128" Unicode="false" FixedLength="false" />
+    <Property Name="tileFilename" Type="String" Nullable="false" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="checked_out" Type="Int32" />
+    <Property Name="checked_out_time" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="jos_shows_artists">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="showID" Type="Int32" />
+    <Property Name="artistID" Type="Int32" />
+    <Property Name="priority" Type="Int32" />
+  </EntityType>
+  <EntityType Name="jos_shows_genres">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="showID" Type="Int32" />
+    <Property Name="genreID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="jos_shows_mp3s">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="showID" Type="Int32" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="filename" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+    <Property Name="priority" Type="Int32" />
+  </EntityType>
+  <EntityType Name="jos_shows_photos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="showID" Type="Int32" />
+    <Property Name="caption" Type="String" MaxLength="128" Unicode="false" FixedLength="false" />
+    <Property Name="filename" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+    <Property Name="priority" Type="Int32" />
+  </EntityType>
+  <EntityType Name="jos_shows_videos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="showID" Type="Int32" />
+    <Property Name="caption" Type="String" Nullable="false" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="youtubelink" Type="String" Nullable="false" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="priority" Type="Int32" />
+  </EntityType>
+  <EntityType Name="jos_stats_agents">
+    <Key>
+      <PropertyRef Name="agent" />
+      <PropertyRef Name="type" />
+      <PropertyRef Name="hits" />
+    </Key>
+    <Property Name="agent" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="Byte" Nullable="false" />
+    <Property Name="hits" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_template_positions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="position" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_templates_menu">
+    <Key>
+      <PropertyRef Name="template" />
+      <PropertyRef Name="menuid" />
+    </Key>
+    <Property Name="template" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="menuid" Type="Int32" Nullable="false" />
+    <Property Name="client_id" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jos_tiles">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="createdOn" Type="DateTime" Nullable="false" />
+    <Property Name="createdBy" Type="Int32" Nullable="false" />
+    <Property Name="updatedOn" Type="DateTime" />
+    <Property Name="updatedBy" Type="Int32" />
+    <Property Name="tileFilename" Type="String" Nullable="false" MaxLength="64" Unicode="false" FixedLength="false" />
+    <Property Name="caption" Type="String" MaxLength="128" Unicode="false" FixedLength="false" />
+    <Property Name="url" Type="String" MaxLength="128" Unicode="false" FixedLength="false" />
+    <Property Name="sticky" Type="Int16" />
+    <Property Name="publish_up" Type="DateTime" />
+    <Property Name="publish_down" Type="DateTime" />
+    <Property Name="checked_out" Type="Int32" />
+    <Property Name="checked_out_time" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="jos_users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="usertype" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="block" Type="Int16" Nullable="false" />
+    <Property Name="sendEmail" Type="Int16" />
+    <Property Name="gid" Type="Byte" Nullable="false" />
+    <Property Name="registerDate" Type="DateTime" />
+    <Property Name="lastvisitDate" Type="DateTime" />
+    <Property Name="activation" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="params" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_usertypes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Byte" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="mask" Type="String" Nullable="false" MaxLength="11" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="jos_weblinks">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="catid" Type="Int32" Nullable="false" />
+    <Property Name="sid" Type="Int32" Nullable="false" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="url" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" />
+    <Property Name="hits" Type="Int32" Nullable="false" />
+    <Property Name="published" Type="Int16" Nullable="false" />
+    <Property Name="checked_out" Type="Int32" Nullable="false" />
+    <Property Name="checked_out_time" Type="DateTime" Nullable="false" />
+    <Property Name="ordering" Type="Int32" Nullable="false" />
+    <Property Name="archived" Type="Int16" Nullable="false" />
+    <Property Name="approved" Type="Int16" Nullable="false" />
+    <Property Name="params" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>

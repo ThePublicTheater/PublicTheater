@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TheaterTemplate.Shared.EpiServerProperties</name>
+    </assembly>
+    <members>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.KeyValuePair.KeyNoSpaces">
+            <summary>
+             Returns the key without any spaces.
+            </summary>
+        </member>
+        <member name="T:TheaterTemplate.Shared.EpiServerProperties.PropertyStringWideControl">
+            <summary>
+            Override for string to widen the control
+            </summary>
+        </member>
+        <member name="T:TheaterTemplate.Shared.EpiServerProperties.KeyImagePair">
+            <summary>
+            Defines a key-value pair that corresponds to a string key and a image url location value
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.KeyImagePair.Key">
+            <summary>
+            Returns the key
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.KeyImagePair.KeyNoSpaces">
+            <summary>
+             Returns the key without any spaces.
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.KeyImagePair.ValueOfKey">
+            <summary>
+            Returns the string value corresponding to the Image URL
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.DonationFundItem.Title">
+            <summary>
+            Title of donation fund in EpiServer
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.DonationFundItem.AccountMethodId">
+            <summary>
+            Account Method Id of donation fund in EpiServer
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.DonationFundItem.FundId">
+            <summary>
+            Fund Id of donation fund in EpiServer
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.DonationFundItem.CsiPage">
+            <summary>
+            EpiServer Page representing the CSI to be submitted for this fund
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.DonationFundItem.Image">
+            <summary>
+            Image of donation fund in EpiServer
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.DonationFundItem.FundDescription">
+            <summary>
+            Fund description of donation fund in EpiServer
+            </summary>
+        </member>
+        <member name="T:TheaterTemplate.Shared.EpiServerProperties.PackageDetailTabList">
+            <summary>
+            A multi-prop list of package detail tabs to populate packages on a package subscription page.
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.PackageDetailTabList.BasePropertys">
+            <summary>
+            List of multi-props
+            </summary>
+        </member>
+        <member name="T:TheaterTemplate.Shared.EpiServerProperties.PropertyNumberWideControl">
+            <summary>
+            Override for number display to be wider
+            </summary>
+        </member>
+        <member name="T:TheaterTemplate.Shared.EpiServerProperties.KeyImagePairList">
+            <summary>
+            Defines  a list key-image pairs
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.ExchangeMessageItem.Title">
+            <summary>
+            Title of donation fund in EpiServer
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.ExchangeMessageItem.DaysBeforePerformance">
+            <summary>
+            DaysBeforePerformance of donation fund in EpiServer
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.ExchangeMessageItem.AllowExchange">
+            <summary>
+            Determines if the exchange is allowed
+            </summary>
+        </member>
+        <member name="T:TheaterTemplate.Shared.EpiServerProperties.ExtendedValidElements">
+            <summary>
+            http://www.frederikvig.com/2010/10/how-to-add-support-for-iframes-and-other-elements-to-tinymce-in-episerver-cms/
+            </summary>
+        </member>
+        <member name="T:TheaterTemplate.Shared.EpiServerProperties.RenewalPackageChoiceList">
+            <summary>
+            Renewal Package Choice List - Multiprop that allows for multiple package choices
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.RenewalPackageChoiceList.PackageChoicesTitle">
+            <summary>
+            Title for the alternate package area
+            </summary>
+        </member>
+        <member name="T:TheaterTemplate.Shared.EpiServerProperties.PackageDetailTab">
+            <summary>
+            Package Detail Tab - Contains information for the master package categorization
+            for tab names, keywords, and venue ids used to filter large lists of packages.
+            </summary>
+        </member>
+        <member name="M:TheaterTemplate.Shared.EpiServerProperties.PackageDetailTab.GetPackageCriteria">
+            <summary>
+            Returns the packages criteria to use for this specific tab
+            </summary>
+            <returns>Populated Package Criteria Object</returns>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.PackageDetailTab.InnerPropertyCollection">
+            <summary>
+            Multi-Prop Collection of properties
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.PackageDetailTab.TabTitle">
+            <summary>
+            Title to be displayed on the tab for this choice
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.PackageDetailTab.Keywords">
+            <summary>
+            Keywords to pass to tessitura
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.PackageDetailTab.VenueId">
+            <summary>
+            Venue Id to pass to tessitura for this choice
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.PackageDetailTab.SeasonId">
+            <summary>
+            Season Id to pass to tessitura for this choice
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.PackageDetailTab.SortString">
+            <summary>
+            Field to use to sort the package tab
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.PackageDetailTab.StartDate">
+            <summary>
+            Start date to filter package search on
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.PackageDetailTab.EndDate">
+            <summary>
+            End date to filter package search on
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:TheaterTemplate.Shared.EpiServerProperties.KeyXHTMLList" -->
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.TitledKeyValuePairList.Title">
+            <summary>
+            Title for the key value list
+            </summary>
+        </member>
+        <member name="T:TheaterTemplate.Shared.EpiServerProperties.KeyXHTMLPair">
+            <summary>
+            Represents a key value pair where the value is a HTML string
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.KeyXHTMLPair.Key">
+            <summary>
+            Key of the pair
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.KeyXHTMLPair.HTMLValue">
+            <summary>
+            Value of the pair returned as HTML
+            </summary>
+        </member>
+        <member name="T:TheaterTemplate.Shared.EpiServerProperties.RenewalPackageChoice">
+            <summary>
+            Renewal Package Choice - Contains a package name, package ID, and a list of package ids associated with the item
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.RenewalPackageChoice.PackageName">
+            <summary>
+            Package Name for the Additional Package Choice
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.RenewalPackageChoice.PackageId">
+            <summary>
+             Package ID to use for the additioanl package choice
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.RenewalPackageChoice.AdditionalPackageIds">
+            <summary>
+            List of additional package Ids that match this package choice
+            </summary>
+        </member>
+        <member name="T:TheaterTemplate.Shared.EpiServerProperties.PropertyPageReferenceWideControl">
+            <summary>
+            Override for string to widen the control
+            </summary>
+        </member>
+        <member name="T:TemplateFoundation.Plugins.ScriptManagerPlugin">
+            <summary>
+            This plugin ensures that the EpiServer edit panel has a script manager.  It is needed
+            for multi-properties to not call a post-back when its buttons are pushed.
+            
+            Code taken from http://tedgustaf.com/en/blog/2010/8/use-updatepanel-inside-an-episerver-custom-property/
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.MembershipLevelItem.Title">
+            <summary>
+            Title of Membership level in EpiServer
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.MembershipLevelItem.AmountRange">
+            <summary>
+            Amount Range of Membership level in EpiServer
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.MembershipLevelItem.LevelDescription">
+            <summary>
+            Level Description of Membership level in EpiServer
+            </summary>
+        </member>
+        <member name="P:TheaterTemplate.Shared.EpiServerProperties.MembershipLevelItem.StartingLevel">
+            <summary>
+            Suggested starting donation amount for a particular donation level
+            </summary>
+        </member>
+    </members>
+</doc>
